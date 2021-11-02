@@ -1,7 +1,21 @@
-import { NextPage } from "next";
+import axios from "axios";
+import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 
 const Login: NextPage = () => {
+  React.useEffect(() => {
+    const fetch = async () => {
+      const res = await axios.get("http://localhost:8080/v1/post", {
+        method: "GET",
+      });
+
+      console.log(res.data);
+      return res.data;
+    };
+
+    fetch();
+  }, []);
+
   return (
     <div className="flex flex-row items-center justify-center min-h-[80vh]">
       <div className="px-24 py-24 border-2 border-gray-300 rounded-lg">
@@ -35,3 +49,10 @@ const Login: NextPage = () => {
 };
 
 export default Login;
+
+// export const getServerSideProps: GetServerSideProps = async (context) => {
+
+//   return {
+//     props: { data }, // will be passed to the page component as props
+//   };
+// };
