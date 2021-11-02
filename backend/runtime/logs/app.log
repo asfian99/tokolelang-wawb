@@ -1,0 +1,86 @@
+2021-11-02 04:02:14 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "gii/model". in C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('gii/model', Array)
+#1 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('gii/model', Array)
+#2 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 C:\xampp\htdocs\yii2-rest-api-template\yii(20): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "gii/model". in C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php:184
+Stack trace:
+#0 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('gii/model', Array)
+#1 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 C:\xampp\htdocs\yii2-rest-api-template\yii(20): yii\base\Application->run()
+#3 {main}
+2021-11-02 04:02:14 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.8\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Asfian\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SATURN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
+    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Asfian'
+    'LOCALAPPDATA' => 'C:\\Users\\Asfian\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SATURN'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Asfian\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Asfian\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\PowerShell\\7;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Python\\Python39\\;C:\\Users\\Asfian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Asfian\\AppData\\Roaming\\npm;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Asfian\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Asfian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Asfian\\AppData\\Local\\atom\\bin;C:\\Users\\Asfian\\AppData\\Local\\gitkraken\\bin;C:\\Android\\platform-tools;C:\\Program Files\\JetBrains\\PhpStorm 2021.2.3\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.2.3\\bin;'
+    'POWERSHELL_DISTRIBUTION_CHANNEL' => 'MSI:Windows 10 Pro'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Asfian\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\powershell\\7\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.3.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Asfian\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Asfian\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SATURN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SATURN'
+    'USERNAME' => 'Asfian'
+    'USERPROFILE' => 'C:\\Users\\Asfian'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{574e775e-4f2a-5b96-ac1e-a2962a402336}'
+    'WT_SESSION' => '09acd73e-d806-49c3-91bf-fcb97367a6a0'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1635822134.4202
+    'REQUEST_TIME' => 1635822134
+    'argv' => [
+        0 => 'yii'
+        1 => 'gii/model'
+        2 => '--tableName=item'
+        3 => '--modelClass=Item'
+    ]
+    'argc' => 4
+]
