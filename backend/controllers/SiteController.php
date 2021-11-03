@@ -3,7 +3,6 @@
 namespace app\controllers;
 
 use app\models\AccessToken;
-use app\models\Post;
 use app\models\Item;
 use app\models\User;
 use app\models\Status;
@@ -25,7 +24,7 @@ class SiteController extends Controller
 
     public function actionIndex(): array
     {
-        $post = Post::find()->all();
+        $post = Item::find()->all();
         return [
             'status' => Status::STATUS_OK,
             'message' => 'Success',
@@ -36,7 +35,7 @@ class SiteController extends Controller
     
     public function actionView($id): array
     {
-        $post = Post::findOne($id);
+        $post = Item::findOne($id);
         return [
             'status' => Status::STATUS_FOUND,
             'message' => 'Data Found',
@@ -169,5 +168,15 @@ class SiteController extends Controller
                 'data' => ''
             ];
         }
+    }
+
+    public function behaviors() {
+        $behaviors = parent::behaviors();
+
+        $behaviors['corsFilter'] = [
+            'class' => \yii\filters\Cors::class,
+        ];
+
+        return $behaviors;
     }
 }

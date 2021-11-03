@@ -7,11 +7,17 @@ use yii\db\ActiveRecord;
 
 class Item extends ActiveRecord
 {
+    /**
+     * {@inheritdoc}
+     */
     public static function tableName(): string
     {
         return 'item';
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function rules(): array
     {
         return [
@@ -21,6 +27,9 @@ class Item extends ActiveRecord
         ];
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function attributeLabels(): array
     {
         return [

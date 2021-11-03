@@ -1,104 +1,129 @@
-2021-11-02 04:02:14 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "gii/model". in C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\base\Module.php:543
+2021-10-31 18:53:22 [::1][-][fpio3b3lcrdd1caulejaat5u69][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
 Stack trace:
-#0 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('gii/model', Array)
-#1 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('gii/model', Array)
-#2 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
-#3 C:\xampp\htdocs\yii2-rest-api-template\yii(20): yii\base\Application->run()
-#4 {main}
-
-Next yii\console\UnknownCommandException: Unknown command "gii/model". in C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php:184
-Stack trace:
-#0 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('gii/model', Array)
-#1 C:\xampp\htdocs\yii2-rest-api-template\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
-#2 C:\xampp\htdocs\yii2-rest-api-template\yii(20): yii\base\Application->run()
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
 #3 {main}
-2021-11-02 04:02:14 [-][-][-][info][application] $_GET = []
+2021-10-31 18:53:22 [::1][-][fpio3b3lcrdd1caulejaat5u69][info][application] $_GET = []
 
 $_POST = []
 
 $_FILES = []
 
-$_COOKIE = []
-
-$_SERVER = [
-    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.8\\'
-    'ALLUSERSPROFILE' => 'C:\\ProgramData'
-    'APPDATA' => 'C:\\Users\\Asfian\\AppData\\Roaming'
-    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
-    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
-    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
-    'COMPUTERNAME' => 'SATURN'
-    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
-    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
-    'FPS_BROWSER_APP_PROFILE_STRING' => 'Internet Explorer'
-    'FPS_BROWSER_USER_PROFILE_STRING' => 'Default'
-    'HOMEDRIVE' => 'C:'
-    'HOMEPATH' => '\\Users\\Asfian'
-    'LOCALAPPDATA' => 'C:\\Users\\Asfian\\AppData\\Local'
-    'LOGONSERVER' => '\\\\SATURN'
-    'NUMBER_OF_PROCESSORS' => '4'
-    'OneDrive' => 'C:\\Users\\Asfian\\OneDrive'
-    'OneDriveConsumer' => 'C:\\Users\\Asfian\\OneDrive'
-    'OS' => 'Windows_NT'
-    'Path' => 'C:\\Program Files\\PowerShell\\7;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Python\\Python39\\;C:\\Users\\Asfian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Asfian\\AppData\\Roaming\\npm;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Asfian\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Asfian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Asfian\\AppData\\Local\\atom\\bin;C:\\Users\\Asfian\\AppData\\Local\\gitkraken\\bin;C:\\Android\\platform-tools;C:\\Program Files\\JetBrains\\PhpStorm 2021.2.3\\bin'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
-    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.2.3\\bin;'
-    'POWERSHELL_DISTRIBUTION_CHANNEL' => 'MSI:Windows 10 Pro'
-    'PROCESSOR_ARCHITECTURE' => 'AMD64'
-    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
-    'PROCESSOR_LEVEL' => '6'
-    'PROCESSOR_REVISION' => '3d04'
-    'ProgramData' => 'C:\\ProgramData'
-    'ProgramFiles' => 'C:\\Program Files'
-    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
-    'ProgramW6432' => 'C:\\Program Files'
-    'PSModulePath' => 'C:\\Users\\Asfian\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\powershell\\7\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
-    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.3.1'
-    'PUBLIC' => 'C:\\Users\\Public'
-    'QT_DEVICE_PIXEL_RATIO' => 'auto'
-    'SystemDrive' => 'C:'
-    'SystemRoot' => 'C:\\Windows'
-    'TEMP' => 'C:\\Users\\Asfian\\AppData\\Local\\Temp'
-    'TMP' => 'C:\\Users\\Asfian\\AppData\\Local\\Temp'
-    'USERDOMAIN' => 'SATURN'
-    'USERDOMAIN_ROAMINGPROFILE' => 'SATURN'
-    'USERNAME' => 'Asfian'
-    'USERPROFILE' => 'C:\\Users\\Asfian'
-    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
-    'windir' => 'C:\\Windows'
-    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
-    'WT_PROFILE_ID' => '{574e775e-4f2a-5b96-ac1e-a2962a402336}'
-    'WT_SESSION' => '09acd73e-d806-49c3-91bf-fcb97367a6a0'
-    'PHP_SELF' => 'yii'
-    'SCRIPT_NAME' => 'yii'
-    'SCRIPT_FILENAME' => 'yii'
-    'PATH_TRANSLATED' => 'yii'
-    'DOCUMENT_ROOT' => ''
-    'REQUEST_TIME_FLOAT' => 1635822134.4202
-    'REQUEST_TIME' => 1635822134
-    'argv' => [
-        0 => 'yii'
-        1 => 'gii/model'
-        2 => '--tableName=item'
-        3 => '--modelClass=Item'
-    ]
-    'argc' => 4
+$_COOKIE = [
+    'PHPSESSID' => 'fpio3b3lcrdd1caulejaat5u69'
+    '_csrf' => 'def2a767423fe9c21dd13a1c5667c0e2bd1d68764d9c604056da6c37bef40645a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eq3y6fbFj-np_zIFXnSUgkAILqdsZMA4\";}'
 ]
-2021-11-02 10:08:25 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "init". in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
-Stack trace:
-#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('init', Array)
-#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('init', Array)
-#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
-#3 C:\xampp\htdocs\TokoLelang\backend\yii(20): yii\base\Application->run()
-#4 {main}
 
-Next yii\console\UnknownCommandException: Unknown command "init". in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Application.php:184
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58135'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/book'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/book'
+    'PHP_SELF' => '/index.php/book'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_DNT' => '1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=fpio3b3lcrdd1caulejaat5u69; _csrf=def2a767423fe9c21dd13a1c5667c0e2bd1d68764d9c604056da6c37bef40645a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eq3y6fbFj-np_zIFXnSUgkAILqdsZMA4%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1635702802.7404
+    'REQUEST_TIME' => 1635702802
+]
+2021-10-31 18:53:33 [::1][-][fpio3b3lcrdd1caulejaat5u69][error][Error] Error: Class 'app\model\Book' not found in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\rest\IndexAction.php:130
 Stack trace:
-#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('init', Array)
-#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
-#2 C:\xampp\htdocs\TokoLelang\backend\yii(20): yii\base\Application->run()
-#3 {main}
-2021-11-02 10:08:25 [-][-][-][info][application] $_GET = []
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\rest\IndexAction.php(98): yii\rest\IndexAction->prepareDataProvider()
+#1 [internal function]: yii\rest\IndexAction->run()
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-10-31 18:53:32 [::1][-][fpio3b3lcrdd1caulejaat5u69][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'fpio3b3lcrdd1caulejaat5u69'
+    '_csrf' => 'def2a767423fe9c21dd13a1c5667c0e2bd1d68764d9c604056da6c37bef40645a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eq3y6fbFj-np_zIFXnSUgkAILqdsZMA4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58145'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_DNT' => '1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=fpio3b3lcrdd1caulejaat5u69; _csrf=def2a767423fe9c21dd13a1c5667c0e2bd1d68764d9c604056da6c37bef40645a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eq3y6fbFj-np_zIFXnSUgkAILqdsZMA4%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1635702812.9866
+    'REQUEST_TIME' => 1635702812
+]
+2021-10-31 18:53:55 [::1][-][-][error][Error] Error: Class 'app\model\Book' not found in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\rest\IndexAction.php:130
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\rest\IndexAction.php(98): yii\rest\IndexAction->prepareDataProvider()
+#1 [internal function]: yii\rest\IndexAction->run()
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-10-31 18:53:55 [::1][-][-][info][application] $_GET = []
 
 $_POST = []
 
@@ -107,74 +132,3003 @@ $_FILES = []
 $_COOKIE = []
 
 $_SERVER = [
-    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.8\\'
-    'ALLUSERSPROFILE' => 'C:\\ProgramData'
-    'APPDATA' => 'C:\\Users\\Asfian\\AppData\\Roaming'
-    'APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL' => 'true'
-    'CHROME_CRASHPAD_PIPE_NAME' => '\\\\.\\pipe\\crashpad_14228_YTRYCUSLDGCSWEXS'
-    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
-    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
-    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
-    'COMPUTERNAME' => 'SATURN'
-    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
-    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
-    'HOMEDRIVE' => 'C:'
-    'HOMEPATH' => '\\Users\\Asfian'
-    'LOCALAPPDATA' => 'C:\\Users\\Asfian\\AppData\\Local'
-    'LOGONSERVER' => '\\\\SATURN'
-    'NUMBER_OF_PROCESSORS' => '4'
-    'OneDrive' => 'C:\\Users\\Asfian\\OneDrive'
-    'OneDriveConsumer' => 'C:\\Users\\Asfian\\OneDrive'
-    'ORIGINAL_XDG_CURRENT_DESKTOP' => 'undefined'
-    'OS' => 'Windows_NT'
-    'Path' => 'C:\\Program Files\\PowerShell\\7;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\PowerShell\\7\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Python\\Python39\\;C:\\Users\\Asfian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Asfian\\AppData\\Roaming\\npm;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Asfian\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Asfian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\Asfian\\AppData\\Local\\atom\\bin;C:\\Users\\Asfian\\AppData\\Local\\gitkraken\\bin;C:\\Android\\platform-tools;C:\\Program Files\\JetBrains\\PhpStorm 2021.2.3\\bin'
-    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
-    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.2.3\\bin;'
-    'POWERSHELL_DISTRIBUTION_CHANNEL' => 'MSI:Windows 10 Pro'
-    'PROCESSOR_ARCHITECTURE' => 'AMD64'
-    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
-    'PROCESSOR_LEVEL' => '6'
-    'PROCESSOR_REVISION' => '3d04'
-    'ProgramData' => 'C:\\ProgramData'
-    'ProgramFiles' => 'C:\\Program Files'
-    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
-    'ProgramW6432' => 'C:\\Program Files'
-    'PROMPT' => '$P$G'
-    'PSModulePath' => 'C:\\Users\\Asfian\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\powershell\\7\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
-    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.3.1'
-    'PUBLIC' => 'C:\\Users\\Public'
-    'QT_DEVICE_PIXEL_RATIO' => 'auto'
-    'SystemDrive' => 'C:'
-    'SystemRoot' => 'C:\\Windows'
-    'TEMP' => 'C:\\Users\\Asfian\\AppData\\Local\\Temp'
-    'TMP' => 'C:\\Users\\Asfian\\AppData\\Local\\Temp'
-    'USERDOMAIN' => 'SATURN'
-    'USERDOMAIN_ROAMINGPROFILE' => 'SATURN'
-    'USERNAME' => 'Asfian'
-    'USERPROFILE' => 'C:\\Users\\Asfian'
-    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
-    'windir' => 'C:\\Windows'
-    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
-    'WT_PROFILE_ID' => '{574e775e-4f2a-5b96-ac1e-a2962a402336}'
-    'WT_SESSION' => '5a61f74a-10c9-44fb-9e98-fc3e1edfbb9c'
-    'TERM_PROGRAM' => 'vscode'
-    'TERM_PROGRAM_VERSION' => '1.61.2'
-    'LANG' => 'en_US.UTF-8'
-    'COLORTERM' => 'truecolor'
-    'VSCODE_GIT_IPC_HANDLE' => '\\\\.\\pipe\\vscode-git-cf2d8165d5-sock'
-    'GIT_ASKPASS' => 'c:\\Users\\Asfian\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass.sh'
-    'VSCODE_GIT_ASKPASS_NODE' => 'C:\\Users\\Asfian\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe'
-    'VSCODE_GIT_ASKPASS_MAIN' => 'c:\\Users\\Asfian\\AppData\\Local\\Programs\\Microsoft VS Code\\resources\\app\\extensions\\git\\dist\\askpass-main.js'
-    'PHP_SELF' => 'yii'
-    'SCRIPT_NAME' => 'yii'
-    'SCRIPT_FILENAME' => 'yii'
-    'PATH_TRANSLATED' => 'yii'
-    'DOCUMENT_ROOT' => ''
-    'REQUEST_TIME_FLOAT' => 1635844105.6482
-    'REQUEST_TIME' => 1635844105
-    'argv' => [
-        0 => 'yii'
-        1 => 'init'
-    ]
-    'argc' => 2
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51408'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.5.2'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635702835.6908
+    'REQUEST_TIME' => 1635702835
+]
+2021-10-31 23:16:33 [::1][-][fpio3b3lcrdd1caulejaat5u69][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-10-31 23:16:33 [::1][-][fpio3b3lcrdd1caulejaat5u69][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'fpio3b3lcrdd1caulejaat5u69'
+    '_csrf' => 'def2a767423fe9c21dd13a1c5667c0e2bd1d68764d9c604056da6c37bef40645a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eq3y6fbFj-np_zIFXnSUgkAILqdsZMA4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64883'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_DNT' => '1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=fpio3b3lcrdd1caulejaat5u69; _csrf=def2a767423fe9c21dd13a1c5667c0e2bd1d68764d9c604056da6c37bef40645a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eq3y6fbFj-np_zIFXnSUgkAILqdsZMA4%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1635718593.6858
+    'REQUEST_TIME' => 1635718593
+]
+2021-11-03 08:19:40 [::1][-][nccb2f4f55mhjmg9cgqmcsr33l][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:19:40 [::1][-][nccb2f4f55mhjmg9cgqmcsr33l][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49735'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/v1/books'
+    'PHP_SELF' => '/index.php/v1/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635923980.7811
+    'REQUEST_TIME' => 1635923980
+]
+2021-11-03 08:20:37 [::1][-][o4nsrlopo1nu9se9meboft3mfn][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:20:37 [::1][-][o4nsrlopo1nu9se9meboft3mfn][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49780'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/v1/books'
+    'PHP_SELF' => '/index.php/v1/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924037.4559
+    'REQUEST_TIME' => 1635924037
+]
+2021-11-03 08:20:41 [::1][-][tfelkqlkpfaa0tvbhg651uuorm][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:20:41 [::1][-][tfelkqlkpfaa0tvbhg651uuorm][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49785'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/v1/books'
+    'PHP_SELF' => '/index.php/v1/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924041.464
+    'REQUEST_TIME' => 1635924041
+]
+2021-11-03 08:20:52 [::1][-][btch1dg2m5ar5k62o1n1e4qoqc][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:20:52 [::1][-][btch1dg2m5ar5k62o1n1e4qoqc][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49800'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/v1/books'
+    'PHP_SELF' => '/index.php/v1/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924052.141
+    'REQUEST_TIME' => 1635924052
+]
+2021-11-03 08:21:10 [::1][-][0he5f4n12hvs6m6ofnihll4n83][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:21:10 [::1][-][0he5f4n12hvs6m6ofnihll4n83][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '49822'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/v1/books'
+    'PHP_SELF' => '/index.php/v1/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924070.3019
+    'REQUEST_TIME' => 1635924070
+]
+2021-11-03 08:24:43 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:24:43 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50246'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/signup'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/signup'
+    'PHP_SELF' => '/index.php/signup'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '80'
+    'HTTP_CONTENT_LENGTH' => '80'
+    'REQUEST_TIME_FLOAT' => 1635924283.2315
+    'REQUEST_TIME' => 1635924283
+]
+2021-11-03 08:28:46 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:28:46 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50600'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/post'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/v1/post'
+    'PHP_SELF' => '/index.php/v1/post'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924526.3948
+    'REQUEST_TIME' => 1635924526
+]
+2021-11-03 08:29:46 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-03 08:29:46 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50640'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635924586.1069
+    'REQUEST_TIME' => 1635924586
+]
+2021-11-03 08:30:06 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-03 08:30:06 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50659'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924606.4308
+    'REQUEST_TIME' => 1635924606
+]
+2021-11-03 08:30:31 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-03 08:30:31 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50787'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924631.2784
+    'REQUEST_TIME' => 1635924631
+]
+2021-11-03 08:31:14 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-03 08:31:14 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50818'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924674.3282
+    'REQUEST_TIME' => 1635924674
+]
+2021-11-03 08:31:27 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-03 08:31:27 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50834'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924687.8786
+    'REQUEST_TIME' => 1635924687
+]
+2021-11-03 08:31:36 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-03 08:31:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50846'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924696.1079
+    'REQUEST_TIME' => 1635924696
+]
+2021-11-03 08:31:43 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-03 08:31:42 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50858'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924702.9814
+    'REQUEST_TIME' => 1635924702
+]
+2021-11-03 08:33:04 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-03 08:33:04 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50916'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924784.2302
+    'REQUEST_TIME' => 1635924784
+]
+2021-11-03 08:33:55 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#12 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-03 08:33:55 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50942'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1635924835.3543
+    'REQUEST_TIME' => 1635924835
+]
+2021-11-03 08:34:05 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\library-api\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\library-api\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:34:05 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => 'fpio3b3lcrdd1caulejaat5u69'
+    '_csrf' => 'def2a767423fe9c21dd13a1c5667c0e2bd1d68764d9c604056da6c37bef40645a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eq3y6fbFj-np_zIFXnSUgkAILqdsZMA4\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\library-api\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50950'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/post'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\library-api\\web\\index.php'
+    'PATH_INFO' => '/v1/post'
+    'PHP_SELF' => '/index.php/v1/post'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_DNT' => '1'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.54 Safari/537.36 Edg/95.0.1020.40'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'HTTP_COOKIE' => 'PHPSESSID=fpio3b3lcrdd1caulejaat5u69; _csrf=def2a767423fe9c21dd13a1c5667c0e2bd1d68764d9c604056da6c37bef40645a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eq3y6fbFj-np_zIFXnSUgkAILqdsZMA4%22%3B%7D'
+    'REQUEST_TIME_FLOAT' => 1635924845.9144
+    'REQUEST_TIME' => 1635924845
+]
+2021-11-03 08:46:27 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-03 08:46:27 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'c98792a062fac56ec2908b816413d10ce8a02eba80c1dc1fde1d07541d3458aba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yeF1s6wV2BpwkyoNrCQqZlc0Zez9hAsf\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51397'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=c98792a062fac56ec2908b816413d10ce8a02eba80c1dc1fde1d07541d3458aba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yeF1s6wV2BpwkyoNrCQqZlc0Zez9hAsf%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635925587.7247
+    'REQUEST_TIME' => 1635925587
+]
+2021-11-03 08:46:38 [::1][1][-][error][Error] Error: Class 'app\models\Book' not found in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php:130
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(98): yii\rest\IndexAction->prepareDataProvider()
+#1 [internal function]: yii\rest\IndexAction->run()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 08:46:38 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'c98792a062fac56ec2908b816413d10ce8a02eba80c1dc1fde1d07541d3458aba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"yeF1s6wV2BpwkyoNrCQqZlc0Zez9hAsf\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51410'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=c98792a062fac56ec2908b816413d10ce8a02eba80c1dc1fde1d07541d3458aba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22yeF1s6wV2BpwkyoNrCQqZlc0Zez9hAsf%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635925598.7767
+    'REQUEST_TIME' => 1635925598
+]
+2021-11-03 08:46:47 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:46:47 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51416'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/item'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/v1/item'
+    'PHP_SELF' => '/index.php/v1/item'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635925607.0987
+    'REQUEST_TIME' => 1635925607
+]
+2021-11-03 08:47:08 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:47:08 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51426'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/item'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/v1/item'
+    'PHP_SELF' => '/index.php/v1/item'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635925628.3113
+    'REQUEST_TIME' => 1635925628
+]
+2021-11-03 08:47:10 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:47:10 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51428'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/v1/items'
+    'PHP_SELF' => '/index.php/v1/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635925630.8291
+    'REQUEST_TIME' => 1635925630
+]
+2021-11-03 08:47:11 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:47:11 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51429'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/v1/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/v1/items'
+    'PHP_SELF' => '/index.php/v1/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635925631.9349
+    'REQUEST_TIME' => 1635925631
+]
+2021-11-03 08:47:17 [::1][1][-][error][Error] Error: Class 'app\models\Book' not found in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php:130
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(98): yii\rest\IndexAction->prepareDataProvider()
+#1 [internal function]: yii\rest\IndexAction->run()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('book/index', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 08:47:16 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51433'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/books'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/books'
+    'PHP_SELF' => '/index.php/books'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=f30548e45185ecf922cc4b289bc3a101d5e8431e7628105831dcb30f794d331aa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sMusb4hIWFkwX-Lx9zfQMUjkjSpZs8jO%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635925636.9479
+    'REQUEST_TIME' => 1635925636
+]
+2021-11-03 08:47:19 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/item in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('item', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/item', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 08:47:19 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd235faa9c532b54a0ace9888a8066aa4c5bbc87e25f44391096da617cbd70aa4a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"eoAtzFf2c1H5op7Pz9uh03JCXJELhnMd\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51437'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/item'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/item'
+    'PHP_SELF' => '/index.php/item'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d235faa9c532b54a0ace9888a8066aa4c5bbc87e25f44391096da617cbd70aa4a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22eoAtzFf2c1H5op7Pz9uh03JCXJELhnMd%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635925639.7574
+    'REQUEST_TIME' => 1635925639
+]
+2021-11-03 08:54:55 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('item/index', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-03 08:54:54 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '765770294130844c74da66573aa96764e493ada24f5e7a0a6dfc2caf969306a9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hVVhKEEfffAU48PLumxH002_NQo18YPb\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51699'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items'
+    'PHP_SELF' => '/index.php/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=765770294130844c74da66573aa96764e493ada24f5e7a0a6dfc2caf969306a9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hVVhKEEfffAU48PLumxH002_NQo18YPb%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635926094.9845
+    'REQUEST_TIME' => 1635926094
+]
+2021-11-03 08:56:50 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('item/index', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-03 08:56:50 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '765770294130844c74da66573aa96764e493ada24f5e7a0a6dfc2caf969306a9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hVVhKEEfffAU48PLumxH002_NQo18YPb\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51762'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items'
+    'PHP_SELF' => '/index.php/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=765770294130844c74da66573aa96764e493ada24f5e7a0a6dfc2caf969306a9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hVVhKEEfffAU48PLumxH002_NQo18YPb%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635926210.8313
+    'REQUEST_TIME' => 1635926210
+]
+2021-11-03 08:56:58 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('item/index', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-03 08:56:57 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '765770294130844c74da66573aa96764e493ada24f5e7a0a6dfc2caf969306a9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hVVhKEEfffAU48PLumxH002_NQo18YPb\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51767'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items'
+    'PHP_SELF' => '/index.php/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=765770294130844c74da66573aa96764e493ada24f5e7a0a6dfc2caf969306a9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hVVhKEEfffAU48PLumxH002_NQo18YPb%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635926217.9473
+    'REQUEST_TIME' => 1635926217
+]
+2021-11-03 08:58:27 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:58:27 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '9466c535f21479fe3ad532ac9af58ba6671074dcb4b46ff902ee5887f37c6cf7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"19yb-A0Lj3J_boW6g3P5f1Ja5UIDAPUh\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51822'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=9466c535f21479fe3ad532ac9af58ba6671074dcb4b46ff902ee5887f37c6cf7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2219yb-A0Lj3J_boW6g3P5f1Ja5UIDAPUh%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '316'
+    'HTTP_CONTENT_LENGTH' => '316'
+    'REQUEST_TIME_FLOAT' => 1635926307.0175
+    'REQUEST_TIME' => 1635926307
+]
+2021-11-03 08:59:35 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 08:59:35 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '9466c535f21479fe3ad532ac9af58ba6671074dcb4b46ff902ee5887f37c6cf7a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"19yb-A0Lj3J_boW6g3P5f1Ja5UIDAPUh\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51877'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=9466c535f21479fe3ad532ac9af58ba6671074dcb4b46ff902ee5887f37c6cf7a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%2219yb-A0Lj3J_boW6g3P5f1Ja5UIDAPUh%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '316'
+    'HTTP_CONTENT_LENGTH' => '316'
+    'REQUEST_TIME_FLOAT' => 1635926375.7214
+    'REQUEST_TIME' => 1635926375
+]
+2021-11-03 09:00:31 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:00:31 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51906'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '316'
+    'HTTP_CONTENT_LENGTH' => '316'
+    'REQUEST_TIME_FLOAT' => 1635926431.1197
+    'REQUEST_TIME' => 1635926431
+]
+2021-11-03 09:00:32 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:00:32 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51907'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '316'
+    'HTTP_CONTENT_LENGTH' => '316'
+    'REQUEST_TIME_FLOAT' => 1635926432.1344
+    'REQUEST_TIME' => 1635926432
+]
+2021-11-03 09:00:32 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:00:32 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51910'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '316'
+    'HTTP_CONTENT_LENGTH' => '316'
+    'REQUEST_TIME_FLOAT' => 1635926432.8861
+    'REQUEST_TIME' => 1635926432
+]
+2021-11-03 09:01:52 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:01:52 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51954'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '314'
+    'HTTP_CONTENT_LENGTH' => '314'
+    'REQUEST_TIME_FLOAT' => 1635926512.0901
+    'REQUEST_TIME' => 1635926512
+]
+2021-11-03 09:01:55 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:01:54 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51957'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '314'
+    'HTTP_CONTENT_LENGTH' => '314'
+    'REQUEST_TIME_FLOAT' => 1635926514.9735
+    'REQUEST_TIME' => 1635926514
+]
+2021-11-03 09:01:59 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:01:59 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51959'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '314'
+    'HTTP_CONTENT_LENGTH' => '314'
+    'REQUEST_TIME_FLOAT' => 1635926519.2938
+    'REQUEST_TIME' => 1635926519
+]
+2021-11-03 09:02:09 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:02:09 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51965'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '197'
+    'HTTP_CONTENT_LENGTH' => '197'
+    'REQUEST_TIME_FLOAT' => 1635926529.3612
+    'REQUEST_TIME' => 1635926529
+]
+2021-11-03 09:03:19 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:03:19 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52005'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/create'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/create'
+    'PHP_SELF' => '/index.php/items/create'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7a17a19e9959eae55933c5b16695f4d7ae8fa6c87e2554f06d6159b4160dcbe9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22u9SehunU3u-6HD86ZmWQ-QiqbY5wSUaV%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '314'
+    'HTTP_CONTENT_LENGTH' => '314'
+    'REQUEST_TIME_FLOAT' => 1635926599.4117
+    'REQUEST_TIME' => 1635926599
+]
+2021-11-03 09:10:33 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:10:33 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'fd4f5f380a2a0a8686b5751ab4df67e0ba7c674b75044c5078b96df5e250fb36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xT6NLeyCaC77ro7l2j0tPEtmlsX9utoy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52274'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/item/3'
+    'REQUEST_METHOD' => 'PATCH'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/item/3'
+    'PHP_SELF' => '/index.php/item/3'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=fd4f5f380a2a0a8686b5751ab4df67e0ba7c674b75044c5078b96df5e250fb36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xT6NLeyCaC77ro7l2j0tPEtmlsX9utoy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '21'
+    'HTTP_CONTENT_LENGTH' => '21'
+    'REQUEST_TIME_FLOAT' => 1635927033.0387
+    'REQUEST_TIME' => 1635927033
+]
+2021-11-03 09:10:38 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/item in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('item', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/item', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 09:10:38 [::1][-][-][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'fd4f5f380a2a0a8686b5751ab4df67e0ba7c674b75044c5078b96df5e250fb36a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xT6NLeyCaC77ro7l2j0tPEtmlsX9utoy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52280'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/item?id=3'
+    'REQUEST_METHOD' => 'PATCH'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/item'
+    'PHP_SELF' => '/index.php/item'
+    'QUERY_STRING' => 'id=3'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=fd4f5f380a2a0a8686b5751ab4df67e0ba7c674b75044c5078b96df5e250fb36a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xT6NLeyCaC77ro7l2j0tPEtmlsX9utoy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '21'
+    'HTTP_CONTENT_LENGTH' => '21'
+    'REQUEST_TIME_FLOAT' => 1635927038.2533
+    'REQUEST_TIME' => 1635927038
+]
+2021-11-03 09:13:08 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 3 in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\UpdateAction.php(40): yii\rest\Action->findModel('3')
+#1 [internal function]: yii\rest\UpdateAction->run('3')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('item/update', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 09:13:08 [::1][1][-][info][application] $_GET = [
+    'id' => '3'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '05001722ca71ade0b5519cf120907816207dd0ed54e9a089089b0a6439009effa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"OASAVyjM2YxMxpupkwRPLo73k-mir8NL\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52373'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/3'
+    'REQUEST_METHOD' => 'PATCH'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/3'
+    'PHP_SELF' => '/index.php/items/3'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=05001722ca71ade0b5519cf120907816207dd0ed54e9a089089b0a6439009effa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22OASAVyjM2YxMxpupkwRPLo73k-mir8NL%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '21'
+    'HTTP_CONTENT_LENGTH' => '21'
+    'REQUEST_TIME_FLOAT' => 1635927188.8488
+    'REQUEST_TIME' => 1635927188
+]
+2021-11-03 09:17:43 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:17:43 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52524'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users/1'
+    'PHP_SELF' => '/index.php/users/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927463.5488
+    'REQUEST_TIME' => 1635927463
+]
+2021-11-03 09:21:13 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:21:13 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52633'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927673.8719
+    'REQUEST_TIME' => 1635927673
+]
+2021-11-03 09:21:16 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:21:16 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52636'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927676.8923
+    'REQUEST_TIME' => 1635927676
+]
+2021-11-03 09:21:18 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:21:18 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52638'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927678.8565
+    'REQUEST_TIME' => 1635927678
+]
+2021-11-03 09:23:30 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:23:29 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52714'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users/'
+    'PHP_SELF' => '/index.php/users/'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927809.9923
+    'REQUEST_TIME' => 1635927809
+]
+2021-11-03 09:23:33 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: user/index in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 09:23:33 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52716'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927813.3912
+    'REQUEST_TIME' => 1635927813
+]
+2021-11-03 09:23:40 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:23:40 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52721'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users/asfian'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users/asfian'
+    'PHP_SELF' => '/index.php/users/asfian'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927820.8554
+    'REQUEST_TIME' => 1635927820
+]
+2021-11-03 09:25:18 [::1][-][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php:293
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(83): yii\web\Request->resolve()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+2021-11-03 09:25:18 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52770'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users/asfian'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users/asfian'
+    'PHP_SELF' => '/index.php/users/asfian'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927918.0718
+    'REQUEST_TIME' => 1635927918
+]
+2021-11-03 09:25:23 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: user/index in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 09:25:23 [::1][-][-][info][application] $_GET = [
+    'username' => 'asfian'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52774'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users?username=asfian'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'QUERY_STRING' => 'username=asfian'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635927923.9292
+    'REQUEST_TIME' => 1635927923
+]
+2021-11-03 09:26:42 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: user/index in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 09:26:42 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52814'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635928002.2304
+    'REQUEST_TIME' => 1635928002
+]
+2021-11-03 09:26:44 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: user/index in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 09:26:44 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52815'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635928004.009
+    'REQUEST_TIME' => 1635928004
+]
+2021-11-03 09:27:42 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: username in C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php(30): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 [internal function]: app\controllers\UserController->actionIndex()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 09:27:42 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52852'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635928062.1193
+    'REQUEST_TIME' => 1635928062
+]
+2021-11-03 09:28:59 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: username in C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php(30): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 [internal function]: app\controllers\UserController->actionIndex()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 09:28:59 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52900'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635928139.8715
+    'REQUEST_TIME' => 1635928139
+]
+2021-11-03 09:29:03 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: username in C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php(30): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 [internal function]: app\controllers\UserController->actionIndex()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 09:29:03 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52902'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635928143.2695
+    'REQUEST_TIME' => 1635928143
+]
+2021-11-03 09:29:36 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: username in C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php:30
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php(30): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 30, Array)
+#1 [internal function]: app\controllers\UserController->actionIndex()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 09:29:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52919'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635928176.1576
+    'REQUEST_TIME' => 1635928176
+]
+2021-11-03 09:30:49 [::1][-][-][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined index: username in C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php:31
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\controllers\UserController.php(31): yii\base\ErrorHandler->handleError(8, 'Undefined index...', 'C:\\xampp\\htdocs...', 31, Array)
+#1 [internal function]: app\controllers\UserController->actionIndex()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('user/index', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 09:30:49 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52956'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/users'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/users'
+    'PHP_SELF' => '/index.php/users'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635928249.0583
+    'REQUEST_TIME' => 1635928249
+]
+2021-11-03 12:11:06 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/pictures in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('pictures', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/pictures', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 12:11:06 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56005'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/pictures'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/pictures'
+    'PHP_SELF' => '/index.php/pictures'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635937866.0251
+    'REQUEST_TIME' => 1635937866
+]
+2021-11-03 12:11:39 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/pictures in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('pictures', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/pictures', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 12:11:39 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56020'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/pictures'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/pictures'
+    'PHP_SELF' => '/index.php/pictures'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635937899.1262
+    'REQUEST_TIME' => 1635937899
+]
+2021-11-03 12:13:46 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/pictures in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('pictures', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/pictures', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 12:13:46 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63615'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/pictures'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/pictures'
+    'PHP_SELF' => '/index.php/pictures'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635938026.1923
+    'REQUEST_TIME' => 1635938026
+]
+2021-11-03 12:15:00 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/items in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('items', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/items', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 12:15:00 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63689'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items'
+    'PHP_SELF' => '/index.php/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635938100.657
+    'REQUEST_TIME' => 1635938100
+]
+2021-11-03 12:15:12 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: site/items in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('items', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('site/items', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-03 12:15:12 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63701'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items'
+    'PHP_SELF' => '/index.php/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=be7fad66164c7a1fdbfc079d58c20af264a20b657101f8d6be54ac3fa8e45cc0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22kNcbGNNJ3g2p9rjKBRanvv9ioKFVn2Ub%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635938112.0499
+    'REQUEST_TIME' => 1635938112
+]
+2021-11-03 12:15:37 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\ViewAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\ViewAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\ViewAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\ViewAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('view', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('item/view', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-03 12:15:37 [::1][-][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6c239ff19f5e668b8dff4f9766b9ca7bc4952e0f3607e4a47b3665fd44a618cfa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UAaok13vF5Ucy3_vte035MLmi4pNiwKn\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63716'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/items/2'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/items/2'
+    'PHP_SELF' => '/index.php/items/2'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=6c239ff19f5e668b8dff4f9766b9ca7bc4952e0f3607e4a47b3665fd44a618cfa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UAaok13vF5Ucy3_vte035MLmi4pNiwKn%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635938137.8152
+    'REQUEST_TIME' => 1635938137
+]
+2021-11-03 12:16:33 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('picture/index', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-03 12:16:32 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '99182e952528cdf378b00f9d86f9d57f196d524e431c2909a28e66064b527543a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_YwX-jb8Q6TxERi46T9U4wGkGolhhqDQ\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63754'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/pictures'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/pictures'
+    'PHP_SELF' => '/index.php/pictures'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=99182e952528cdf378b00f9d86f9d57f196d524e431c2909a28e66064b527543a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_YwX-jb8Q6TxERi46T9U4wGkGolhhqDQ%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635938192.9525
+    'REQUEST_TIME' => 1635938192
+]
+2021-11-03 12:18:09 [::1][1][-][error][Error] Error: Class 'app\models\Transaction' not found in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php:130
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(98): yii\rest\IndexAction->prepareDataProvider()
+#1 [internal function]: yii\rest\IndexAction->run()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('transaction/ind...', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-03 12:18:09 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '5b13f4c658dbd706acf15437e5058dd37052ee9780964f5d117b6bfa2f476331a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"vRKHbCzlv-ypt81QroaTTXLpOu1hI05J\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63821'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/transactions'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/transactions'
+    'PHP_SELF' => '/index.php/transactions'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=5b13f4c658dbd706acf15437e5058dd37052ee9780964f5d117b6bfa2f476331a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22vRKHbCzlv-ypt81QroaTTXLpOu1hI05J%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1635938289.3562
+    'REQUEST_TIME' => 1635938289
 ]

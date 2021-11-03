@@ -52,6 +52,7 @@ use yii\filters\auth\CompositeAuth;
         $behaviors['authenticator'] = [
             'class' => CompositeAuth::class,
             'authMethods' => AuthMethodsFromParamsHelper::authMethods(),
+            'except' => ['option']
         ];
         if(Yii::$app->params['useRateLimiter']){
             $behaviors['rateLimiter']['enableRateLimitHeaders'] = false;

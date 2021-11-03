@@ -7,27 +7,36 @@ use yii\db\ActiveRecord;
 
 class Picture extends ActiveRecord
 {
+    /**
+     * {@inheritdoc}
+     */
     public static function tableName(): string
     {
-        return 'item';
+        return 'picture';
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function rules(): array
     {
         return [
-            [['name', 'item_id', 'user_id'], 'required'],
+            [['link'], 'required'],
             [['link'], 'string'],
-            [['name', 'item_id', 'user_id', 'created_at', 'updated_at'], 'integer']
+            [['item_id', 'user_id', 'created_at', 'updated_at'], 'integer']
         ];
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function attributeLabels(): array
     {
         return [
             'id' => 'ID',
-            'item_id' => 'Item ID',
-            'user_id' => 'User ID',
             'link' => 'Picture Link',
+            'user_id' => 'User ID',
+            'item_id' => 'Item Id',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];

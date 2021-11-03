@@ -1,19 +1,41 @@
 import axios from "axios";
 import { GetServerSideProps, NextPage } from "next";
 import React from "react";
+import {log} from "util";
 
 const Login: NextPage = () => {
   React.useEffect(() => {
     const fetch = async () => {
-      const res = await axios.get("http://localhost:8080/v1/post", {
-        method: "GET",
-      });
+      //const httpClient = axios.create({
+      //  baseURL: `http://localhost:8080/`
+      //});
 
-      console.log(res.data);
-      return res.data;
+
+      //const res = await httpClient.get('books')
+
+
+      const res = await axios.get("http://localhost:8080/items", {
+         headers: {
+           'Authorization': `Bearer lU9QrgmA8gDdVmtIgKIugtR2wnSD6aLK`,
+         },
+       });
+	  
+      // const res2 = await axios.get("http://localhost:8080/v1/post", {
+      //   headers: {
+      //     'Authorization': `Bearer G6HCsGBwkLLcgpV8a2qy960p3YioEhJ8`,
+      //   },
+      // });
+
+      // console.log(res.headers);
+      console.log(res);
+
+      // console.log(res2.headers);
+      // console.log(res2.data);
+      //
+      // return res2;
     };
 
-    fetch();
+    fetch().then(r => console.log(r));
   }, []);
 
   return (

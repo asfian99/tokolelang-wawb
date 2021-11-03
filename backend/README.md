@@ -1,161 +1,233 @@
 <p align="center">
     <a href="https://github.com/yiisoft" target="_blank">
-        <img src="https://belajararief.com/images/yii2.png" height="200px">
+        <img src="https://avatars0.githubusercontent.com/u/993323" height="100px">
     </a>
-    <h1 align="center">Yii 2 REST API Template</h1>
+    <h1 align="center">Yii 2 Basic Project Template</h1>
     <br>
 </p>
 
-Yii2 REST API Template
+Yii 2 Basic Project Template is a skeleton [Yii 2](http://www.yiiframework.com/) application best for
+rapidly creating small projects.
+
+The template contains the basic features including user login/logout and a contact page.
+It includes all commonly used configurations that would allow you to focus on adding new
+features to your application.
+
+[![Latest Stable Version](https://img.shields.io/packagist/v/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
+[![Total Downloads](https://img.shields.io/packagist/dt/yiisoft/yii2-app-basic.svg)](https://packagist.org/packages/yiisoft/yii2-app-basic)
+[![build](https://github.com/yiisoft/yii2-app-basic/workflows/build/badge.svg)](https://github.com/yiisoft/yii2-app-basic/actions?query=workflow%3Abuild)
+
+DIRECTORY STRUCTURE
 -------------------
-This is a a REST API TEMPLATE with Yii2. This template use [Yii2-Micro](https://github.com/hoaaah/yii2-micro) approach so it will be lightweight and easy to deploy.
 
-
-# Installation
-
-The preferred way to install this template is through [composer](http://getcomposer.org/download/).
-
-Either run
-
-```bash
-composer create-project --prefer-dist hoaaah/yii2-rest-api-template [app_name]
-```
-
-Setup your database configuration from `config/db.php`. Create your database because this template will not create it for you :)
-
-```php
-<?php
-return [
-    'components' => [
-        'db' => [
-            'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=your_db_name',
-            'username' => 'root',
-            'password' => '',
-            'charset' => 'utf8',
-        ],
-    ],
-];
-
-```
-
-Then run migration to create table in selected database.
-
-```bash
-yii migrate
-```
-
-# Directory Structure
-Since this template use MicroFramework approach, directory structure might be a little bit different from Yii2.
-
+      assets/             contains assets definition
+      commands/           contains console commands (controllers)
       config/             contains application configurations
       controllers/        contains Web controller classes
-      migration/          contains list of your migration files
+      mail/               contains view files for e-mails
       models/             contains model classes
-      modules/            contains your rest-api versioning (based on modules)
+      runtime/            contains files generated during runtime
+      tests/              contains various tests for the basic application
       vendor/             contains dependent 3rd-party packages
+      views/              contains view files for the Web application
       web/                contains the entry script and Web resources
 
-This template use modules as versioning pattern. Every version of API saved in a module. This template already have v1 module, so it means if consumer want to use v1 API, it can access `https://your-api-url/v1/endpoint`.
 
 
-# API Scenario
-## Supported Authentication
-This template support 3 most used authentication. (Actually it's not me who make it, Yii2 already support it all :D ).
+REQUIREMENTS
+------------
 
-1. HTTP Basic Auth:  the access token is sent as the username. This should only be used when an access token can be safely stored on the API consumer side. For example, the API consumer is a program running on a server.
-2. Query parameter: the access token is sent as a query parameter in the API URL, e.g., https://example.com/users?access-token=xxxxxxxx. Because most Web servers will keep query parameters in server logs, this approach should be mainly used to serve JSONP requests which cannot use HTTP headers to send access tokens.
-3. OAuth 2: the access token is obtained by the consumer from an authorization server and sent to the API server via HTTP Bearer Tokens, according to the OAuth2 protocol.
+The minimum requirement by this project template that your Web server supports PHP 5.6.0.
 
-## Global Configuration of AuthMethods and RateLimiter
-This template provide global configuration to set your application supported authMethods. You can find global configuration from `app\config\params.php`. Set your supported authMethods and RateLimiter from this file.
+
+INSTALLATION
+------------
+
+### Install via Composer
+
+If you do not have [Composer](http://getcomposer.org/), you may install it by following the instructions
+at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+
+You can then install this project template using the following command:
+
+~~~
+composer create-project --prefer-dist yiisoft/yii2-app-basic basic
+~~~
+
+Now you should be able to access the application through the following URL, assuming `basic` is the directory
+directly under the Web root.
+
+~~~
+http://localhost/basic/web/
+~~~
+
+### Install from an Archive File
+
+Extract the archive file downloaded from [yiiframework.com](http://www.yiiframework.com/download/) to
+a directory named `basic` that is directly under the Web root.
+
+Set cookie validation key in `config/web.php` file to some random secret string:
+
+```php
+'request' => [
+    // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
+    'cookieValidationKey' => '<secret random string goes here>',
+],
+```
+
+You can then access the application through the following URL:
+
+~~~
+http://localhost/basic/web/
+~~~
+
+
+### Install with Docker
+
+Update your vendor packages
+
+    docker-compose run --rm php composer update --prefer-dist
+    
+Run the installation triggers (creating cookie validation code)
+
+    docker-compose run --rm php composer install    
+    
+Start the container
+
+    docker-compose up -d
+    
+You can then access the application through the following URL:
+
+    http://127.0.0.1:8000
+
+**NOTES:** 
+- Minimum required Docker engine version `17.04` for development (see [Performance tuning for volume mounts](https://docs.docker.com/docker-for-mac/osxfs-caching/))
+- The default configuration uses a host-volume in your home directory `.docker-composer` for composer caches
+
+
+CONFIGURATION
+-------------
+
+### Database
+
+Edit the file `config/db.php` with real data, for example:
 
 ```php
 return [
-    'useHttpBasicAuth' => true,
-    'useHttpBearerAuth' => true,
-    'useQueryParamAuth' => true,
-    'useRateLimiter' => false,
+    'class' => 'yii\db\Connection',
+    'dsn' => 'mysql:host=localhost;dbname=yii2basic',
+    'username' => 'root',
+    'password' => '1234',
+    'charset' => 'utf8',
 ];
 ```
 
-Example use in behaviors looks like this
+**NOTES:**
+- Yii won't create the database for you, this has to be done manually before you can access it.
+- Check and edit the other files in the `config/` directory to customize your application as required.
+- Refer to the README in the `tests` directory for information specific to basic application tests.
 
-```php
-use app\helpers\BehaviorsFromParamsHelper;
-use yii\rest\ActiveController;
 
-class PostController extends ActiveController
-{
-    public $modelClass = 'app\models\Post';
+TESTING
+-------
 
-    public function behaviors()
-    {
-        $behaviors = parent::behaviors();
-        $behaviors = BehaviorsFromParamsHelper::behaviors($behaviors);
-        // if you need other behaviors method use like this
-        // $behaviors['otherMethods'] = $value;
-        return $behaviors;
-    }
-}
+Tests are located in `tests` directory. They are developed with [Codeception PHP Testing Framework](http://codeception.com/).
+By default there are 3 test suites:
+
+- `unit`
+- `functional`
+- `acceptance`
+
+Tests can be executed by running
+
+```
+vendor/bin/codecept run
 ```
 
-### Ratelimiter
-To enable your ratelimiter configuration, please follow official guide from [Yii documentation](https://www.yiiframework.com/doc/guide/2.0/en/rest-rate-limiting).
+The command above will execute unit and functional tests. Unit tests are testing the system components, while functional
+tests are for testing user interaction. Acceptance tests are disabled by default as they require additional setup since
+they perform testing in real browser. 
 
-## Auth Scenario
-This template already have basic endpoint that you can use to start your REST-API. Such as:
 
-Endpoint | Type |Usage
----------|------|-----
-https://YOUR-API-URL/ | GET| list all post created
-https://YOUR-API-URL/view?id={id} | GET| View a post
-https://YOUR-API-URL/login | POST | Login with username and password
-https://YOUR-API-URL/signup | POST | Signup with username, email and password
-https://YOUR-API-URL/v1/post | GET | List all post created
-https://YOUR-API-URL/v1/post/create | POST | Create a new post (title, body)
-https://YOUR-API-URL/v1/post/update?id={id} | PUT / PATCH | Update a post (title, body)
-https://YOUR-API-URL/v1/post/delete?id={id} | DELETE | Delete a post
-https://YOUR-API-URL/v1/post/view?id={id} | GET | View a post 
+### Running  acceptance tests
 
-## Access Token Management
-This application manage token via access_token table. Access Token have certain expiration based on $tokenExpiration value. Default Token Expiration are in seconds.
+To execute acceptance tests do the following:  
 
-```php 
-public $tokenExpiration = 60 * 24 * 365; // in seconds
+1. Rename `tests/acceptance.suite.yml.example` to `tests/acceptance.suite.yml` to enable suite configuration
+
+2. Replace `codeception/base` package in `composer.json` with `codeception/codeception` to install full featured
+   version of Codeception
+
+3. Update dependencies with Composer 
+
+    ```
+    composer update  
+    ```
+
+4. Download [Selenium Server](http://www.seleniumhq.org/download/) and launch it:
+
+    ```
+    java -jar ~/selenium-server-standalone-x.xx.x.jar
+    ```
+
+    In case of using Selenium Server 3.0 with Firefox browser since v48 or Google Chrome since v53 you must download [GeckoDriver](https://github.com/mozilla/geckodriver/releases) or [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) and launch Selenium with it:
+
+    ```
+    # for Firefox
+    java -jar -Dwebdriver.gecko.driver=~/geckodriver ~/selenium-server-standalone-3.xx.x.jar
+    
+    # for Google Chrome
+    java -jar -Dwebdriver.chrome.driver=~/chromedriver ~/selenium-server-standalone-3.xx.x.jar
+    ``` 
+    
+    As an alternative way you can use already configured Docker container with older versions of Selenium and Firefox:
+    
+    ```
+    docker run --net=host selenium/standalone-firefox:2.53.0
+    ```
+
+5. (Optional) Create `yii2basic_test` database and update it by applying migrations if you have them.
+
+   ```
+   tests/bin/yii migrate
+   ```
+
+   The database configuration can be found at `config/test_db.php`.
+
+
+6. Start web server:
+
+    ```
+    tests/bin/yii serve
+    ```
+
+7. Now you can run all available tests
+
+   ```
+   # run all available tests
+   vendor/bin/codecept run
+
+   # run acceptance tests
+   vendor/bin/codecept run acceptance
+
+   # run only unit and functional tests
+   vendor/bin/codecept run unit,functional
+   ```
+
+### Code coverage support
+
+By default, code coverage is disabled in `codeception.yml` configuration file, you should uncomment needed rows to be able
+to collect code coverage. You can run your tests and collect coverage with the following command:
+
+```
+#collect coverage for all tests
+vendor/bin/codecept run --coverage --coverage-html --coverage-xml
+
+#collect coverage only for unit tests
+vendor/bin/codecept run unit --coverage --coverage-html --coverage-xml
+
+#collect coverage for unit and functional tests
+vendor/bin/codecept run functional,unit --coverage --coverage-html --coverage-xml
 ```
 
-In certain case you want to make a token expire before given tokenExpiration. Use ```expireThisToken()``` method to achieve it.
-```php
-$accessToken = AccessToken::findOne(['token' => $token]);
-$accessToken->expireThisToken();
-```
-
-Or you want to make all tokens from certain user expire, use ```makeAllUserTokenExpiredByUserId($userId)``` method to achieve it.
-```php 
-$user = Yii::$app->user->identity; // or User::findOne($id)
-AccessToken::makeAllUserTokenExpiredByUserId($user->id);
-```
-
-## API versioning
-This template give you versioning scenario based on module application. In Yii2 a module are self-contained software units that consist of model, views, controllers and other supporting components. This template already have v1 module, it means all of endpoint for API v1 created in this module. When you publish a new API version (that break backward compatibility / BBC), you can create a new module. For more information create a module, you can visit this [Yii2 Guide on Creating Module](https://www.yiiframework.com/doc/guide/2.0/en/structure-modules).
-
-
-# TODO
-Feel free to contribute if you have any idea.
-- [x] Rest API Template
-- [x] Login and signup in SiteController
-- [x] Example of versioning and Blog Scenario
-- [x] Authentication Type from params
-- [x] Rate Limit from params
-- [x] Change auth_key for every login
-- [x] Auth_key have expiration
-- [x] each auth_key have application token
-
-
-# Creator
-
-This Template was created by and is maintained by **[Heru Arief Wijaya](http://belajararief.com/)**.
-
-* https://twitter.com/hoaaah
-* https://github.com/hoaaah
+You can see code coverage output under the `tests/_output` directory.
