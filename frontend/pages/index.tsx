@@ -1,6 +1,19 @@
+import axios from "axios";
 import type { NextPage } from "next";
+import React from "react";
 
 const Home: NextPage = () => {
+  React.useEffect(() => {
+    const fetch = async () => {
+      const res = await axios.get(
+        "http://localhost:8080/users?username=asfian"
+      );
+
+      console.log(res.data);
+    };
+
+    fetch();
+  });
   return (
     <div className="mx-32 my-12">
       <p>
