@@ -13,14 +13,14 @@ use yii\filters\Cors;
 use yii\rest\ActiveController;
 
 /**
- * Class ItemController
+ * Class AccountController
  *
  * @author Zura Sekhniashvili <zurasekhniashvili@gmail.com>
  * @package app\modules\api\controllers
  */
-class ItemController extends ActiveController
+class AccountController extends ActiveController
 {
-    public $modelClass = '\app\models\Item';
+    public $modelClass = '\app\models\Account';
 
     public function behaviors()
     {

@@ -3,19 +3,11 @@ import type { NextPage } from "next";
 import React from "react";
 
 const Home: NextPage = () => {
-  React.useEffect(() => {
-    const fetch = async () => {
-      const res = await axios.get(
-        "http://localhost:8080/users?username=asfian"
-      );
-
-      console.log(res.data);
-    };
-
-    fetch();
-  });
   return (
     <div className="mx-32 my-12">
+      <h1 className="mb-6 text-5xl font-bold text-center">
+        Selamat Datang di TokoLelang
+      </h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis,
         voluptate neque facilis iste exercitationem ullam tempora labore

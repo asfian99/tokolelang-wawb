@@ -1,54 +1,54 @@
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import { NextPage } from "next";
-import React from "react";
+import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useMutation } from "react-query";
-
-type Inputs = {
-  username: string;
-  password: string;
-};
+import { postLogin } from "../lib/mutations/authMutations";
+import type {
+  LoginInputs,
+  LoginResponse,
+} from "../lib/mutations/authMutations";
+import { getAccountDetail } from "../lib/queries/accountQueries";
+import { setCookie } from "nookies";
+import { useRouter } from "next/router";
 
 const Login: NextPage = () => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<Inputs>();
+  const router = useRouter();
+  const { formState, handleSubmit, register, reset } = useForm<LoginInputs>();
+  const { errors } = formState;
 
-  const loginMutation = useMutation((data: any) => {
-    return axios.post("http://localhost:8080/items", data, {headers: {Authorization : 'Bearer 6PZnoGZQAC5sZL4Zu7HPGH5z8M-Y584Y'}});
-  });
+  const [reqStatus, setReqStatus] = useState({ loading: false, error: false });
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
-    const newData = {
-      name: data.username,
-      description: data.password,
-      open_bid: 4500000,
-      fundraising: 1,
-      created_at: 1635832481,
-      updated_at: 1635832989,
-      closing_time: 1638424481,
-      user_id: 1
-    }
+  const loginMutation = useMutation<LoginResponse, AxiosError, LoginInputs>(
+    (data) => postLogin(data)
+  );
 
-    loginMutation.mutate(newData, {
-      onError: (error) => console.log(error),
-      onSuccess: (data) => console.log(data),
+  const onSubmit: SubmitHandler<LoginInputs> = (data) => {
+    setReqStatus({ loading: true, error: false });
+    // const newData = {...data}
+
+    loginMutation.mutate(data, {
+      onError: (error) => {
+        console.log(error.message);
+        setReqStatus({ loading: false, error: true });
+      },
+      onSuccess: async (data) => {
+        const account = await getAccountDetail(data);
+
+        console.log(data);
+        console.log(account);
+
+        setCookie(null, "token", data.access_token, {
+          maxAge: 1 * 24 * 60 * 60,
+          path: "/",
+        });
+
+        setReqStatus({ loading: false, error: false });
+        // redirect
+        router.replace("/lelang-terbuka");
+      },
     });
   };
-
-  React.useEffect(() => {
-    const fetch = async () => {
-      const res = await axios.get(
-          "http://localhost:8080/users?username=asfian"
-      );
-
-      console.log(res.data);
-    };
-
-    fetch();
-  });
 
   return (
     <div className="flex flex-row items-center justify-center min-h-[80vh]">
@@ -64,14 +64,14 @@ const Login: NextPage = () => {
                 Your Username
               </label>
               <input
-                type="username"
+                type="text"
                 id="username"
                 placeholder="username"
                 className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                 {...register("username", { required: true })}
               />
               {errors.username && (
-                <p className="mt-2 text-sm text-red-600">
+                <p className="m-1 text-sm text-red-600">
                   <span className="font-medium">Oops!</span> Username are empty!
                 </p>
               )}
@@ -92,16 +92,17 @@ const Login: NextPage = () => {
                 {...register("password", { required: true })}
               />
               {errors.password && (
-                <p className="mt-2 text-sm text-red-600">
+                <p className="mt-1 text-sm text-red-600">
                   <span className="font-medium">Oops!</span> Password are empty!
                 </p>
               )}
             </div>
             <button
               type="submit"
-              className="py-2 mt-4 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600 "
+              disabled={reqStatus.loading}
+              className="py-2 mt-4 font-bold text-white bg-blue-500 rounded-lg disabled:bg-blue-300 hover:bg-blue-600 "
             >
-              Login
+              {reqStatus.loading ? "Loading" : "Login"}
             </button>
           </div>
         </form>
