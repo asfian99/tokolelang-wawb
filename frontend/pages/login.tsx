@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import { AxiosError } from "axios";
-import { NextPage } from "next";
+import { GetServerSideProps, NextPage } from "next";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useMutation } from "react-query";
 import { postLogin } from "../lib/mutations/authMutations";
@@ -9,7 +9,7 @@ import type {
   LoginResponse,
 } from "../lib/mutations/authMutations";
 import { getAccountDetail } from "../lib/queries/accountQueries";
-import { setCookie } from "nookies";
+import nookies, { setCookie } from "nookies";
 import { useRouter } from "next/router";
 import { userContext } from "../lib/contexts/userContext";
 
@@ -45,12 +45,12 @@ const Login: NextPage = () => {
           maxAge: 1 * 24 * 60 * 60,
           path: "/",
         });
-
-        setReqStatus({ loading: false, error: false });
         setUser({
           authenticated: true,
           data: { id, username, user_id, is_master, is_member },
         });
+
+        setReqStatus({ loading: false, error: false });
         // redirect
         router.replace("/lelang-terbuka");
       },
@@ -120,9 +120,19 @@ const Login: NextPage = () => {
 
 export default Login;
 
-// export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async (context) => {
+  const cookies = nookies.get(context);
 
-//   return {
-//     props: { data }, // will be passed to the page component as props
-//   };
-// };
+  if (cookies.token) {
+    return {
+      redirect: {
+        destination: "/lelang-terbuka",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: {},
+  };
+};
