@@ -2,46 +2,83 @@
 
 namespace app\models;
 
-use yii\db\ActiveRecord;
+use Yii;
+use yii\behaviors\BlameableBehavior;
+use yii\behaviors\TimestampBehavior;
 
-
-class Item extends ActiveRecord
+/**
+ * This is the model class for table "{{%items}}".
+ *
+ * @property int $id
+ * @property string|null $name
+ * @property string|null $description
+ * @property int|null $created_at
+ * @property int|null $updated_at
+ * @property int|null $user_id
+ *
+ * @property User $userId
+ */
+class Item extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
      */
-    public static function tableName(): string
+    public static function tableName()
     {
-        return 'item';
+        return '{{%items}}';
     }
 
-    /**
-     * {@inheritdoc}
-     */
-    public function rules(): array
+    public function behaviors()
     {
         return [
-            [['name', 'open_bid'], 'required'],
-            [['name', 'description'], 'string'],
-            [['open_bid', 'fundraising', 'closing_time', 'user_id', 'created_at', 'updated_at'], 'integer']
+            TimestampBehavior::class,
+            // [
+            //     'class' => BlameableBehavior::class,
+            //     'updatedByAttribute' => false
+            // ]
         ];
     }
 
     /**
      * {@inheritdoc}
      */
-    public function attributeLabels(): array
+    public function rules()
     {
         return [
-            'id' => 'ID',
-            'user_id' => 'User ID',
-            'name' => 'Name',
-            'description' => 'Description',
-            'open_bid' => 'Open Bid',
-            'fundraising' => 'Fundraising',
-            'closing_time' => 'Closing Time',
-            'created_at' => 'Created At',
-            'updated_at' => 'Updated At',
+            [['description', 'name'], 'string'],
+            [['created_at', 'user_id', 'updated_at', 'closing_time'], 'integer'],
         ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => Yii::t('app', 'ID'),
+            'name' => Yii::t('app', 'Name'),
+            'description' => Yii::t('app', 'Description'),
+            'open_bid' => Yii::t('app', 'Open Bid'),
+            'closing_time' => Yii::t('app', 'Closing Time'),
+            'fundraising' => Yii::t('app', 'Fundraising'),
+            'user_id' => Yii::t('app', 'User ID'),
+            'created_at' => Yii::t('app', 'Created At'),
+            'updated_at' => Yii::t('app', 'Updated At'),
+        ];
+    }
+
+    public function getUserId()
+    {
+        return $this->hasOne(User::class, ['id' => 'user_id']);
+    }
+
+    /**
+     * {@inheritdoc}
+     * @return \app\models\query\ItemQuery the active query used by this AR class.
+     */
+    public static function find()
+    {
+        return new \app\models\query\ItemQuery(get_called_class());
     }
 }
