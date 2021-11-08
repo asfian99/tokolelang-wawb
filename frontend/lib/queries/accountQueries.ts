@@ -1,5 +1,5 @@
 import axios from "axios";
-import { LoginResponse } from "../mutations/authMutations";
+import type { LoginResponse } from "../mutations/authMutations";
 
 export type AccountResponse = {
   id: number;

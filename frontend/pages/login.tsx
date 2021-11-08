@@ -1,6 +1,6 @@
-import axios, { AxiosError } from "axios";
+import { useContext, useState } from "react";
+import { AxiosError } from "axios";
 import { NextPage } from "next";
-import { useState } from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useMutation } from "react-query";
 import { postLogin } from "../lib/mutations/authMutations";
@@ -11,9 +11,11 @@ import type {
 import { getAccountDetail } from "../lib/queries/accountQueries";
 import { setCookie } from "nookies";
 import { useRouter } from "next/router";
+import { userContext } from "../lib/contexts/userContext";
 
 const Login: NextPage = () => {
   const router = useRouter();
+  const { setUser } = useContext(userContext);
   const { formState, handleSubmit, register, reset } = useForm<LoginInputs>();
   const { errors } = formState;
 
@@ -34,6 +36,7 @@ const Login: NextPage = () => {
       },
       onSuccess: async (data) => {
         const account = await getAccountDetail(data);
+        const { id, username, user_id, is_master, is_member } = account;
 
         console.log(data);
         console.log(account);
@@ -44,6 +47,10 @@ const Login: NextPage = () => {
         });
 
         setReqStatus({ loading: false, error: false });
+        setUser({
+          authenticated: true,
+          data: { id, username, user_id, is_master, is_member },
+        });
         // redirect
         router.replace("/lelang-terbuka");
       },
