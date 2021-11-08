@@ -4,13 +4,14 @@ import { GetServerSideProps, NextPage } from "next";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { useMutation } from "react-query";
 import { postLogin } from "../lib/mutations/authMutations";
+import nookies, { setCookie } from "nookies";
+import { useRouter } from "next/router";
 import type {
   LoginInputs,
   LoginResponse,
 } from "../lib/mutations/authMutations";
 import { getAccountDetail } from "../lib/queries/accountQueries";
-import nookies, { setCookie } from "nookies";
-import { useRouter } from "next/router";
+
 import { userContext } from "../lib/contexts/userContext";
 
 const Login: NextPage = () => {
@@ -104,6 +105,7 @@ const Login: NextPage = () => {
                 </p>
               )}
             </div>
+
             <button
               type="submit"
               disabled={reqStatus.loading}
@@ -111,6 +113,17 @@ const Login: NextPage = () => {
             >
               {reqStatus.loading ? "Loading" : "Login"}
             </button>
+
+            {reqStatus.error && (
+              <div
+                className="p-4 text-sm text-red-700 bg-red-100 rounded-lg"
+                role="alert"
+              >
+                <span className="font-semibold">
+                  username or password is invalid
+                </span>
+              </div>
+            )}
           </div>
         </form>
       </div>

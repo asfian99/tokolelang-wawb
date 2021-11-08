@@ -3,7 +3,15 @@ module.exports = {
   purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#3280EB",
+        lPrimary: "#DFE9FE",
+        cGray: "#747474",
+        clGray: "#EDEDED",
+        accent: "#FFC155",
+      },
+    },
     fontFamily: {
       sans: [
         "Inter",
