@@ -13,8 +13,6 @@ export type AccountResponse = {
   updated_at: number;
 };
 
-// const token = "";
-
 export const getAccountDetail = async (data: LoginResponse) => {
   const res = await axios.get("http://localhost:8080/api/accounts", {
     headers: { Authorization: `Bearer ${data.access_token}` },
@@ -23,6 +21,9 @@ export const getAccountDetail = async (data: LoginResponse) => {
   const users: AccountResponse[] = res.data.filter(
     (user: AccountResponse) => user.user_id === data.id
   );
+
+  // console.log(res.data);
+  // console.log(users);
 
   const user = { ...users[0], username: data.username };
 

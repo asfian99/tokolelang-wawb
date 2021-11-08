@@ -18,7 +18,7 @@ export default LelangTerbuka;
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const cookies = nookies.get(context);
 
-  if (!cookies.token) {
+  if (!cookies.token || cookies.token.length < 25) {
     return {
       redirect: {
         destination: "/login",

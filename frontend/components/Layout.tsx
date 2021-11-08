@@ -21,8 +21,8 @@ const Layout = ({ children }: AppProps): JSX.Element => {
   const { pathname } = useRouter();
   const cookies = parseCookies();
 
-  console.log(cookies);
-  console.log(user);
+  console.log({ user });
+  console.log({ cookies });
 
   return (
     <>
@@ -34,12 +34,12 @@ const Layout = ({ children }: AppProps): JSX.Element => {
           pathname === "/" ? (
             <div className="min-h-screen">
               <Navbar />
-              <div className="flex flex-row font-sans">
+              <div className="flex flex-row font-sans text-gray-900">
                 <div className="w-full px-8 py-4">{children}</div>
               </div>
             </div>
           ) : (
-            <div className="min-h-screen">
+            <div className="min-h-screen text-gray-900">
               <Navbar />
               <div className="flex flex-row font-sans">
                 <Sidebar />

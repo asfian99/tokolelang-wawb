@@ -11,7 +11,6 @@ import type {
   LoginResponse,
 } from "../lib/mutations/authMutations";
 import { getAccountDetail } from "../lib/queries/accountQueries";
-
 import { userContext } from "../lib/contexts/userContext";
 
 const Login: NextPage = () => {
@@ -28,7 +27,6 @@ const Login: NextPage = () => {
 
   const onSubmit: SubmitHandler<LoginInputs> = (data) => {
     setReqStatus({ loading: true, error: false });
-    // const newData = {...data}
 
     loginMutation.mutate(data, {
       onError: (error) => {
@@ -39,10 +37,8 @@ const Login: NextPage = () => {
         const account = await getAccountDetail(data);
         const { id, username, user_id, is_master, is_member } = account;
 
-        console.log(data);
-        console.log(account);
-
-        setCookie(null, "token", data.access_token, {
+        const cookieValue = `${data.access_token}&${data.id}&${data.username}`;
+        setCookie(null, "token", cookieValue, {
           maxAge: 1 * 24 * 60 * 60,
           path: "/",
         });
@@ -136,7 +132,7 @@ export default Login;
 export const getServerSideProps: GetServerSideProps = async (context) => {
   const cookies = nookies.get(context);
 
-  if (cookies.token) {
+  if (cookies.token && cookies.token.length > 25) {
     return {
       redirect: {
         destination: "/lelang-terbuka",

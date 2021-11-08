@@ -36,7 +36,7 @@
 }
 
 /* Remove these to get rid of the spinner */
-#nprogress .spinner {
+/* #nprogress .spinner {
   display: block;
   position: fixed;
   z-index: 1031;
@@ -83,4 +83,4 @@
   100% {
     transform: rotate(360deg);
   }
-}
+} */
