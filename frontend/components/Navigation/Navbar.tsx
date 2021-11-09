@@ -19,9 +19,11 @@ const Navbar = ({ user }: NavbarProps) => {
           <Link href="/">
             <a className="mr-4 text-2xl font-bold text-blue-500">TokoLelang</a>
           </Link>
-          <h3 className="font-semibold text-gray-500 cursor-pointer hover:underline text-md">
-            Tentang Kami
-          </h3>
+          <Link href="/tentang-kami">
+            <a className="font-semibold text-gray-500 cursor-pointer hover:underline text-md">
+              Tentang Kami
+            </a>
+          </Link>
         </div>
         <div className="justify-center mx-auto">
           <input

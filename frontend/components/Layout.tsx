@@ -31,6 +31,7 @@ const Layout = ({ children }: AppProps): JSX.Element => {
         <userContext.Provider value={{ user, setUser }}>
           {pathname === "/login" ||
           pathname === "/signup" ||
+          pathname === "/tentang-kami" ||
           pathname === "/_error" ||
           pathname === "/" ? (
             <div className="min-h-screen">
@@ -43,7 +44,7 @@ const Layout = ({ children }: AppProps): JSX.Element => {
             <div className="min-h-screen text-gray-900">
               <Navbar user={user} />
               <div className="flex flex-row font-sans">
-                <Sidebar />
+                <Sidebar user={user} />
                 <div className="w-full px-8 py-4 ml-64">{children}</div>
               </div>
             </div>

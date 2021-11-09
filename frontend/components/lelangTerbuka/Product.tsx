@@ -12,9 +12,9 @@ const Product = () => {
   };
 
   return (
-    <div className="p-5 border border-gray-300 rounded-lg group hover:bg-gray-50">
+    <div className="p-5 border border-gray-300 rounded-xl group hover:bg-gray-50">
       <Image
-        className="border border-gray-300 rounded-lg cursor-pointer"
+        className="border border-gray-300 cursor-pointer rounded-xl"
         onClick={onClick}
         src={PlaceholderImg}
         alt="placeholderImage"
