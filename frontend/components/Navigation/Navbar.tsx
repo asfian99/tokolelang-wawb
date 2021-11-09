@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { parseCookies } from "nookies";
 import type { AuthUserType } from "../../lib/contexts/userContext";
 import LoginRegisterSection from "./navbar/LoginRegisterSection";
 import UserInfo from "./navbar/UserInfo";
@@ -9,6 +10,8 @@ interface NavbarProps {
 }
 
 const Navbar = ({ user }: NavbarProps) => {
+  const cookies = parseCookies();
+
   return (
     <>
       <div className="sticky top-0 z-10 grid items-center justify-between grid-cols-3 px-16 py-6 font-sans bg-white border-b-2 border-gray-300">
@@ -30,7 +33,7 @@ const Navbar = ({ user }: NavbarProps) => {
           />
         </div>
         <div className="flex flex-row items-center justify-end gap-8">
-          {user.authenticated ? (
+          {cookies.token || user.authenticated ? (
             <UserInfo userData={user.data} />
           ) : (
             <LoginRegisterSection />

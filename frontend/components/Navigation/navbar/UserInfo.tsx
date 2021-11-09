@@ -24,7 +24,7 @@ const UserInfo = ({ userData }: UserInfoProps) => {
 
       <div className="flex items-center justify-end w-full h-full py-0 pl-6">
         <Image
-          className="border border-gray-300 rounded-full"
+          className="border border-gray-300 rounded-full "
           src={Avatar}
           alt="avatar"
           height="45"
