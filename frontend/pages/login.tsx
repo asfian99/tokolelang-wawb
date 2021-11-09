@@ -6,12 +6,12 @@ import { useMutation } from "react-query";
 import { postLogin } from "../lib/mutations/authMutations";
 import nookies, { setCookie } from "nookies";
 import { useRouter } from "next/router";
+import { getAccountDetail } from "../lib/queries/accountQueries";
+import { userContext } from "../lib/contexts/userContext";
 import type {
   LoginInputs,
   LoginResponse,
 } from "../lib/mutations/authMutations";
-import { getAccountDetail } from "../lib/queries/accountQueries";
-import { userContext } from "../lib/contexts/userContext";
 
 const Login: NextPage = () => {
   const router = useRouter();

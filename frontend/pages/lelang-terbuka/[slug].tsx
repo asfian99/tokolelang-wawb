@@ -3,6 +3,9 @@ import React from "react";
 import nookies from "nookies";
 import Image from "next/image";
 import PlaceholderImg from "../../assets/placeholder-img.png";
+import ProductInfo from "../../components/productDetail/ProductInfo";
+import BuatPenawaranButton from "../../components/productDetail/BuatPenawaranButton";
+import PelelangInfo from "../../components/productDetail/PelelangInfo";
 
 const ProductDetail = () => {
   return (
@@ -21,12 +24,13 @@ const ProductDetail = () => {
           />
         </div>
 
-        <div className="flex flex-col">
-          <h2 className="mt-4 text-3xl font-bold cursor-pointer group-hover:text-black hover:underline">
-            Lorem ipsum dolor sit amet.
-          </h2>
+        <div className="flex flex-col pr-8 mb-4">
+          <ProductInfo />
+          <BuatPenawaranButton />
         </div>
       </div>
+
+      <PelelangInfo />
     </div>
   );
 };

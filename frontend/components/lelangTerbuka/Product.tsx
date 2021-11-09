@@ -22,6 +22,7 @@ const Product = () => {
         width="400"
         objectFit="cover"
         layout="responsive"
+        priority
       />
       <h2
         onClick={onClick}

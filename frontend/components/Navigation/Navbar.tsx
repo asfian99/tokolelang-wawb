@@ -35,7 +35,7 @@ const Navbar = ({ user }: NavbarProps) => {
           />
         </div>
         <div className="flex flex-row items-center justify-end gap-8">
-          {cookies.token || user.authenticated ? (
+          {cookies.token && user.authenticated ? (
             <UserInfo userData={user.data} />
           ) : (
             <LoginRegisterSection />

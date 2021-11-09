@@ -40,6 +40,7 @@ const sideMenu = [
 
 const MasterSidebar = () => {
   const { pathname } = useRouter();
+  const [, pageSlug] = pathname.split("/");
 
   return (
     <>
@@ -48,7 +49,7 @@ const MasterSidebar = () => {
           <a
             className={clsx(
               "w-full px-4 py-3 font-semibold flex flex-row items-center gap-2 text-left rounded-lg hover:bg-blue-50 hover:underline",
-              pathname === `/${menu.slug}`
+              pageSlug === menu.slug
                 ? "text-blue-500 bg-blue-50"
                 : "text-gray-700 "
             )}
