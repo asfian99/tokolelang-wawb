@@ -6,7 +6,7 @@ import Products from "../components/lelangTerbuka/Products";
 const LelangTerbuka: NextPage = () => {
   return (
     <div>
-      <p>Lelang Terbuka</p>
+      <h2 className="mb-4 text-2xl font-semibold">Lelang Terbuka</h2>
 
       <Products />
     </div>

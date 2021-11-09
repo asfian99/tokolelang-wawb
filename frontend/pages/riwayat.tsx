@@ -6,7 +6,7 @@ import React from "react";
 const Riwayat: NextPage = () => {
   return (
     <div>
-      <p>Riwayat</p>
+      <h2 className="mb-4 text-2xl font-semibold">Riwayat</h2>
     </div>
   );
 };

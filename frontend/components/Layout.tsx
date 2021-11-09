@@ -3,13 +3,14 @@ import { useRouter } from "next/router";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Navbar from "./navigation/Navbar";
 import Sidebar from "./navigation/Sidebar";
-import { parseCookies } from "nookies";
 import { userContext, userDefault } from "../lib/contexts/userContext";
 import type { AuthUserType } from "../lib/contexts/userContext";
+import { useCheckLoginStatus } from "../lib/hooks/useCheckLoginStatus";
 
 type AppProps = {
   children: JSX.Element;
 };
+
 const queryClient = new QueryClient();
 const userContextDefault: AuthUserType = {
   authenticated: false,
@@ -17,12 +18,12 @@ const userContextDefault: AuthUserType = {
 };
 
 const Layout = ({ children }: AppProps): JSX.Element => {
-  const [user, setUser] = React.useState(userContextDefault);
   const { pathname } = useRouter();
-  const cookies = parseCookies();
+  const [user, setUser] = React.useState(userContextDefault);
+  const res = useCheckLoginStatus({ user, setUser });
 
   console.log({ user });
-  console.log({ cookies });
+  console.log(res);
 
   return (
     <>
@@ -33,14 +34,14 @@ const Layout = ({ children }: AppProps): JSX.Element => {
           pathname === "/_error" ||
           pathname === "/" ? (
             <div className="min-h-screen">
-              <Navbar />
+              <Navbar user={user} />
               <div className="flex flex-row font-sans text-gray-900">
                 <div className="w-full px-8 py-4">{children}</div>
               </div>
             </div>
           ) : (
             <div className="min-h-screen text-gray-900">
-              <Navbar />
+              <Navbar user={user} />
               <div className="flex flex-row font-sans">
                 <Sidebar />
                 <div className="w-full px-8 py-4 ml-64">{children}</div>

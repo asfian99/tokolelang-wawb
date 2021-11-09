@@ -5,7 +5,7 @@ import nookies from "nookies";
 const Notifikasi: NextPage = () => {
   return (
     <div>
-      <p>Notifikasi</p>
+      <h2 className="mb-4 text-2xl font-semibold">Notifikasi</h2>
     </div>
   );
 };
