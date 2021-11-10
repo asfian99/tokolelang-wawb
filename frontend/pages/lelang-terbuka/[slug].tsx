@@ -6,6 +6,47 @@ import PlaceholderImg from "../../assets/placeholder-img.png";
 import ProductInfo from "../../components/productDetail/ProductInfo";
 import BuatPenawaranButton from "../../components/productDetail/BuatPenawaranButton";
 import PelelangInfo from "../../components/productDetail/PelelangInfo";
+import LelangTable from "../../components/productDetail/LelangTable";
+
+export interface PenawaranInterface {
+  id: number;
+  username: string;
+  datetime: string;
+  bid: string;
+}
+
+const productPenawaran: PenawaranInterface[] = [
+  {
+    id: 1,
+    username: "k_asfian",
+    datetime: "12/11/2021 - 19.20",
+    bid: "10.250.000",
+  },
+  {
+    id: 2,
+    username: "k_asfian",
+    datetime: "12/11/2021 - 19.20",
+    bid: "10.250.000",
+  },
+  {
+    id: 3,
+    username: "k_asfian",
+    datetime: "12/11/2021 - 19.20",
+    bid: "10.250.000",
+  },
+  {
+    id: 4,
+    username: "k_asfian",
+    datetime: "12/11/2021 - 19.20",
+    bid: "10.250.000",
+  },
+  {
+    id: 5,
+    username: "k_asfian",
+    datetime: "12/11/2021 - 19.20",
+    bid: "10.250.000",
+  },
+];
 
 const ProductDetail = () => {
   return (
@@ -31,6 +72,11 @@ const ProductDetail = () => {
       </div>
 
       <PelelangInfo />
+
+      <div className="flex flex-col mt-4">
+        <h3 className="text-xl font-bold">Daftar Penawaran</h3>
+        <LelangTable data={productPenawaran} />
+      </div>
     </div>
   );
 };

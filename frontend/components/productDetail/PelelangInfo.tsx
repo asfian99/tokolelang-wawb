@@ -7,7 +7,7 @@ import {
 
 const PelelangInfo = () => {
   return (
-    <div className="grid items-center justify-between grid-cols-3 p-4 bg-gray-100 border-2 border-gray-300 divide-x-2 divide-gray-300 rounded-2xl">
+    <div className="grid items-center justify-between grid-cols-3 p-4 mb-6 bg-gray-100 border-2 border-gray-300 divide-x-2 divide-gray-300 rounded-2xl">
       <div className="flex flex-col items-start justify-center pl-6">
         <div className="flex flex-row items-center gap-2">
           <LocationMarkerIcon className="w-4 h-4" />
