@@ -44,7 +44,7 @@ const MemberSidebar = () => {
             className={clsx(
               "w-full px-4 py-3 font-semibold flex flex-row items-center gap-2 text-left rounded-lg hover:bg-blue-50 hover:underline",
               pageSlug === menu.slug
-                ? "text-blue-500 bg-blue-50"
+                ? "text-blue-600 bg-blue-50"
                 : "text-gray-700 "
             )}
           >

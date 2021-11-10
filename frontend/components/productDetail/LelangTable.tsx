@@ -42,19 +42,16 @@ const LelangTable = (props: LelangTableProps) => {
             <thead className="bg-gray-100">
               {
                 // Loop over the header rows
-                headerGroups.map((headerGroup) => (
+                headerGroups.map((headerGroup, i) => (
                   // Apply the header row props
-                  <tr
-                    {...headerGroup.getHeaderGroupProps()}
-                    key={headerGroup.id}
-                  >
+                  <tr {...headerGroup.getHeaderGroupProps()} key={i}>
                     {
                       // Loop over the headers in each row
-                      headerGroup.headers.map((column) => (
+                      headerGroup.headers.map((column, i) => (
                         // Apply the header cell props
                         <th
                           {...column.getHeaderProps()}
-                          key={column.id}
+                          key={i}
                           scope="col"
                           className="px-6 py-3 text-xs font-semibold tracking-wider text-left text-gray-700 uppercase"
                         >
@@ -77,7 +74,7 @@ const LelangTable = (props: LelangTableProps) => {
                     // Apply the row props
                     <tr
                       {...row.getRowProps()}
-                      key={row.id}
+                      key={i}
                       className={
                         i === data.length - 1 ? "bg-white" : "bg-white border-b"
                       }
@@ -89,7 +86,7 @@ const LelangTable = (props: LelangTableProps) => {
                           return (
                             <td
                               {...cell.getCellProps()}
-                              key={cell.column.id}
+                              key={i}
                               className={clsx(
                                 "px-6 py-4 text-sm",
                                 i === 0
