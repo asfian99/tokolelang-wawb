@@ -1,5 +1,5 @@
 import React, { Dispatch, SetStateAction, Fragment } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { Dialog } from "@headlessui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
 import Link from "next/link";

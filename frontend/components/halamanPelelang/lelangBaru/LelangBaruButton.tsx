@@ -7,6 +7,7 @@ const LelangBaruButton = () => {
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
+
   return (
     <>
       <button

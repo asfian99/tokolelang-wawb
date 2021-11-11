@@ -2,7 +2,81 @@ import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 import Head from "next/head";
 import nookies from "nookies";
-import LelangBaruButton from "../components/halamanPelelang/LelangBaruButton";
+import LelangBaruButton from "../components/halamanPelelang/lelangBaru/LelangBaruButton";
+import DilelangkanTable from "../components/halamanPelelang/DilelangkanTable";
+
+export interface DilelangkanInterface {
+  id: number;
+  name: string;
+  description: string;
+  open_bid: number;
+  closing_time: number;
+  fundraising: number;
+  user_id: number;
+  location: string;
+  event: string;
+  created_at: number;
+  updated_at: number;
+}
+
+const data = [
+  {
+    id: 1,
+    name: "Paseo Tissue",
+    description:
+      "During the course of developing and maintaining a database-driven application, the structure of the database being used evolves just like the source code does.",
+    open_bid: 7500000,
+    closing_time: 1633593240000,
+    fundraising: 0,
+    user_id: 1,
+    location: "Surabaya",
+    event: "",
+    created_at: 1636353342,
+    updated_at: 1636353342,
+  },
+  {
+    id: 2,
+    name: "Paseo Tissue 2",
+    description:
+      "During the course of developing and maintaining a database-driven application, the structure of the database being used evolves just like the source code does.",
+    open_bid: 800000,
+    closing_time: 1633593240000,
+    fundraising: 1,
+    user_id: 1,
+    location: "Surabaya",
+    event: "",
+    created_at: 1636353342,
+    updated_at: 1636353342,
+  },
+  {
+    id: 3,
+    name: "Paseo Tissue 3",
+    description:
+      "During the course of developing and maintaining a database-driven application, the structure of the database being used evolves just like the source code does.",
+    open_bid: 3500000,
+    closing_time: 1633593240000,
+    fundraising: 1,
+    user_id: 1,
+    location: "Surabaya",
+    event: "",
+    created_at: 1636353342,
+    updated_at: 1636353342,
+  },
+  {
+    id: 4,
+    name: "Paseo Tissue 4",
+    description:
+      "During the course of developing and maintaining a database-driven application, the structure of the database being used evolves just like the source code does.",
+    open_bid: 2000000,
+    closing_time: 1633593240000,
+    fundraising: 0,
+    user_id: 1,
+    location: "Surabaya",
+    event: "",
+    created_at: 1636353342,
+    updated_at: 1636353342,
+  },
+];
 
 const HalamanPelelang: NextPage = () => {
   return (
@@ -14,7 +88,7 @@ const HalamanPelelang: NextPage = () => {
       <div>
         <h2 className="mb-4 text-2xl font-semibold">Halaman Pelelang</h2>
 
-        <div className="flex flex-row items-center justify-between mr-8">
+        <div className="flex flex-row items-center justify-between">
           <h3 className="mr-8 text-xl font-semibold ">
             Daftar Barang Dilelangkan
           </h3>
@@ -22,7 +96,7 @@ const HalamanPelelang: NextPage = () => {
         </div>
 
         <div className="flex flex-col mt-4">
-          {/* <LelangTable data={productPenawaran} /> */}
+          <DilelangkanTable data={data} />
         </div>
       </div>
     </>

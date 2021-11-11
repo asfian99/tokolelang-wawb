@@ -4023,3 +4023,53 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1636439527.8967
     'REQUEST_TIME' => 1636439527
 ]
+2021-11-11 18:57:52 [::1][1][-][error][yii\web\HttpException:400] yii\web\BadRequestHttpException: Invalid JSON data in request body: Syntax error. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\JsonParser.php:60
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Request.php(585): yii\web\JsonParser->parse('{\n\t"fundraising...', 'application/jso...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\UpdateAction.php(47): yii\web\Request->getBodyParams()
+#2 [internal function]: yii\rest\UpdateAction->run('1')
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/update', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-11 18:57:52 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '403d582abd9df069bb50c323e326a0a640619b9954eb3f24f5512e9a885ce993a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"gCRukeUD6MhhV7aqiei5wdLO1Xn671RI\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59335'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'PATCH'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=403d582abd9df069bb50c323e326a0a640619b9954eb3f24f5512e9a885ce993a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22gCRukeUD6MhhV7aqiei5wdLO1Xn671RI%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '22'
+    'HTTP_CONTENT_LENGTH' => '22'
+    'REQUEST_TIME_FLOAT' => 1636653472.4429
+    'REQUEST_TIME' => 1636653472
+]
