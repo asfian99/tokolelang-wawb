@@ -20,7 +20,7 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
 
   const onSubmit: SubmitHandler<InputType> = (data) => console.log(data);
 
-  const close = () => {
+  const closeThisModal = () => {
     setIsAccept(false);
     closeModal();
   };
@@ -31,7 +31,7 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
       <Dialog
         as="div"
         className="fixed inset-0 z-10 overflow-y-auto"
-        onClose={close}
+        onClose={closeThisModal}
       >
         <div className="min-h-screen px-4 text-center">
           <Transition.Child
@@ -43,7 +43,7 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-black opacity-30" />
+            <Dialog.Overlay className="fixed inset-0 bg-black opacity-50" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
@@ -75,18 +75,23 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
                   <form onSubmit={handleSubmit(onSubmit)}>
                     <div className="mb-4 ">
                       <label
-                        htmlFor="username"
+                        htmlFor="penawaran"
                         className="block mb-2 text-sm font-medium text-gray-900"
                       >
                         Nilai Penawaran
                       </label>
-                      <input
-                        type="number"
-                        id="penawaran"
-                        placeholder="0"
-                        className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
-                        {...register("penawaran", { required: true })}
-                      />
+                      <div className="flex">
+                        <span className="inline-flex items-center px-3 text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-lg sm:text-sm">
+                          Rp
+                        </span>
+                        <input
+                          type="number"
+                          id="penawaran"
+                          placeholder="0"
+                          className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                          {...register("penawaran")}
+                        />
+                      </div>
                       {errors.penawaran && (
                         <p className="m-1 text-sm text-red-600">
                           Nilai Penawaran Invalid
@@ -123,14 +128,14 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
                 <button
                   type="button"
                   className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-                  onClick={close}
+                  onClick={closeThisModal}
                 >
                   Batal
                 </button>
                 <button
                   type="submit"
                   disabled={!isAccept}
-                  className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-primary hover:bg-blue-600 focus:outline-none disabled:bg-blue-300 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                  className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded- bg-primary hover:bg-blue-600 focus:outline-none disabled:bg-blue-300 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                 >
                   Buat Penawaran
                 </button>
