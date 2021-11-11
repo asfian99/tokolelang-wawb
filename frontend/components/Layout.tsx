@@ -23,8 +23,8 @@ const Layout = ({ children }: AppProps): JSX.Element => {
   const [user, setUser] = React.useState(userContextDefault);
   const res = useCheckLoginStatus({ user, setUser });
 
-  console.log({ user });
-  console.log(res);
+  // console.log({ user });
+  // console.log(res);
 
   return (
     <>

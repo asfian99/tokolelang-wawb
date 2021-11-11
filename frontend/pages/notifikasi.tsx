@@ -1,12 +1,19 @@
 import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 import nookies from "nookies";
+import Head from "next/head";
 
 const Notifikasi: NextPage = () => {
   return (
-    <div>
-      <h2 className="mb-4 text-2xl font-semibold">Notifikasi</h2>
-    </div>
+    <>
+      <Head>
+        <title>Notifikasi - TokoLelang</title>
+      </Head>
+
+      <div>
+        <h2 className="mb-4 text-2xl font-semibold">Notifikasi</h2>
+      </div>
+    </>
   );
 };
 

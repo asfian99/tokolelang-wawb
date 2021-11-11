@@ -2,8 +2,8 @@ import React, { Fragment, useState } from "react";
 import Link from "next/link";
 import { Dialog, Transition } from "@headlessui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+// import { yupResolver } from "@hookform/resolvers/yup";
+// import * as yup from "yup";
 
 interface PenawaranModalProps {
   isOpen: boolean;

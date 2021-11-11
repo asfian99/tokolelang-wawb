@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from "next";
+import Head from "next/head";
 import React from "react";
 import nookies from "nookies";
 import Image from "next/image";
@@ -48,36 +49,42 @@ const productPenawaran: PenawaranInterface[] = [
   },
 ];
 
-const ProductDetail = () => {
+const ProductDetail: NextPage = () => {
   return (
-    <div>
-      <h2 className="mb-4 text-2xl font-semibold">Product Detail</h2>
+    <>
+      <Head>
+        <title>Lorem ipsum dolor sit amet. - TokoLelang</title>
+      </Head>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="my-4 mr-2">
-          <Image
-            className="border border-gray-300 cursor-pointer rounded-2xl"
-            src={PlaceholderImg}
-            alt="placeholderImageDetail"
-            height="400"
-            width="540"
-            objectFit="cover"
-          />
+      <div>
+        <h2 className="mb-4 text-2xl font-semibold">Product Detail</h2>
+
+        <div className="grid grid-cols-2 gap-4">
+          <div className="my-4 mr-2">
+            <Image
+              className="border border-gray-300 cursor-pointer rounded-2xl"
+              src={PlaceholderImg}
+              alt="placeholderImageDetail"
+              height="400"
+              width="540"
+              objectFit="cover"
+            />
+          </div>
+
+          <div className="flex flex-col pr-8 mb-4">
+            <ProductInfo />
+            <BuatPenawaranButton />
+          </div>
         </div>
 
-        <div className="flex flex-col pr-8 mb-4">
-          <ProductInfo />
-          <BuatPenawaranButton />
+        <PelelangInfo />
+
+        <div className="flex flex-col mt-4">
+          <h3 className="text-xl font-bold">Daftar Penawaran</h3>
+          <LelangTable data={productPenawaran} />
         </div>
       </div>
-
-      <PelelangInfo />
-
-      <div className="flex flex-col mt-4">
-        <h3 className="text-xl font-bold">Daftar Penawaran</h3>
-        <LelangTable data={productPenawaran} />
-      </div>
-    </div>
+    </>
   );
 };
 

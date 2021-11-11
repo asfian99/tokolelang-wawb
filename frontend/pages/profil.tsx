@@ -3,8 +3,9 @@ import {
   InferGetServerSidePropsType,
   NextPage,
 } from "next";
-import nookies from "nookies";
 import React from "react";
+import Head from "next/head";
+import nookies from "nookies";
 import LogoutButton from "../components/profil/LogoutButton";
 import UserProfile from "../components/profil/UserProfile";
 import { getAccountDetail } from "../lib/queries/accountQueries";
@@ -19,18 +20,24 @@ const Profil: NextPage = (
   const { data, status } = useQuery("profile", () => getAccountDetail(cookie));
 
   return (
-    <div>
-      {status === "loading" && <Loading />}
-      {status === "error" && <Loading />}
-      {data && (
-        <>
-          <h2 className="mb-4 text-2xl font-semibold">Profil</h2>
-          <UserProfile data={data} />
-          <hr />
-          <LogoutButton />
-        </>
-      )}
-    </div>
+    <>
+      <Head>
+        <title>Profil - TokoLelang</title>
+      </Head>
+
+      <div>
+        {status === "loading" && <Loading />}
+        {status === "error" && <Loading />}
+        {data && (
+          <>
+            <h2 className="mb-4 text-2xl font-semibold">Profil</h2>
+            <UserProfile data={data} />
+            <hr />
+            <LogoutButton />
+          </>
+        )}
+      </div>
+    </>
   );
 };
 

@@ -2,14 +2,21 @@ import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 import nookies from "nookies";
 import Products from "../components/lelangTerbuka/Products";
+import Head from "next/head";
 
 const LelangTerbuka: NextPage = () => {
   return (
-    <div>
-      <h2 className="mb-4 text-2xl font-semibold">Lelang Terbuka</h2>
+    <>
+      <Head>
+        <title>Lelang Terbuka - TokoLelang</title>
+      </Head>
 
-      <Products />
-    </div>
+      <div>
+        <h2 className="mb-4 text-2xl font-semibold">Lelang Terbuka</h2>
+
+        <Products />
+      </div>
+    </>
   );
 };
 
