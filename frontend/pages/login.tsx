@@ -12,6 +12,7 @@ import type {
   LoginInputs,
   LoginResponse,
 } from "../lib/mutations/authMutations";
+import { InformationCircleIcon } from "@heroicons/react/outline";
 
 const Login: NextPage = () => {
   const router = useRouter();
@@ -110,13 +111,15 @@ const Login: NextPage = () => {
               {reqStatus.loading ? "Loading" : "Login"}
             </button>
 
+            {/* Error */}
             {reqStatus.error && (
               <div
-                className="p-4 text-sm text-red-700 bg-red-100 rounded-lg"
+                className="flex flex-row items-center p-4 text-sm text-red-700 bg-red-100 rounded-lg"
                 role="alert"
               >
+                <InformationCircleIcon className="w-5 h-5 mr-3" />
                 <span className="font-semibold">
-                  username or password is invalid
+                  Username or password is invalid
                 </span>
               </div>
             )}

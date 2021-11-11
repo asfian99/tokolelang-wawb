@@ -30,5 +30,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  pluginplugins: [require("@tailwindcss/forms")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("@themesberg/flowbite/plugin"),
+  ],
 };

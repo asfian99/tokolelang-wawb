@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import Link from "next/link";
 import { Dialog, Transition } from "@headlessui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -14,17 +14,24 @@ type InputType = { penawaran: number };
 
 const BuatPenawaranModal = (props: PenawaranModalProps) => {
   const { isOpen, closeModal } = props;
+  const [isAccept, setIsAccept] = useState(false);
   const { formState, handleSubmit, register } = useForm<InputType>();
   const { errors } = formState;
 
   const onSubmit: SubmitHandler<InputType> = (data) => console.log(data);
+
+  const close = () => {
+    setIsAccept(false);
+    closeModal();
+  };
+  console.log({ isAccept });
 
   return (
     <Transition appear show={isOpen} as={Fragment}>
       <Dialog
         as="div"
         className="fixed inset-0 z-10 overflow-y-auto"
-        onClose={closeModal}
+        onClose={close}
       >
         <div className="min-h-screen px-4 text-center">
           <Transition.Child
@@ -77,26 +84,38 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
                         type="number"
                         id="penawaran"
                         placeholder="0"
-                        className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                        className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                         {...register("penawaran", { required: true })}
                       />
                       {errors.penawaran && (
                         <p className="m-1 text-sm text-red-600">
-                          {errors.penawaran?.message}
+                          Nilai Penawaran Invalid
                         </p>
                       )}
                     </div>
                   </form>
 
-                  <p className="text-sm text-gray-500">
-                    Pastikan telah membaca{" "}
-                    <Link href={`/syarat-ketentuan`}>
-                      <a className="text-blue-600 cursor-pointer hover:underline">
-                        Syarat & Ketentuan
-                      </a>
-                    </Link>{" "}
-                    sebelum membuat penawaran.
-                  </p>
+                  <div className="flex flex-row items-center gap-4">
+                    <input
+                      type="checkbox"
+                      checked={isAccept}
+                      onChange={() => setIsAccept(!isAccept)}
+                      id="syaratKetentuan"
+                      className="w-4 h-4 border border-gray-300 rounded form-checkbox bg-gray-50 focus:ring-3 focus:ring-blue-300"
+                    />
+                    <label
+                      htmlFor="syaratKetentuan"
+                      className="text-sm text-gray-500"
+                    >
+                      Saya telah membaca & menyetujui{" "}
+                      <Link href={`/syarat-ketentuan`}>
+                        <a className="text-blue-600 cursor-pointer hover:underline">
+                          Syarat & Ketentuan
+                        </a>
+                      </Link>{" "}
+                      sebelum membuat penawaran.
+                    </label>
+                  </div>
                 </div>
               </Dialog.Description>
 
@@ -104,13 +123,14 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
                 <button
                   type="button"
                   className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-                  onClick={closeModal}
+                  onClick={close}
                 >
                   Batal
                 </button>
                 <button
                   type="submit"
-                  className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-primary hover:bg-blue-600 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                  disabled={!isAccept}
+                  className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-primary hover:bg-blue-600 focus:outline-none disabled:bg-blue-300 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                 >
                   Buat Penawaran
                 </button>

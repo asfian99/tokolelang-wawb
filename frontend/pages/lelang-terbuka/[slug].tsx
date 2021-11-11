@@ -26,25 +26,25 @@ const productPenawaran: PenawaranInterface[] = [
     id: 2,
     username: "k_asfian",
     datetime: "12/11/2021 - 19.20",
-    bid: "10.250.000",
+    bid: "10.110.000",
   },
   {
     id: 3,
     username: "k_asfian",
     datetime: "12/11/2021 - 19.20",
-    bid: "10.250.000",
+    bid: "10.210.000",
   },
   {
     id: 4,
     username: "k_asfian",
     datetime: "12/11/2021 - 19.20",
-    bid: "10.250.000",
+    bid: "10.050.000",
   },
   {
     id: 5,
     username: "k_asfian",
     datetime: "12/11/2021 - 19.20",
-    bid: "10.250.000",
+    bid: "9.800.000",
   },
 ];
 

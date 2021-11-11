@@ -256,6 +256,11 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@popperjs/core@^2.9.3":
+  version "2.10.2"
+  resolved "https://registry.yarnpkg.com/@popperjs/core/-/core-2.10.2.tgz#0798c03351f0dea1a5a4cabddf26a55a7cbee590"
+  integrity sha512-IXf3XA7+XyN7CP9gGh/XB0UxVMlvARGEgGXLubFICsUMGz6Q+DU+i4gGlpOxTjKvXjkJDJC8YdqdKkDj9qZHEQ==
+
 "@rushstack/eslint-patch@^1.0.6":
   version "1.0.9"
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.0.9.tgz#1168db664faab4c3bb82c76124b393970e80bf89"
@@ -267,6 +272,14 @@
   integrity sha512-vlAoBifNJUkagB+PAdW4aHMe4pKmSLroH398UPgIogBFc91D2VlHUxe4pjxQhiJl0Nfw53sHSJSQBSTQBZP3vA==
   dependencies:
     mini-svg-data-uri "^1.2.3"
+
+"@themesberg/flowbite@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@themesberg/flowbite/-/flowbite-1.1.1.tgz#b5d00fa8b372d4765898c7e0cc497cee679fdbef"
+  integrity sha512-2VwqRMqtwf7wJybvAkaULqr/x7X8Ake9wkSIACJwcxGr9jzsTuEvuDoX+HBzgbgOAAt1qpw2FWAlARCVSCKI5g==
+  dependencies:
+    "@popperjs/core" "^2.9.3"
+    mini-svg-data-uri "^1.4.3"
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -2305,7 +2318,7 @@ miller-rabin@^4.0.0:
     bn.js "^4.0.0"
     brorand "^1.0.1"
 
-mini-svg-data-uri@^1.2.3:
+mini-svg-data-uri@^1.2.3, mini-svg-data-uri@^1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/mini-svg-data-uri/-/mini-svg-data-uri-1.4.3.tgz#43177b2e93766ba338931a3e2a84a3dfd3a222b8"
   integrity sha512-gSfqpMRC8IxghvMcxzzmMnWpXAChSA+vy4cia33RgerMS8Fex95akUyQZPbxJJmeBGiGmK7n/1OpUX8ksRjIdA==

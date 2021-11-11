@@ -6,6 +6,7 @@ import type { userContextType } from "../contexts/userContext";
 export const useCheckLoginStatus = ({ user, setUser }: userContextType) => {
   // const [user, setUser] = useState<AuthUserType>(userContextDefault);
   console.log("check login status");
+  const cookies = parseCookies();
 
   useEffect(() => {
     const cookies = parseCookies();
@@ -32,6 +33,6 @@ export const useCheckLoginStatus = ({ user, setUser }: userContextType) => {
     }
   }, [setUser]);
 
-  const res = user.authenticated ? "Logged in" : "Need to login";
-  return res;
+  if (cookies.token) return "Logged in";
+  return "Need to login";
 };
