@@ -4073,3 +4073,358 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1636653472.4429
     'REQUEST_TIME' => 1636653472
 ]
+2021-11-12 14:01:50 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-12 14:01:49 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52546'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1636722109.4392
+    'REQUEST_TIME' => 1636722109
+]
+2021-11-13 19:12:28 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-13 19:12:27 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '57407'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1636827147.6389
+    'REQUEST_TIME' => 1636827147
+]
+2021-11-14 08:32:13 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php:723
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1063): yii\db\Connection->open()
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1050): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(406): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(430): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(249): yii\db\mysql\Schema->createQueryBuilder()
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(880): yii\db\Schema->getQueryBuilder()
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\Connection->getQueryBuilder()
+#13 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#15 C:\xampp\htdocs\TokoLelang\backend\models\User.php(38): yii\db\ActiveQuery->one()
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\User.php(305): app\models\User::findIdentityByAccessToken('eyJhbGciOiJIUzI...', 'yii\\filters\\aut...')
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(62): yii\web\User->loginByAccessToken('eyJhbGciOiJIUzI...', 'yii\\filters\\aut...')
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#19 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#20 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#21 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#22 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#23 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#24 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#25 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#26 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#27 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#28 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#29 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#30 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#31 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php:649
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1063): yii\db\Connection->open()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1050): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(406): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(430): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(249): yii\db\mysql\Schema->createQueryBuilder()
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(880): yii\db\Schema->getQueryBuilder()
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\Connection->getQueryBuilder()
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#13 C:\xampp\htdocs\TokoLelang\backend\models\User.php(38): yii\db\ActiveQuery->one()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\User.php(305): app\models\User::findIdentityByAccessToken('eyJhbGciOiJIUzI...', 'yii\\filters\\aut...')
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(62): yii\web\User->loginByAccessToken('eyJhbGciOiJIUzI...', 'yii\\filters\\aut...')
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#19 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#20 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#21 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#22 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#23 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#24 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#25 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#26 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#27 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#28 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#29 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No connection could be made because the target machine actively refused it.
+
+)
+
+2021-11-14 08:32:08 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51743'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1636875128.9755
+    'REQUEST_TIME' => 1636875128
+]
+2021-11-14 08:32:42 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php:723
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1063): yii\db\Connection->open()
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1050): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(406): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(430): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(249): yii\db\mysql\Schema->createQueryBuilder()
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(880): yii\db\Schema->getQueryBuilder()
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\Connection->getQueryBuilder()
+#13 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#15 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#16 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('k_asfian')
+#17 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#19 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#20 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#21 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#22 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#23 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#24 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#25 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#26 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#27 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#28 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#29 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#30 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php:649
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1063): yii\db\Connection->open()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1050): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(406): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(430): yii\db\mysql\QueryBuilder->supportsFractionalSeconds()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\QueryBuilder.php(59): yii\db\mysql\QueryBuilder->defaultTimeTypeMap()
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\db\mysql\QueryBuilder->init()
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\QueryBuilder.php(116): yii\base\BaseObject->__construct(Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\Schema.php(217): yii\db\QueryBuilder->__construct(Object(yii\db\Connection))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(249): yii\db\mysql\Schema->createQueryBuilder()
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(880): yii\db\Schema->getQueryBuilder()
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(328): yii\db\Connection->getQueryBuilder()
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\ActiveQuery->createCommand(Object(yii\db\Connection))
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#13 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#14 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('k_asfian')
+#15 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#19 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#20 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#21 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#22 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#24 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#25 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#26 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#28 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No connection could be made because the target machine actively refused it.
+
+)
+
+2021-11-14 08:32:37 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '51777'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/user/login'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/user/login'
+    'PHP_SELF' => '/index.php/api/user/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '41'
+    'HTTP_CONTENT_LENGTH' => '41'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.44'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1636875157.7845
+    'REQUEST_TIME' => 1636875157
+]

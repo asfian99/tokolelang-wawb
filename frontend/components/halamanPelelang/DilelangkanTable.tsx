@@ -4,6 +4,7 @@ import clsx from "clsx";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/outline";
 import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
 import { DilelangkanInterface } from "../../pages/halaman-pelelang";
+import DilelangkanDetailModal from "./DilelangkanDetailModal";
 
 interface DilelangkanTableProps {
   data: DilelangkanInterface[];
@@ -47,6 +48,7 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
               Detail
             </a>
           </Link>
+          // <DilelangkanDetailModal data={item} />
         ),
       };
     });
