@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import BuatPenawaranModal from "./BuatPenawaranModal";
 
 const BuatPenawaranButton = () => {
-  const [isExpired, setIsExpired] = useState(true);
+  const [isExpired, setIsExpired] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
