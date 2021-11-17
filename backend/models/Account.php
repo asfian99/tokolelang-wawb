@@ -79,7 +79,7 @@ class Account extends \yii\db\ActiveRecord
     }
 
     public function setOtherAttr($user_id){
-        $user = User::find()->where(['id'=>$user_id])->one();
+        $user = User::findIdentity($user_id);
 //        $this->username = $user->other_attr1;
 //        $this->other_attr2 = $user->other_attr2;
         return $user->username;

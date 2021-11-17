@@ -48,7 +48,7 @@ class Note extends \yii\db\ActiveRecord
             [['body'], 'string'],
             [['created_at', 'created_by', 'updated_at'], 'integer'],
             [['title'], 'string', 'max' => 1024],
-            [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => User::className(), 'targetAttribute' => ['created_by' => 'id']],
+            [['created_by'], 'exist', 'skipOnError' => true, 'targetClass' => User::class, 'targetAttribute' => ['created_by' => 'id']],
         ];
     }
 
@@ -74,7 +74,7 @@ class Note extends \yii\db\ActiveRecord
      */
     public function getCreatedBy()
     {
-        return $this->hasOne(User::className(), ['id' => 'created_by']);
+        return $this->hasOne(User::class, ['id' => 'created_by']);
     }
 
     /**

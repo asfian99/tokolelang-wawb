@@ -5638,3 +5638,1412 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1637137101.8407
     'REQUEST_TIME' => 1637137101
 ]
+2021-11-17 12:53:05 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/image". in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-17 12:53:05 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd546a84687be4a5767485285d9672b405c067891a24dec2659df2e5c5802505ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_cUpGTNXiH2_-7btLnvlhh0s9u7Cfr3q\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '50863'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d546a84687be4a5767485285d9672b405c067891a24dec2659df2e5c5802505ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_cUpGTNXiH2_-7btLnvlhh0s9u7Cfr3q%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637149985.8052
+    'REQUEST_TIME' => 1637149985
+]
+2021-11-17 12:53:26 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/image". in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-17 12:53:26 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd546a84687be4a5767485285d9672b405c067891a24dec2659df2e5c5802505ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_cUpGTNXiH2_-7btLnvlhh0s9u7Cfr3q\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54466'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d546a84687be4a5767485285d9672b405c067891a24dec2659df2e5c5802505ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_cUpGTNXiH2_-7btLnvlhh0s9u7Cfr3q%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637150006.5283
+    'REQUEST_TIME' => 1637150006
+]
+2021-11-17 12:53:28 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/image". in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-17 12:53:28 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd546a84687be4a5767485285d9672b405c067891a24dec2659df2e5c5802505ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"_cUpGTNXiH2_-7btLnvlhh0s9u7Cfr3q\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54468'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d546a84687be4a5767485285d9672b405c067891a24dec2659df2e5c5802505ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22_cUpGTNXiH2_-7btLnvlhh0s9u7Cfr3q%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637150008.0813
+    'REQUEST_TIME' => 1637150008
+]
+2021-11-17 12:56:23 [::1][1][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE) in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('{{%userAccounts...', Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\CreateAction.php(52): yii\db\BaseActiveRecord->save()
+#7 [internal function]: yii\rest\CreateAction->run()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/cre...', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `userAccounts` (`created_at`, `updated_at`) VALUES (1637150183, 1637150183) in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('{{%userAccounts...', Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\CreateAction.php(52): yii\db\BaseActiveRecord->save()
+#7 [internal function]: yii\rest\CreateAction->run()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/cre...', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+)
+
+2021-11-17 12:56:23 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '766e897e73640e88c1f2365a25ee974b9fff0321fd8e1744ebe271699e6cde33a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"NSW7rHKs2ufij9A8Ssm-nw_ks1lYXYSr\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '61550'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=766e897e73640e88c1f2365a25ee974b9fff0321fd8e1744ebe271699e6cde33a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22NSW7rHKs2ufij9A8Ssm-nw_ks1lYXYSr%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150183.5637
+    'REQUEST_TIME' => 1637150183
+]
+2021-11-17 12:56:53 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 12:56:53 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '61571'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150213.4228
+    'REQUEST_TIME' => 1637150213
+]
+2021-11-17 12:57:49 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 12:57:49 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63670'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150269.8222
+    'REQUEST_TIME' => 1637150269
+]
+2021-11-17 12:59:01 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 12:59:01 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59854'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150341.3126
+    'REQUEST_TIME' => 1637150341
+]
+2021-11-17 13:00:56 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:00:56 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62680'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150456.1595
+    'REQUEST_TIME' => 1637150456
+]
+2021-11-17 13:01:00 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:00:59 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62683'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150459.9638
+    'REQUEST_TIME' => 1637150459
+]
+2021-11-17 13:01:01 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:01:01 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53458'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150461.8734
+    'REQUEST_TIME' => 1637150461
+]
+2021-11-17 13:03:53 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:03:52 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62130'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150632.9744
+    'REQUEST_TIME' => 1637150632
+]
+2021-11-17 13:03:54 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:03:54 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62132'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150634.2365
+    'REQUEST_TIME' => 1637150634
+]
+2021-11-17 13:04:32 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:31 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62156'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150671.969
+    'REQUEST_TIME' => 1637150671
+]
+2021-11-17 13:04:33 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:33 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62157'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150673.2212
+    'REQUEST_TIME' => 1637150673
+]
+2021-11-17 13:04:34 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:34 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62159'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150674.912
+    'REQUEST_TIME' => 1637150674
+]
+2021-11-17 13:04:35 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:35 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62160'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150675.6327
+    'REQUEST_TIME' => 1637150675
+]
+2021-11-17 13:04:36 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62162'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150676.382
+    'REQUEST_TIME' => 1637150676
+]
+2021-11-17 13:04:38 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:38 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62164'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150678.521
+    'REQUEST_TIME' => 1637150678
+]
+2021-11-17 13:04:53 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:53 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55032'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150693.1614
+    'REQUEST_TIME' => 1637150693
+]
+2021-11-17 13:04:54 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:54 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55037'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150694.3672
+    'REQUEST_TIME' => 1637150694
+]
+2021-11-17 13:04:55 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:55 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55038'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '189'
+    'HTTP_CONTENT_LENGTH' => '189'
+    'REQUEST_TIME_FLOAT' => 1637150695.1383
+    'REQUEST_TIME' => 1637150695
+]
+2021-11-17 13:04:57 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:04:57 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55040'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '188'
+    'HTTP_CONTENT_LENGTH' => '188'
+    'REQUEST_TIME_FLOAT' => 1637150697.5458
+    'REQUEST_TIME' => 1637150697
+]
+2021-11-17 13:06:17 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:06:17 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '65158'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '188'
+    'HTTP_CONTENT_LENGTH' => '188'
+    'REQUEST_TIME_FLOAT' => 1637150777.3685
+    'REQUEST_TIME' => 1637150777
+]
+2021-11-17 13:06:18 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:06:18 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '65159'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '188'
+    'HTTP_CONTENT_LENGTH' => '188'
+    'REQUEST_TIME_FLOAT' => 1637150778.3165
+    'REQUEST_TIME' => 1637150778
+]
+2021-11-17 13:07:41 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:07:41 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54467'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '188'
+    'HTTP_CONTENT_LENGTH' => '188'
+    'REQUEST_TIME_FLOAT' => 1637150861.8471
+    'REQUEST_TIME' => 1637150861
+]
+2021-11-17 13:07:54 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-17 13:07:54 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'd21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54474'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=d21cb1381db7e6a00bbd6d2817c17de3b6e05a3825cc0b82c548704afb4eca3fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22aTAKGVBFH4E9ue9IEU_f_Vr6uSc4GuQy%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '188'
+    'HTTP_CONTENT_LENGTH' => '188'
+    'REQUEST_TIME_FLOAT' => 1637150874.0706
+    'REQUEST_TIME' => 1637150874
+]
+2021-11-17 13:08:12 [::1][1][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::item in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\di\ServiceLocator.php(77): yii\base\Component->__get('item')
+#1 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\ImageController.php(53): yii\di\ServiceLocator->__get('item')
+#2 [internal function]: app\modules\api\controllers\ImageController->prepareDataProvider(Object(yii\rest\IndexAction), NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(124): call_user_func(Array, Object(yii\rest\IndexAction), NULL)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(98): yii\rest\IndexAction->prepareDataProvider()
+#5 [internal function]: yii\rest\IndexAction->run()
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-17 13:08:12 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '27c863aedb5734882fb863d261d770f42851fff31a8aad847cdaeb6a36895e1ba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"hp7hFH2wL9MzQPg3a9AX2vlIPAcjK9qR\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54488'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=27c863aedb5734882fb863d261d770f42851fff31a8aad847cdaeb6a36895e1ba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22hp7hFH2wL9MzQPg3a9AX2vlIPAcjK9qR%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637150892.1135
+    'REQUEST_TIME' => 1637150892
+]
+2021-11-17 13:08:15 [::1][1][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::item in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\di\ServiceLocator.php(77): yii\base\Component->__get('item')
+#1 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\ImageController.php(53): yii\di\ServiceLocator->__get('item')
+#2 [internal function]: app\modules\api\controllers\ImageController->prepareDataProvider(Object(yii\rest\IndexAction), NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(124): call_user_func(Array, Object(yii\rest\IndexAction), NULL)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(98): yii\rest\IndexAction->prepareDataProvider()
+#5 [internal function]: yii\rest\IndexAction->run()
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image/index', Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-17 13:08:15 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '5eaab136cd350e8e333007cf0e837d83772499c1593fa502c974f480ac08aac0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"By8gOWD1turKS8Ait7x438MbUX4mau1r\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54492'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/images'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/images'
+    'PHP_SELF' => '/index.php/api/images'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=5eaab136cd350e8e333007cf0e837d83772499c1593fa502c974f480ac08aac0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22By8gOWD1turKS8Ait7x438MbUX4mau1r%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637150895.2264
+    'REQUEST_TIME' => 1637150895
+]
+2021-11-17 13:08:56 [::1][1][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::items in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\di\ServiceLocator.php(77): yii\base\Component->__get('items')
+#1 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\ImageController.php(53): yii\di\ServiceLocator->__get('items')
+#2 [internal function]: app\modules\api\controllers\ImageController->prepareDataProvider(Object(yii\rest\IndexAction), NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(124): call_user_func(Array, Object(yii\rest\IndexAction), NULL)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\IndexAction.php(98): yii\rest\IndexAction->prepareDataProvider()
+#5 [internal function]: yii\rest\IndexAction->run()
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image/index', Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-17 13:08:56 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'daa16fd01f64b6ce2f2d93ffcbd5ce7da758d945ef8a85f278493923cddcaabda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"woA7QCS3D8IUh7BcsRhytBzoEnFZ18_m\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59829'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/images'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/images'
+    'PHP_SELF' => '/index.php/api/images'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=daa16fd01f64b6ce2f2d93ffcbd5ce7da758d945ef8a85f278493923cddcaabda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22woA7QCS3D8IUh7BcsRhytBzoEnFZ18_m%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637150936.7714
+    'REQUEST_TIME' => 1637150936
+]
