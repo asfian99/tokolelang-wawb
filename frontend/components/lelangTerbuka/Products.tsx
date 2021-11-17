@@ -1,15 +1,17 @@
 import React from "react";
+import { PostItemResponse } from "../../lib/mutations/itemMutations";
 import Product from "./Product";
 
-const Products = () => {
+interface ProductsProps {
+  data: PostItemResponse[];
+}
+
+const Products = ({ data }: ProductsProps) => {
   return (
     <div className="grid grid-cols-4 gap-4 mt-4">
-      <Product />
-      <Product />
-      <Product />
-      <Product />
-      <Product />
-      <Product />
+      {data.map((item) => (
+        <Product key={item.id} data={item} />
+      ))}
     </div>
   );
 };

@@ -21,6 +21,10 @@ use yii\rest\ActiveController;
 class AccountController extends ActiveController
 {
     public $modelClass = '\app\models\Account';
+//    public $serializer = [
+//        'class' => 'yii\rest\Serializer',
+//        'collectionEnvelope' => 'Account',
+//    ];
 
     public function behaviors()
     {

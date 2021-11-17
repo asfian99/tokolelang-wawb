@@ -4428,3 +4428,1213 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1636875157.7845
     'REQUEST_TIME' => 1636875157
 ]
+2021-11-14 19:04:41 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request: api/user/ in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php:152
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user', Array)
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#3 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#4 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-14 19:04:41 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '1b71b3b363d2c88d2eecebf21098bd069b950eb0df1013e909f54727ae78c2ffa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"p8Yq3VO4ulMRc_bz66qD_OpmRsdKs2jv\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '57964'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/user'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/user'
+    'PHP_SELF' => '/index.php/api/user'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=1b71b3b363d2c88d2eecebf21098bd069b950eb0df1013e909f54727ae78c2ffa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22p8Yq3VO4ulMRc_bz66qD_OpmRsdKs2jv%22%3B%7D'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1636913081.0593
+    'REQUEST_TIME' => 1636913081
+]
+2021-11-16 02:41:26 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('k_asfian')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist
+The SQL being executed was: SELECT * FROM `users` WHERE `username`='k_asfian' in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('k_asfian')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'wabw_pa_dev.users' doesn't exist
+)
+
+2021-11-16 02:41:25 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54311'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/user/login'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/user/login'
+    'PHP_SELF' => '/index.php/api/user/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '41'
+    'HTTP_CONTENT_LENGTH' => '41'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637026885.5266
+    'REQUEST_TIME' => 1637026885
+]
+2021-11-16 02:41:30 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('k_asfian')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist
+The SQL being executed was: SELECT * FROM `users` WHERE `username`='k_asfian' in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('k_asfian')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'wabw_pa_dev.users' doesn't exist
+)
+
+2021-11-16 02:41:30 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54313'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/user/login'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/user/login'
+    'PHP_SELF' => '/index.php/api/user/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '41'
+    'HTTP_CONTENT_LENGTH' => '41'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637026890.6874
+    'REQUEST_TIME' => 1637026890
+]
+2021-11-16 02:41:43 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('asfian99')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist
+The SQL being executed was: SELECT * FROM `users` WHERE `username`='asfian99' in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('asfian99')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'wabw_pa_dev.users' doesn't exist
+)
+
+2021-11-16 02:41:43 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54315'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/user/login'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/user/login'
+    'PHP_SELF' => '/index.php/api/user/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '41'
+    'HTTP_CONTENT_LENGTH' => '41'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637026903.1261
+    'REQUEST_TIME' => 1637026903
+]
+2021-11-16 02:41:44 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('asfian99')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist
+The SQL being executed was: SELECT * FROM `users` WHERE `username`='asfian99' in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('asfian99')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'wabw_pa_dev.users' doesn't exist
+)
+
+2021-11-16 02:41:43 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54317'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/user/login'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/user/login'
+    'PHP_SELF' => '/index.php/api/user/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '41'
+    'HTTP_CONTENT_LENGTH' => '41'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637026903.953
+    'REQUEST_TIME' => 1637026903
+]
+2021-11-16 02:41:44 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('asfian99')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist
+The SQL being executed was: SELECT * FROM `users` WHERE `username`='asfian99' in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\User.php(49): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\modules\api\models\LoginForm.php(25): app\models\User::findByUsername('asfian99')
+#7 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(48): app\modules\api\models\LoginForm->getUser()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\InlineValidator.php(84): app\models\LoginForm->validatePassword('password', NULL, Object(yii\validators\InlineValidator), 'test')
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\InlineValidator->validateAttribute(Object(app\modules\api\models\LoginForm), 'password')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\LoginForm), Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\models\LoginForm.php(62): yii\base\Model->validate()
+#12 C:\xampp\htdocs\TokoLelang\backend\modules\api\controllers\UserController.php(37): app\models\LoginForm->login()
+#13 [internal function]: app\modules\api\controllers\UserController->actionLogin()
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('login', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/login', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'wabw_pa_dev.users' doesn't exist
+)
+
+2021-11-16 02:41:44 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '54319'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/user/login'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/user/login'
+    'PHP_SELF' => '/index.php/api/user/login'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '41'
+    'HTTP_CONTENT_LENGTH' => '41'
+    'HTTP_SEC_CH_UA' => '\"Microsoft Edge\";v=\"95\", \"Chromium\";v=\"95\", \";Not A Brand\";v=\"99\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4638.69 Safari/537.36 Edg/95.0.1020.53'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637026904.2995
+    'REQUEST_TIME' => 1637026904
+]
+2021-11-16 19:22:46 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php:723
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(723): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1063): yii\db\Connection->open()
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1050): yii\db\Connection->getMasterPdo()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#19 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#20 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#21 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 C:\xampp\htdocs\TokoLelang\backend\yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php:649
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1063): yii\db\Connection->open()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1050): yii\db\Connection->getMasterPdo()
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(261): yii\db\Connection->getSlavePdo()
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1163): yii\db\Command->prepare(true)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(410): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\Schema.php(319): yii\db\Command->queryAll()
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(758): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\controllers\MigrateController.php(211): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Controller.php(184): yii\base\Controller->runAction('', Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\console\Controller->runAction('', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Application.php(181): yii\base\Module->runAction('migrate', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\console\Application.php(148): yii\console\Application->runAction('migrate', Array)
+#19 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 C:\xampp\htdocs\TokoLelang\backend\yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No connection could be made because the target machine actively refused it.
+
+)
+
+2021-11-16 19:22:41 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'AGSDESKTOPJAVA' => 'C:\\Program Files (x86)\\ArcGIS\\Desktop10.8\\'
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\Asfian\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'SATURN'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'DriverData' => 'C:\\Windows\\System32\\Drivers\\DriverData'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\Asfian'
+    'LOCALAPPDATA' => 'C:\\Users\\Asfian\\AppData\\Local'
+    'LOGONSERVER' => '\\\\SATURN'
+    'NUMBER_OF_PROCESSORS' => '4'
+    'OneDrive' => 'C:\\Users\\Asfian\\OneDrive'
+    'OneDriveConsumer' => 'C:\\Users\\Asfian\\OneDrive'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files\\PowerShell\\7;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\OpenSSH\\;C:\\Program Files\\nodejs\\;C:\\Program Files\\Git\\cmd;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Docker\\Docker\\resources\\bin;C:\\ProgramData\\DockerDesktop\\version-bin;C:\\Program Files\\VSCodium\\bin;C:\\Program Files\\PowerShell\\7\\;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Python\\Python39\\Scripts\\;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Python\\Python39\\;C:\\Users\\Asfian\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\Asfian\\AppData\\Roaming\\npm;C:\\Users\\Asfian\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\Asfian\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Asfian\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Android\\platform-tools;C:\\Program Files\\JetBrains\\PhpStorm 2021.2.3\\bin;C:\\Program Files\\heroku\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.CPL'
+    'PhpStorm' => 'C:\\Program Files\\JetBrains\\PhpStorm 2021.2.3\\bin;'
+    'POWERSHELL_DISTRIBUTION_CHANNEL' => 'MSI:Windows 10 Pro'
+    'PROCESSOR_ARCHITECTURE' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 61 Stepping 4, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '3d04'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PSModulePath' => 'C:\\Users\\Asfian\\Documents\\PowerShell\\Modules;C:\\Program Files\\PowerShell\\Modules;c:\\program files\\powershell\\7\\Modules;C:\\Program Files\\WindowsPowerShell\\Modules;C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules'
+    'PT7HOME' => 'C:\\Program Files\\Cisco Packet Tracer 7.3.1'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'QT_DEVICE_PIXEL_RATIO' => 'auto'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\Asfian\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\Asfian\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'SATURN'
+    'USERDOMAIN_ROAMINGPROFILE' => 'SATURN'
+    'USERNAME' => 'Asfian'
+    'USERPROFILE' => 'C:\\Users\\Asfian'
+    'VBOX_MSI_INSTALL_PATH' => 'C:\\Program Files\\Oracle\\VirtualBox\\'
+    'windir' => 'C:\\Windows'
+    'WSLENV' => 'WT_SESSION::WT_PROFILE_ID'
+    'WT_PROFILE_ID' => '{574e775e-4f2a-5b96-ac1e-a2962a402336}'
+    'WT_SESSION' => 'b43eee9c-6b03-448d-ae32-82d65030e6ad'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1637086961.5717
+    'REQUEST_TIME' => 1637086961
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-11-16 19:43:03 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-16 19:43:03 [::1][-][-][info][application] $_GET = [
+    'user_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '4c09e2ab887c9ea6fe880da659f40dd87ceb3d08ba6b127b725619bca66ece0ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ZReuRXuAm2sP1Fa1EkNc2x4Vbx2Ic2_G\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60322'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts?user_id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'QUERY_STRING' => 'user_id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=4c09e2ab887c9ea6fe880da659f40dd87ceb3d08ba6b127b725619bca66ece0ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ZReuRXuAm2sP1Fa1EkNc2x4Vbx2Ic2_G%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637088183.3014
+    'REQUEST_TIME' => 1637088183
+]
+2021-11-17 05:02:58 [::1][1][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Account::user in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('user')
+#1 C:\xampp\htdocs\TokoLelang\backend\models\Account.php(81): yii\db\BaseActiveRecord->__get('user')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ArrayableTrait.php(126): app\models\Account->app\models\{closure}(Object(app\models\Account), 'username')
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(300): yii\base\Model->toArray(Array, Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(196): yii\rest\Serializer->serializeModels(Array)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(154): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(183): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2021-11-17 05:02:58 [::1][1][-][info][application] $_GET = [
+    'user_id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'fb9aa675bcbd0515d2d6e4362ec4a3fb5789984462a598f263a73579d1017716a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"KHNkU6lfVlcQfV8IYQOc12GE6H9K6Q7C\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64678'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts?user_id=1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'QUERY_STRING' => 'user_id=1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=fb9aa675bcbd0515d2d6e4362ec4a3fb5789984462a598f263a73579d1017716a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22KHNkU6lfVlcQfV8IYQOc12GE6H9K6Q7C%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637121778.5929
+    'REQUEST_TIME' => 1637121778
+]
+2021-11-17 05:08:22 [::1][1][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\Account.php(95): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\models\Account.php(83): app\models\Account->setOtherAttr(1)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ArrayableTrait.php(126): app\models\Account->app\models\{closure}(Object(app\models\Account), 'username')
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(300): yii\base\Model->toArray(Array, Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(196): yii\rest\Serializer->serializeModels(Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(154): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#13 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(183): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#18 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+The SQL being executed was: SELECT * FROM `users` WHERE `user_id`=1 in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT * FROM `...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT * FROM `...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(424): yii\db\Command->queryInternal('fetch', NULL)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(287): yii\db\Command->queryOne()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(304): yii\db\Query->one(NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\models\Account.php(95): yii\db\ActiveQuery->one()
+#6 C:\xampp\htdocs\TokoLelang\backend\models\Account.php(83): app\models\Account->setOtherAttr(1)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ArrayableTrait.php(126): app\models\Account->app\models\{closure}(Object(app\models\Account), 'username')
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(300): yii\base\Model->toArray(Array, Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(196): yii\rest\Serializer->serializeModels(Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(154): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#13 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(183): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#18 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'user_id' in 'where clause'
+)
+
+2021-11-17 05:08:21 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'b9109d95b9763fad81ba86975700eb0c8a338bed1a774c0f0d294ce5ed698e18a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"0W_lr21GHYsNMoELwbdThs0rgxIMezJj\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '64741'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=b9109d95b9763fad81ba86975700eb0c8a338bed1a774c0f0d294ce5ed698e18a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%220W_lr21GHYsNMoELwbdThs0rgxIMezJj%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637122101.9381
+    'REQUEST_TIME' => 1637122101
+]
+2021-11-17 08:42:05 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/index', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-17 08:42:05 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'b5172851cdf2f2828118a67b7f3e176c06247f64b6ae9d6d317e3f949280b3c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FfXKn6v2yH4YNerW8mZXka7cgzHrelPf\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56825'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items'
+    'PHP_SELF' => '/index.php/api/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=b5172851cdf2f2828118a67b7f3e176c06247f64b6ae9d6d317e3f949280b3c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FfXKn6v2yH4YNerW8mZXka7cgzHrelPf%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637134925.7534
+    'REQUEST_TIME' => 1637134925
+]
+2021-11-17 08:42:28 [::1][1][-][error][yii\db\Exception] PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause' in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(436): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(497): yii\db\Command->queryScalar()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(352): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(368): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\ActiveDataProvider.php(168): yii\db\Query->count('*', NULL)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\ActiveDataProvider.php(105): yii\data\BaseDataProvider->getTotalCount()
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(194): yii\data\BaseDataProvider->getModels()
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(154): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#13 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(183): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/index', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'user_id' in 'where clause'
+The SQL being executed was: SELECT COUNT(*) FROM `items` WHERE `user_id`=1 in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT COUNT(*)...')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT COUNT(*)...')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(436): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(497): yii\db\Command->queryScalar()
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveQuery.php(352): yii\db\Query->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(368): yii\db\ActiveQuery->queryScalar('COUNT(*)', Object(yii\db\Connection))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\ActiveDataProvider.php(168): yii\db\Query->count('*', NULL)
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\BaseDataProvider.php(169): yii\data\ActiveDataProvider->prepareTotalCount()
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\ActiveDataProvider.php(105): yii\data\BaseDataProvider->getTotalCount()
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\BaseDataProvider.php(101): yii\data\ActiveDataProvider->prepareModels()
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\data\BaseDataProvider.php(114): yii\data\BaseDataProvider->prepare()
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(194): yii\data\BaseDataProvider->getModels()
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Serializer.php(154): yii\rest\Serializer->serializeDataProvider(Object(yii\data\ActiveDataProvider))
+#13 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(99): yii\rest\Serializer->serialize(Object(yii\data\ActiveDataProvider))
+#14 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\Controller.php(77): yii\rest\Controller->serializeData(Object(yii\data\ActiveDataProvider))
+#15 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(183): yii\rest\Controller->afterAction(Object(yii\rest\IndexAction), Object(yii\data\ActiveDataProvider))
+#16 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#17 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/index', Array)
+#18 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'user_id' in 'where clause'
+)
+
+2021-11-17 08:42:27 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'b5172851cdf2f2828118a67b7f3e176c06247f64b6ae9d6d317e3f949280b3c9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"FfXKn6v2yH4YNerW8mZXka7cgzHrelPf\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '56828'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items'
+    'PHP_SELF' => '/index.php/api/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=b5172851cdf2f2828118a67b7f3e176c06247f64b6ae9d6d317e3f949280b3c9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22FfXKn6v2yH4YNerW8mZXka7cgzHrelPf%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637134947.9689
+    'REQUEST_TIME' => 1637134947
+]
+2021-11-17 09:13:54 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\CreateAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\CreateAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\CreateAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\CreateAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/create', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-17 09:13:54 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '75aad615ac7119e159e3adb056a9c103e6e4415eb04f6f1c54854d3cd2d6fae6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qmwP2SH_ryNwgqBCPWiluPG2qFp8NBmd\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60085'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items'
+    'PHP_SELF' => '/index.php/api/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=75aad615ac7119e159e3adb056a9c103e6e4415eb04f6f1c54854d3cd2d6fae6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qmwP2SH_ryNwgqBCPWiluPG2qFp8NBmd%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '442'
+    'HTTP_CONTENT_LENGTH' => '442'
+    'REQUEST_TIME_FLOAT' => 1637136834.9136
+    'REQUEST_TIME' => 1637136834
+]
+2021-11-17 09:14:06 [::1][1][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Item::user_id in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('user_id')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(258): yii\db\BaseActiveRecord->__get('user_id')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\models\Item), Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\CreateAction.php(52): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/create', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2021-11-17 09:14:05 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '75aad615ac7119e159e3adb056a9c103e6e4415eb04f6f1c54854d3cd2d6fae6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"qmwP2SH_ryNwgqBCPWiluPG2qFp8NBmd\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60092'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items'
+    'PHP_SELF' => '/index.php/api/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=75aad615ac7119e159e3adb056a9c103e6e4415eb04f6f1c54854d3cd2d6fae6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22qmwP2SH_ryNwgqBCPWiluPG2qFp8NBmd%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '442'
+    'HTTP_CONTENT_LENGTH' => '442'
+    'REQUEST_TIME_FLOAT' => 1637136845.9522
+    'REQUEST_TIME' => 1637136845
+]
+2021-11-17 09:14:38 [::1][1][-][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: app\models\Item::user_id in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php:155
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(298): yii\base\Component->__get('user_id')
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(258): yii\db\BaseActiveRecord->__get('user_id')
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\models\Item), Array)
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(560): yii\base\Model->validate(Array)
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#5 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\rest\CreateAction.php(52): yii\db\BaseActiveRecord->save()
+#6 [internal function]: yii\rest\CreateAction->run()
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/create', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#12 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#13 {main}
+2021-11-17 09:14:38 [::1][1][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'e568bb3c65d19b555c3925a91af126790beaf8992036f74ae13c325d70adacf5a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"xTNSKIM6jX86QIDWly-UfbGSyURaSR4G\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '58475'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items'
+    'PHP_SELF' => '/index.php/api/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=e568bb3c65d19b555c3925a91af126790beaf8992036f74ae13c325d70adacf5a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22xTNSKIM6jX86QIDWly-UfbGSyURaSR4G%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '442'
+    'HTTP_CONTENT_LENGTH' => '442'
+    'REQUEST_TIME_FLOAT' => 1637136878.4956
+    'REQUEST_TIME' => 1637136878
+]
+2021-11-17 09:18:21 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\UpdateAction))
+#4 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\UpdateAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\UpdateAction))
+#9 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\UpdateAction))
+#10 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#11 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/update', Array)
+#12 C:\xampp\htdocs\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\xampp\htdocs\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-17 09:18:21 [::1][-][-][info][application] $_GET = [
+    'id' => '13'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '86d3ec4eed965a5a82f764a08af8373c11e18f46462d6cab20a31112d87b9bd3a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Y0xqHwU1TT2VoXF2aimVydbuV9k5xIfX\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53723'
+    'SERVER_SOFTWARE' => 'PHP 7.4.18 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/13'
+    'REQUEST_METHOD' => 'PATCH'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\xampp\\htdocs\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items/13'
+    'PHP_SELF' => '/index.php/api/items/13'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=86d3ec4eed965a5a82f764a08af8373c11e18f46462d6cab20a31112d87b9bd3a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Y0xqHwU1TT2VoXF2aimVydbuV9k5xIfX%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '24'
+    'HTTP_CONTENT_LENGTH' => '24'
+    'REQUEST_TIME_FLOAT' => 1637137101.8407
+    'REQUEST_TIME' => 1637137101
+]

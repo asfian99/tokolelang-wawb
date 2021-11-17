@@ -45,8 +45,8 @@ class Item extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['description', 'name'], 'string'],
-            [['created_at', 'user_id', 'updated_at', 'closing_time'], 'integer'],
+            [['description', 'name', 'location', 'event'], 'string'],
+            [['account_id', 'open_bid', 'bid_ratio', 'is_cancelled', 'created_at', 'fundraising', 'updated_at', 'closing_time'], 'integer'],
         ];
     }
 
@@ -57,12 +57,16 @@ class Item extends \yii\db\ActiveRecord
     {
         return [
             'id' => Yii::t('app', 'ID'),
+            'account_id' => Yii::t('app', 'User ID'),
             'name' => Yii::t('app', 'Name'),
             'description' => Yii::t('app', 'Description'),
             'open_bid' => Yii::t('app', 'Open Bid'),
+            'bid_ratio' => Yii::t('app', 'Bid Ratio'),
+            'location' => Yii::t('app', 'Location'),
+            'event' => Yii::t('app', 'Event'),
+            'is_cancelled' => Yii::t('app', 'Is Cancelled'),
             'closing_time' => Yii::t('app', 'Closing Time'),
             'fundraising' => Yii::t('app', 'Fundraising'),
-            'user_id' => Yii::t('app', 'User ID'),
             'created_at' => Yii::t('app', 'Created At'),
             'updated_at' => Yii::t('app', 'Updated At'),
         ];
@@ -70,7 +74,7 @@ class Item extends \yii\db\ActiveRecord
 
     public function getUserId()
     {
-        return $this->hasOne(User::class, ['id' => 'user_id']);
+        return $this->hasOne(User::class, ['id' => 'account_id']);
     }
 
     /**

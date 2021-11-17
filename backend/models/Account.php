@@ -68,6 +68,23 @@ class Account extends \yii\db\ActiveRecord
         ];
     }
 
+    public function fields()
+    {
+        $fields = parent::fields();
+
+        $fields['username'] = function ($model) {
+            return $model->setOtherAttr($model->user_id);
+        };
+        return $fields;
+    }
+
+    public function setOtherAttr($user_id){
+        $user = User::find()->where(['id'=>$user_id])->one();
+//        $this->username = $user->other_attr1;
+//        $this->other_attr2 = $user->other_attr2;
+        return $user->username;
+    }
+
     public function getUserId()
     {
         return $this->hasOne(User::class, ['id' => 'user_id']);

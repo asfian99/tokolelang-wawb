@@ -91,6 +91,8 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/npm-asset/bootstrap" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/behat/gherkin" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/webmozart/assert" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/bower-asset/bootstrap" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/yiisoft/yii2-bootstrap" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

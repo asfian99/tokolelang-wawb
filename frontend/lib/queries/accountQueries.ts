@@ -22,9 +22,6 @@ export const getAccountDetail = async (data: LoginResponse) => {
     (user: AccountResponse) => user.user_id === data.id
   );
 
-  // console.log(res.data);
-  // console.log(users);
-
   const user = { ...users[0], username: data.username };
 
   return user;

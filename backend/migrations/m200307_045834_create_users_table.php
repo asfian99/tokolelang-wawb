@@ -17,8 +17,8 @@ class m200307_045834_create_users_table extends Migration
             'username' => $this->string(255)->notNull()->unique(),
             'password_hash' => $this->string(512)->notNull(),
             'access_token' => $this->string(1024),
-            'created_at' => $this->integer()->notNull()->defaultValue(time()),
-            'updated_at' => $this->integer()->notNull()->defaultValue(time()),
+            'created_at' => $this->integer(),
+            'updated_at' => $this->integer(),
         ]);
     }
 

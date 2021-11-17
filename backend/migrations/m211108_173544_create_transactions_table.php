@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `{{%transactions}}`.
  */
-class m211107_173544_create_transactions_table extends Migration
+class m211108_173544_create_transactions_table extends Migration
 {
     /**
      * {@inheritdoc}
@@ -14,25 +14,26 @@ class m211107_173544_create_transactions_table extends Migration
     {
         $this->createTable('{{%transactions}}', [
             'id' => $this->primaryKey(),
-            'user_id' => $this->integer()->notNull(),
+            'account_id' => $this->integer()->notNull(),
             'item_id' => $this->integer()->notNull(),
             'bid_value' => $this->bigInteger()->notNull(),
-            'created_at' => $this->integer()->notNull()->defaultValue(time()),
-            'updated_at' => $this->integer()->notNull()->defaultValue(time()),
+            'is_highest' => $this->integer()->defaultValue(0),
+            'created_at' => $this->integer(),
+            'updated_at' => $this->integer(),
         ]);
 
         $this->createIndex(
-            '{{%idx-transactions-user_id}}',
+            '{{%idx-transactions-account_id}}',
             '{{%transactions}}',
-            'user_id'
+            'account_id'
         );
 
-        // add foreign key for table `{{%users}}`
+        // add foreign key for table `{{%userAccounts}}`
         $this->addForeignKey(
-            '{{%fk-transactions-user_id}}',
+            '{{%fk-transactions-account_id}}',
             '{{%transactions}}',
-            'user_id',
-            '{{%users}}',
+            'account_id',
+            '{{%userAccounts}}',
             'id',
             'CASCADE'
         );
@@ -43,7 +44,7 @@ class m211107_173544_create_transactions_table extends Migration
             'item_id'
         );
 
-        // add foreign key for table `{{%users}}`
+        // add foreign key for table `{{%items}}`
         $this->addForeignKey(
             '{{%fk-transactions-item_id}}',
             '{{%transactions}}',
@@ -60,12 +61,12 @@ class m211107_173544_create_transactions_table extends Migration
     public function safeDown()
     {
         $this->dropForeignKey(
-            '{{%fk-transactions-user_id}}',
+            '{{%fk-transactions-account_id}}',
             '{{%transactions}}'
         );
 
         $this->dropIndex(
-            '{{%idx-transactions-user_id}}',
+            '{{%idx-transactions-account_id}}',
             '{{%transactions}}'
         );
 

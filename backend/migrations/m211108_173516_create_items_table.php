@@ -5,7 +5,7 @@ use yii\db\Migration;
 /**
  * Handles the creation of table `{{%items}}`.
  */
-class m211107_173516_create_items_table extends Migration
+class m211108_173516_create_items_table extends Migration
 {
     /**
      * {@inheritdoc}
@@ -14,28 +14,31 @@ class m211107_173516_create_items_table extends Migration
     {
         $this->createTable('{{%items}}', [
             'id' => $this->primaryKey(),
+            'account_id' => $this->integer()->notNull(),
             'name' => $this->string(180)->notNull(),
-            'description' => $this->text()->notNull(),
+            'description' => $this->text(),
             'open_bid' => $this->bigInteger()->notNull(),
+            'bid_ratio' => $this->bigInteger(),
+            'location' => $this->string(),
+            'event' => $this->string(),
             'closing_time' => $this->integer()->notNull(),
             'fundraising' => $this->boolean()->defaultValue(0),
-            'user_id' => $this->integer()->notNull(),
-            'created_at' => $this->integer()->notNull()->defaultValue(time()),
-            'updated_at' => $this->integer()->notNull()->defaultValue(time()),
+            'is_cancelled' => $this->integer()->notNull()->defaultValue(0),
+            'created_at' => $this->integer(),
+            'updated_at' => $this->integer(),
         ]);
 
         $this->createIndex(
-            '{{%idx-items-user_id}}',
+            '{{%idx-items-account_id}}',
             '{{%items}}',
-            'user_id'
+            'account_id'
         );
 
-        // add foreign key for table `{{%users}}`
         $this->addForeignKey(
-            '{{%fk-items-user_id}}',
+            '{{%fk-items-account_id}}',
             '{{%items}}',
-            'user_id',
-            '{{%users}}',
+            'account_id',
+            '{{%userAccounts}}',
             'id',
             'CASCADE'
         );
@@ -47,12 +50,12 @@ class m211107_173516_create_items_table extends Migration
     public function safeDown()
     {
         $this->dropForeignKey(
-            '{{%fk-items-user_id}}',
+            '{{%fk-items-account_id}}',
             '{{%items}}'
         );
 
         $this->dropIndex(
-            '{{%idx-items-user_id}}',
+            '{{%idx-items-account_id}}',
             '{{%items}}'
         );
 

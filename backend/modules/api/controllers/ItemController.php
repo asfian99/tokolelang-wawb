@@ -50,7 +50,7 @@ class ItemController extends ActiveController
     public function prepareDataProvider()
     {
         return new ActiveDataProvider([
-            'query' => $this->modelClass::find()->andWhere(['user_id' => \Yii::$app->user->id])
+            'query' => $this->modelClass::find()->andWhere(['account_id' => \Yii::$app->user->id])
         ]);
     }
 }

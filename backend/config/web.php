@@ -53,7 +53,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 [
-                    'class' => \yii\rest\UrlRule::class,
+                    'class' => 'yii\rest\UrlRule',
                     'pluralize' => true,
                     'controller' => ['api/account', 'api/item'],
                 ]
