@@ -7663,3 +7663,997 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1637211073.0385
     'REQUEST_TIME' => 1637211073
 ]
+2021-11-18 05:34:29 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:34:29 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36650'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213669.1827
+    'REQUEST_TIME' => 1637213669
+]
+2021-11-18 05:34:30 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:34:30 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36652'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213670.3305
+    'REQUEST_TIME' => 1637213670
+]
+2021-11-18 05:34:32 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:34:32 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36654'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213672.4243
+    'REQUEST_TIME' => 1637213672
+]
+2021-11-18 05:34:36 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:34:36 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36656'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213676.5487
+    'REQUEST_TIME' => 1637213676
+]
+2021-11-18 05:37:19 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:19 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36658'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213838.9927
+    'REQUEST_TIME' => 1637213838
+]
+2021-11-18 05:37:20 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:20 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36662'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213840.2499
+    'REQUEST_TIME' => 1637213840
+]
+2021-11-18 05:37:22 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:22 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36664'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213842.3498
+    'REQUEST_TIME' => 1637213842
+]
+2021-11-18 05:37:26 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:26 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36666'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213846.4542
+    'REQUEST_TIME' => 1637213846
+]
+2021-11-18 05:37:28 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:28 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36668'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213848.5631
+    'REQUEST_TIME' => 1637213848
+]
+2021-11-18 05:37:29 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:29 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36672'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213849.7216
+    'REQUEST_TIME' => 1637213849
+]
+2021-11-18 05:37:31 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:31 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36674'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213851.8
+    'REQUEST_TIME' => 1637213851
+]
+2021-11-18 05:37:35 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:35 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36676'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213855.8955
+    'REQUEST_TIME' => 1637213855
+]
+2021-11-18 05:37:58 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:58 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36680'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213878.8103
+    'REQUEST_TIME' => 1637213878
+]
+2021-11-18 05:37:59 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 1 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/ViewAction.php(29): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\ViewAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-18 05:37:59 [::1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36682'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/1'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/1'
+    'PHP_SELF' => '/index.php/api/items/1'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.24'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Linux\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637213879.9448
+    'REQUEST_TIME' => 1637213879
+]
+2021-11-18 07:27:57 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/items/and-in-she-went-once_3". in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php:543
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-18 07:27:57 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59764'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/and-in-she-went-once_3'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/and-in-she-went-once_3'
+    'PHP_SELF' => '/index.php/api/items/and-in-she-went-once_3'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'GET'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.26'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637220477.6899
+    'REQUEST_TIME' => 1637220477
+]
+2021-11-18 07:27:58 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/items/and-in-she-went-once_3". in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php:543
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-18 07:27:58 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59766'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/and-in-she-went-once_3'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/and-in-she-went-once_3'
+    'PHP_SELF' => '/index.php/api/items/and-in-she-went-once_3'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'GET'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.26'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637220478.7573
+    'REQUEST_TIME' => 1637220478
+]
+2021-11-18 07:28:01 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/items/and-in-she-went-once_3". in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php:543
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php:116
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-18 07:28:01 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59768'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/and-in-she-went-once_3'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/and-in-she-went-once_3'
+    'PHP_SELF' => '/index.php/api/items/and-in-she-went-once_3'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'GET'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.26'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637220481.0136
+    'REQUEST_TIME' => 1637220481
+]
+2021-11-18 07:39:32 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php:93
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Component.php(628): call_user_func()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Controller.php(216): yii\base\Controller->beforeAction()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(179): yii\web\Controller->beforeAction()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-18 07:39:32 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '225b413e094a4cadf3beeb8b468f2b7b6096993e5a774e3e232a22189bf0cb27a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wFbo3lcBWat12n1gH1u16iioOeE4fE61\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59818'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items'
+    'PHP_SELF' => '/index.php/api/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=225b413e094a4cadf3beeb8b468f2b7b6096993e5a774e3e232a22189bf0cb27a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wFbo3lcBWat12n1gH1u16iioOeE4fE61%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '442'
+    'HTTP_CONTENT_LENGTH' => '442'
+    'REQUEST_TIME_FLOAT' => 1637221172.4784
+    'REQUEST_TIME' => 1637221172
+]
+2021-11-18 12:27:14 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php:93
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Component.php(628): call_user_func()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Controller.php(216): yii\base\Controller->beforeAction()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(179): yii\web\Controller->beforeAction()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-18 12:27:13 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '0f8e5cd3cec9b3b14c4aa17e6411407d4634826e4f4aa3e45b5cd2eeb3d03e2fa:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"jf_FLEakD2xr5ODXGKYyMOK4rnCbyn61\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '33050'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/images'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/images'
+    'PHP_SELF' => '/index.php/api/images'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=0f8e5cd3cec9b3b14c4aa17e6411407d4634826e4f4aa3e45b5cd2eeb3d03e2fa%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22jf_FLEakD2xr5ODXGKYyMOK4rnCbyn61%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637238433.9641
+    'REQUEST_TIME' => 1637238433
+]

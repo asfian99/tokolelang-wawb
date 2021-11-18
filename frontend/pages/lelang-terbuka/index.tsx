@@ -12,15 +12,19 @@ import { getItems } from "../../lib/queries/itemQueries";
 import Loading from "../../components/pageStatus/Loading";
 import { AxiosError } from "axios";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { PostImageResponse } from "../../lib/mutations/imageMutations";
+import { getImages } from "../../lib/queries/imageQueries";
 
 const LelangTerbuka: NextPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
   const { cookie } = props;
 
-  const { data, status } = useQuery<PostItemResponse[], AxiosError>(
-    "items",
-    () => getItems(cookie)
+  const items = useQuery<PostItemResponse[], AxiosError>("items", () =>
+    getItems(cookie)
+  );
+  const images = useQuery<PostImageResponse[], AxiosError>("images", () =>
+    getImages(cookie)
   );
 
   return (
@@ -29,13 +33,13 @@ const LelangTerbuka: NextPage = (
         <title>Lelang Terbuka - TokoLelang</title>
       </Head>
 
-      {status === "loading" && <Loading />}
-      {status === "error" && <Loading />}
-      {data && (
+      {items.status === "loading" && <Loading />}
+      {items.status === "error" && <Loading />}
+      {items.data && images.data && (
         <div>
           <h2 className="mb-4 text-2xl font-semibold">Lelang Terbuka</h2>
 
-          <Products data={data} />
+          <Products data={items.data} images={images.data} />
         </div>
       )}
     </>

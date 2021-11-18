@@ -7,29 +7,35 @@ import { PostItemResponse } from "../../lib/mutations/itemMutations";
 import { formatDate, formatTime } from "../../lib/formatDateTime";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { formatSlug } from "../../lib/formatString";
+import { PostImageResponse } from "../../lib/mutations/imageMutations";
 
 interface ProductProps {
   data: PostItemResponse;
+  images: PostImageResponse[];
 }
 
-const Product = ({ data }: ProductProps) => {
+const Product = ({ data, images }: ProductProps) => {
   const router = useRouter();
   const onClick = () => {
     console.log("porduct");
     router.push(`/lelang-terbuka/${formatSlug(data.name, data.id)}`);
   };
 
+  // console.log(images);
+
   return (
     <div className="p-5 border border-gray-300 rounded-xl group hover:bg-gray-50">
       <Image
         className="border border-gray-300 cursor-pointer rounded-xl"
         onClick={onClick}
-        src={PlaceholderImg}
+        src={images.length > 0 ? images[0].link : PlaceholderImg}
         alt="placeholderImage"
         height="400"
         width="400"
         objectFit="cover"
         layout="responsive"
+        // placeholder="blur"
+        // blurDataURL={}
         priority
       />
       <h2
