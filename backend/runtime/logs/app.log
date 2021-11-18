@@ -7047,3 +7047,619 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1637150936.7714
     'REQUEST_TIME' => 1637150936
 ]
+2021-11-18 04:38:57 [-][-][-][error][Error] Error: Class "PDO" not found in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/di/Container.php:420
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/di/Container.php(420): ReflectionClass->newInstanceArgs()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(768): yii\BaseYii::createObject()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Connection->createCommand()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#14 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Controller.php(184): yii\base\Controller->runAction()
+#15 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\console\Controller->runAction()
+#16 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction()
+#17 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction()
+#18 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\console\Application->handleRequest()
+#19 /home/asfian99/Documents/Project/TokoLelang/backend/yii(20): yii\base\Application->run()
+#20 {main}
+2021-11-18 04:38:57 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_DATA_DIRS' => '/home/asfian99/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'SYSTEMD_EXEC_PID' => '12366'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/unix:@/tmp/.ICE-unix/12341,unix/unix:/tmp/.ICE-unix/12341'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/04041cf5_9160_42b4_9dbf_efb979bdb440'
+    'SSH_AGENT_PID' => '12294'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'USER' => 'asfian99'
+    'PATH' => '/home/asfian99/.nvm/versions/node/v16.13.0/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin'
+    'NVM_BIN' => '/home/asfian99/.nvm/versions/node/v16.13.0/bin'
+    'SHELL' => '/usr/bin/fish'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_CD_FLAGS' => ''
+    'PWD' => '/home/asfian99/Documents/Project/TokoLelang/backend'
+    'DESKTOP_SESSION' => 'gnome-xorg'
+    'NVM_INC' => '/home/asfian99/.nvm/versions/node/v16.13.0/include/node'
+    'NVM_DIR' => '/home/asfian99/.nvm'
+    'STARSHIP_SHELL' => 'fish'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XDG_SESSION_DESKTOP' => 'gnome-xorg'
+    'STARSHIP_SESSION_KEY' => '7153834989200316'
+    'WINDOWPATH' => '2'
+    'GNOME_TERMINAL_SERVICE' => ':1.190'
+    'SHLVL' => '1'
+    'LANG' => 'en_US.UTF-8'
+    'EDITOR' => '/usr/bin/nano'
+    'LOGNAME' => 'asfian99'
+    'XDG_SESSION_CLASS' => 'user'
+    'VTE_VERSION' => '6601'
+    'HOME' => '/home/asfian99'
+    'TERM' => 'xterm-256color'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GDMSESSION' => 'gnome-xorg'
+    'QT_IM_MODULE' => 'ibus'
+    'GDM_LANG' => 'en_US.UTF-8'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'DISPLAY' => ':0'
+    'COLORTERM' => 'truecolor'
+    'XMODIFIERS' => '@im=ibus'
+    'USERNAME' => 'asfian99'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1637210337.393
+    'REQUEST_TIME' => 1637210337
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-11-18 04:41:43 [-][-][-][error][Error] Error: Class "PDO" not found in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/di/Container.php:420
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/di/Container.php(420): ReflectionClass->newInstanceArgs()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/di/Container.php(171): yii\di\Container->build()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/BaseYii.php(365): yii\di\Container->get()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(768): yii\BaseYii::createObject()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Connection->createCommand()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#11 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#14 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Controller.php(184): yii\base\Controller->runAction()
+#15 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\console\Controller->runAction()
+#16 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction()
+#17 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction()
+#18 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\console\Application->handleRequest()
+#19 /home/asfian99/Documents/Project/TokoLelang/backend/yii(20): yii\base\Application->run()
+#20 {main}
+2021-11-18 04:41:43 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_DATA_DIRS' => '/home/asfian99/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'SYSTEMD_EXEC_PID' => '12366'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/unix:@/tmp/.ICE-unix/12341,unix/unix:/tmp/.ICE-unix/12341'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/04041cf5_9160_42b4_9dbf_efb979bdb440'
+    'SSH_AGENT_PID' => '12294'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'USER' => 'asfian99'
+    'PATH' => '/home/asfian99/.nvm/versions/node/v16.13.0/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin'
+    'NVM_BIN' => '/home/asfian99/.nvm/versions/node/v16.13.0/bin'
+    'SHELL' => '/usr/bin/fish'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_CD_FLAGS' => ''
+    'PWD' => '/home/asfian99/Documents/Project/TokoLelang/backend'
+    'DESKTOP_SESSION' => 'gnome-xorg'
+    'NVM_INC' => '/home/asfian99/.nvm/versions/node/v16.13.0/include/node'
+    'NVM_DIR' => '/home/asfian99/.nvm'
+    'STARSHIP_SHELL' => 'fish'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XDG_SESSION_DESKTOP' => 'gnome-xorg'
+    'STARSHIP_SESSION_KEY' => '7153834989200316'
+    'WINDOWPATH' => '2'
+    'GNOME_TERMINAL_SERVICE' => ':1.190'
+    'SHLVL' => '1'
+    'LANG' => 'en_US.UTF-8'
+    'EDITOR' => '/usr/bin/nano'
+    'LOGNAME' => 'asfian99'
+    'XDG_SESSION_CLASS' => 'user'
+    'VTE_VERSION' => '6601'
+    'HOME' => '/home/asfian99'
+    'TERM' => 'xterm-256color'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GDMSESSION' => 'gnome-xorg'
+    'QT_IM_MODULE' => 'ibus'
+    'GDM_LANG' => 'en_US.UTF-8'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'DISPLAY' => ':0'
+    'COLORTERM' => 'truecolor'
+    'XMODIFIERS' => '@im=ibus'
+    'USERNAME' => 'asfian99'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1637210503.0595
+    'REQUEST_TIME' => 1637210503
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-11-18 04:47:09 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(1063): yii\db\Connection->open()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(1050): yii\db\Connection->getMasterPdo()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(410): yii\db\Command->queryInternal()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#17 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Controller.php(184): yii\base\Controller->runAction()
+#18 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\console\Controller->runAction()
+#19 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction()
+#20 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction()
+#21 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\console\Application->handleRequest()
+#22 /home/asfian99/Documents/Project/TokoLelang/backend/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(1063): yii\db\Connection->open()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(1050): yii\db\Connection->getMasterPdo()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(410): yii\db\Command->queryInternal()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#15 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Controller.php(184): yii\base\Controller->runAction()
+#16 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\console\Controller->runAction()
+#17 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction()
+#18 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction()
+#19 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\console\Application->handleRequest()
+#20 /home/asfian99/Documents/Project/TokoLelang/backend/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2021-11-18 04:47:09 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_DATA_DIRS' => '/home/asfian99/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'SYSTEMD_EXEC_PID' => '12366'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/unix:@/tmp/.ICE-unix/12341,unix/unix:/tmp/.ICE-unix/12341'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/04041cf5_9160_42b4_9dbf_efb979bdb440'
+    'SSH_AGENT_PID' => '12294'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'USER' => 'asfian99'
+    'PATH' => '/home/asfian99/.nvm/versions/node/v16.13.0/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin'
+    'NVM_BIN' => '/home/asfian99/.nvm/versions/node/v16.13.0/bin'
+    'SHELL' => '/usr/bin/fish'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_CD_FLAGS' => ''
+    'PWD' => '/home/asfian99/Documents/Project/TokoLelang/backend'
+    'DESKTOP_SESSION' => 'gnome-xorg'
+    'NVM_INC' => '/home/asfian99/.nvm/versions/node/v16.13.0/include/node'
+    'NVM_DIR' => '/home/asfian99/.nvm'
+    'STARSHIP_SHELL' => 'fish'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XDG_SESSION_DESKTOP' => 'gnome-xorg'
+    'STARSHIP_SESSION_KEY' => '7153834989200316'
+    'WINDOWPATH' => '2'
+    'GNOME_TERMINAL_SERVICE' => ':1.190'
+    'SHLVL' => '1'
+    'LANG' => 'en_US.UTF-8'
+    'EDITOR' => '/usr/bin/nano'
+    'LOGNAME' => 'asfian99'
+    'XDG_SESSION_CLASS' => 'user'
+    'VTE_VERSION' => '6601'
+    'HOME' => '/home/asfian99'
+    'TERM' => 'xterm-256color'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GDMSESSION' => 'gnome-xorg'
+    'QT_IM_MODULE' => 'ibus'
+    'GDM_LANG' => 'en_US.UTF-8'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'DISPLAY' => ':0'
+    'COLORTERM' => 'truecolor'
+    'XMODIFIERS' => '@im=ibus'
+    'USERNAME' => 'asfian99'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1637210829.3472
+    'REQUEST_TIME' => 1637210829
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-11-18 04:47:59 [-][-][-][error][yii\db\Exception] PDOException: SQLSTATE[HY000] [2002] No such file or directory in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php:723
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(723): PDO->__construct()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(638): yii\db\Connection->createPdoInstance()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(1063): yii\db\Connection->open()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(1050): yii\db\Connection->getMasterPdo()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(410): yii\db\Command->queryInternal()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#15 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#16 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#17 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Controller.php(184): yii\base\Controller->runAction()
+#18 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\console\Controller->runAction()
+#19 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction()
+#20 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction()
+#21 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\console\Application->handleRequest()
+#22 /home/asfian99/Documents/Project/TokoLelang/backend/yii(20): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000] [2002] No such file or directory in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php:649
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(1063): yii\db\Connection->open()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Connection.php(1050): yii\db\Connection->getMasterPdo()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(261): yii\db\Connection->getSlavePdo()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(1163): yii\db\Command->prepare()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Command.php(410): yii\db\Command->queryInternal()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(319): yii\db\Command->queryAll()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/mysql/Schema.php(125): yii\db\mysql\Schema->findColumns()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(758): yii\db\mysql\Schema->loadTableSchema()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/db/Schema.php(194): yii\db\Schema->getTableMetadata()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/MigrateController.php(211): yii\db\Schema->getTableSchema()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(908): yii\console\controllers\MigrateController->getMigrationHistory()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/controllers/BaseMigrateController.php(183): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array()
+#14 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\InlineAction->runWithParams()
+#15 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Controller.php(184): yii\base\Controller->runAction()
+#16 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\console\Controller->runAction()
+#17 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(181): yii\base\Module->runAction()
+#18 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/console/Application.php(148): yii\console\Application->runAction()
+#19 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\console\Application->handleRequest()
+#20 /home/asfian99/Documents/Project/TokoLelang/backend/yii(20): yii\base\Application->run()
+#21 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 2002
+    [2] => No such file or directory
+)
+
+2021-11-18 04:47:59 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_DATA_DIRS' => '/home/asfian99/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/'
+    'SYSTEMD_EXEC_PID' => '12366'
+    'SSH_AUTH_SOCK' => '/run/user/1000/keyring/ssh'
+    'SESSION_MANAGER' => 'local/unix:@/tmp/.ICE-unix/12341,unix/unix:/tmp/.ICE-unix/12341'
+    'GNOME_TERMINAL_SCREEN' => '/org/gnome/Terminal/screen/04041cf5_9160_42b4_9dbf_efb979bdb440'
+    'SSH_AGENT_PID' => '12294'
+    'XDG_CURRENT_DESKTOP' => 'GNOME'
+    'XDG_MENU_PREFIX' => 'gnome-'
+    'USER' => 'asfian99'
+    'PATH' => '/home/asfian99/.nvm/versions/node/v16.13.0/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin'
+    'NVM_BIN' => '/home/asfian99/.nvm/versions/node/v16.13.0/bin'
+    'SHELL' => '/usr/bin/fish'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.m4a=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.oga=01;36:*.opus=01;36:*.spx=01;36:*.xspf=01;36:'
+    'DBUS_SESSION_BUS_ADDRESS' => 'unix:path=/run/user/1000/bus'
+    'NVM_CD_FLAGS' => ''
+    'PWD' => '/home/asfian99/Documents/Project/TokoLelang/backend'
+    'DESKTOP_SESSION' => 'gnome-xorg'
+    'NVM_INC' => '/home/asfian99/.nvm/versions/node/v16.13.0/include/node'
+    'NVM_DIR' => '/home/asfian99/.nvm'
+    'STARSHIP_SHELL' => 'fish'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'XDG_SESSION_DESKTOP' => 'gnome-xorg'
+    'STARSHIP_SESSION_KEY' => '7153834989200316'
+    'WINDOWPATH' => '2'
+    'GNOME_TERMINAL_SERVICE' => ':1.190'
+    'SHLVL' => '1'
+    'LANG' => 'en_US.UTF-8'
+    'EDITOR' => '/usr/bin/nano'
+    'LOGNAME' => 'asfian99'
+    'XDG_SESSION_CLASS' => 'user'
+    'VTE_VERSION' => '6601'
+    'HOME' => '/home/asfian99'
+    'TERM' => 'xterm-256color'
+    'XDG_SESSION_TYPE' => 'x11'
+    'GDMSESSION' => 'gnome-xorg'
+    'QT_IM_MODULE' => 'ibus'
+    'GDM_LANG' => 'en_US.UTF-8'
+    'XAUTHORITY' => '/run/user/1000/gdm/Xauthority'
+    'DISPLAY' => ':0'
+    'COLORTERM' => 'truecolor'
+    'XMODIFIERS' => '@im=ibus'
+    'USERNAME' => 'asfian99'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1637210879.1168
+    'REQUEST_TIME' => 1637210879
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2021-11-18 04:50:20 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php:93
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Component.php(628): call_user_func()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Controller.php(216): yii\base\Controller->beforeAction()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(179): yii\web\Controller->beforeAction()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-18 04:50:20 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'f10643fe830ad307c397123912f57d18dba3ccb4f214c2dfacc5912d3ae5362ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tgYuSqRveatL58E92aFRGL9PPEPA7K8T\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36584'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=f10643fe830ad307c397123912f57d18dba3ccb4f214c2dfacc5912d3ae5362ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tgYuSqRveatL58E92aFRGL9PPEPA7K8T%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637211020.0691
+    'REQUEST_TIME' => 1637211020
+]
+2021-11-18 04:50:30 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php:93
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Component.php(628): call_user_func()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Controller.php(216): yii\base\Controller->beforeAction()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(179): yii\web\Controller->beforeAction()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-18 04:50:30 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'c4d824f44e72e44bf8b9b348228f994e4a0d161e8e189a7ff79c2dc4af9bf7fda:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"EXyCATIKLUVLDLnb7dmqncyBFfvD2y1S\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36590'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=c4d824f44e72e44bf8b9b348228f994e4a0d161e8e189a7ff79c2dc4af9bf7fda%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22EXyCATIKLUVLDLnb7dmqncyBFfvD2y1S%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637211030.8226
+    'REQUEST_TIME' => 1637211030
+]
+2021-11-18 04:50:45 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php:93
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Component.php(628): call_user_func()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Controller.php(216): yii\base\Controller->beforeAction()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(179): yii\web\Controller->beforeAction()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-18 04:50:45 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '4ee8d7f0b16ac48cbd554d3be0b6778fba08a8cceda57762b59861ceeeec7721a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"pCcCtCqY1aoi-EZqkpKXDv8CYDitUCCI\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36594'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=4ee8d7f0b16ac48cbd554d3be0b6778fba08a8cceda57762b59861ceeeec7721a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22pCcCtCqY1aoi-EZqkpKXDv8CYDitUCCI%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637211045.6028
+    'REQUEST_TIME' => 1637211045
+]
+2021-11-18 04:51:13 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php:93
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Component.php(628): call_user_func()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Controller.php(216): yii\base\Controller->beforeAction()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(179): yii\web\Controller->beforeAction()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-18 04:51:13 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '247e6fda74833b256dfa733864a7b948e3bda1d2fe44ef0c4f1ed1be224cd439a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ayztSyiIzBXyHh4Wt0AV_HMPTzf1Rxh5\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '36602'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items'
+    'PHP_SELF' => '/index.php/api/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=247e6fda74833b256dfa733864a7b948e3bda1d2fe44ef0c4f1ed1be224cd439a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ayztSyiIzBXyHh4Wt0AV_HMPTzf1Rxh5%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637211073.0385
+    'REQUEST_TIME' => 1637211073
+]

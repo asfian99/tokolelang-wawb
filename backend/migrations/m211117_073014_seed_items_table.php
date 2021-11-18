@@ -23,15 +23,17 @@ class m211117_073014_seed_items_table extends Migration
                 'items',
                 [
                     'account_id'    => 1,
-                    'name'          => $faker->text(6),
+                    'name'          => $faker->realText(25),
                     'description'   => $faker->paragraph(3),
                     'open_bid'      => ((int)$faker->randomNumber(4, true)) * 1000,
-                    'closing_time'  => $faker->unixTime,
-                    'fundraising'   => (int)$faker->randomElement([1,2]),
+                    'closing_time'  => time() + 1209600,
+                    'fundraising'   => (int)$faker->randomElement([0,1]),
                     'is_cancelled'  => 0,
                     'event'         => '-',
                     'location'      => $faker->city,
-                    'bid_ratio'     => $faker->randomNumber(3) * 1000
+                    'bid_ratio'     => $faker->randomNumber(3) * 1000,
+                    'created_at'    => time(), 
+                    'updated_at'    => time()
                 ]
             );
         }
