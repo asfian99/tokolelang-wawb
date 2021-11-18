@@ -5,13 +5,13 @@ import {
 } from "next";
 import React from "react";
 import nookies from "nookies";
-import Products from "../components/lelangTerbuka/Products";
+import Products from "../../components/lelangTerbuka/Products";
 import Head from "next/head";
 import { useQuery } from "react-query";
-import { getItems } from "../lib/queries/itemQueries";
-import Loading from "../components/pageStatus/Loading";
+import { getItems } from "../../lib/queries/itemQueries";
+import Loading from "../../components/pageStatus/Loading";
 import { AxiosError } from "axios";
-import { PostItemResponse } from "../lib/mutations/itemMutations";
+import { PostItemResponse } from "../../lib/mutations/itemMutations";
 
 const LelangTerbuka: NextPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>

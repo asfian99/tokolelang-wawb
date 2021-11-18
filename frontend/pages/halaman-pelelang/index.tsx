@@ -2,8 +2,8 @@ import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 import Head from "next/head";
 import nookies from "nookies";
-import LelangBaruButton from "../components/halamanPelelang/lelangBaru/LelangBaruButton";
-import DilelangkanTable from "../components/halamanPelelang/DilelangkanTable";
+import LelangBaruButton from "../../components/halamanPelelang/lelangBaru/LelangBaruButton";
+import DilelangkanTable from "../../components/halamanPelelang/DilelangkanTable";
 
 export interface DilelangkanInterface {
   id: number;

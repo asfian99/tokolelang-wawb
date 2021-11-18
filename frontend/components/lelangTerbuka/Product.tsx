@@ -5,6 +5,8 @@ import { ClockIcon, LocationMarkerIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
 import { formatDate, formatTime } from "../../lib/formatDateTime";
+import { formatRupiah } from "../../lib/formatCurrency";
+import { formatSlug } from "../../lib/formatString";
 
 interface ProductProps {
   data: PostItemResponse;
@@ -14,7 +16,7 @@ const Product = ({ data }: ProductProps) => {
   const router = useRouter();
   const onClick = () => {
     console.log("porduct");
-    router.push(`/lelang-terbuka/${"1"}`);
+    router.push(`/lelang-terbuka/${formatSlug(data.name, data.id)}`);
   };
 
   return (
@@ -46,7 +48,7 @@ const Product = ({ data }: ProductProps) => {
       <div className="flex flex-col items-start justify-between w-full gap-2 text-sm">
         <div className="flex flex-row items-start justify-between w-full gap-4">
           <p>Dibuka</p>
-          <h4>Rp {data.open_bid}</h4>
+          <h4>{formatRupiah(data.open_bid)}</h4>
         </div>
         {/* <div className="flex flex-row items-end justify-between w-full gap-4 ">
           <h4>|</h4>

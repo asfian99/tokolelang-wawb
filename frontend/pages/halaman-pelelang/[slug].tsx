@@ -72,7 +72,7 @@ const ProductDilelangkanDetail: NextPage = () => {
           </div>
 
           <div className="flex flex-col pr-8 mb-4">
-            <ProductInfo />
+            {/* <ProductInfo /> */}
             <BuatPenawaranButton />
           </div>
         </div>

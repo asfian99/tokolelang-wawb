@@ -9,9 +9,7 @@ interface ProductsProps {
 const Products = ({ data }: ProductsProps) => {
   return (
     <div className="grid grid-cols-4 gap-4 mt-4">
-      {data.map((item) => (
-        <Product key={item.id} data={item} />
-      ))}
+      {data && data?.map((item) => <Product key={item.id} data={item} />)}
     </div>
   );
 };
