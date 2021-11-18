@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import PlaceholderImg from "../../assets/placeholder-img.png";
 import { ClockIcon, LocationMarkerIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
@@ -8,11 +7,14 @@ import { formatDate, formatTime } from "../../lib/formatDateTime";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { formatSlug } from "../../lib/formatString";
 import { PostImageResponse } from "../../lib/mutations/imageMutations";
+import { rgbDataURL } from "../../lib/formatImage";
 
 interface ProductProps {
   data: PostItemResponse;
   images: PostImageResponse[];
 }
+
+const placeholderImg = "/uploads/item_placeholder.png";
 
 const Product = ({ data, images }: ProductProps) => {
   const router = useRouter();
@@ -28,14 +30,14 @@ const Product = ({ data, images }: ProductProps) => {
       <Image
         className="border border-gray-300 cursor-pointer rounded-xl"
         onClick={onClick}
-        src={images.length > 0 ? images[0].link : PlaceholderImg}
+        src={images.length > 0 ? images[0].link : placeholderImg}
         alt="placeholderImage"
         height="400"
         width="400"
         objectFit="cover"
         layout="responsive"
-        // placeholder="blur"
-        // blurDataURL={}
+        placeholder="blur"
+        blurDataURL={rgbDataURL(220, 220, 220)}
         priority
       />
       <h2

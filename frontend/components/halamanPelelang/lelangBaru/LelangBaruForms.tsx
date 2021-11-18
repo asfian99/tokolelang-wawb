@@ -1,9 +1,26 @@
-import React, { Dispatch, SetStateAction, Fragment } from "react";
+import React, { Dispatch, SetStateAction, Fragment, useState } from "react";
 import { Dialog } from "@headlessui/react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
 import Link from "next/link";
 import * as yup from "yup";
+import {
+  postItemImage,
+  uploadImage,
+} from "../../../lib/mutations/imageMutations";
+import { useMutation } from "react-query";
+import { AxiosError } from "axios";
+import type {
+  PostImageInputs,
+  PostImageResponse,
+} from "../../../lib/mutations/imageMutations";
+import { getTimeStamp } from "../../../lib/timestamp";
+import {
+  postItem,
+  PostItemInputs,
+  PostItemResponse,
+} from "../../../lib/mutations/itemMutations";
+import { formatUnixTime } from "../../../lib/formatDateTime";
 
 interface LelangBaruFormsProps {
   isAccept: boolean;
@@ -15,6 +32,7 @@ interface InputType {
   name: string;
   description: string;
   open_bid: number;
+  bid_ratio: number;
   closing_time: string;
   fundraising: boolean;
   event: string;
@@ -25,6 +43,7 @@ const schema = yup.object({
   name: yup.string().required(),
   description: yup.string().required(),
   open_bid: yup.number().positive().integer().required(),
+  bid_ratio: yup.number().positive().integer().required(),
   closing_time: yup.string().required(),
   fundraising: yup.boolean().required(),
   location: yup.string().required(),
@@ -37,10 +56,75 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
     resolver: yupResolver(schema),
   });
   const { errors } = formState;
+  const fileInputRef = React.useRef<HTMLInputElement | null>(null);
+  const formRef = React.useRef<HTMLFormElement | null>(null);
+  const [img, setImg] = useState<FormData>();
+  const [reqStatus, setReqStatus] = useState({ loading: false, error: false });
+
+  const itemMutation = useMutation<
+    PostItemResponse,
+    AxiosError,
+    PostItemInputs
+  >((data) => postItem(data));
+  const imageMutation = useMutation<
+    PostImageResponse,
+    AxiosError,
+    PostImageInputs
+  >((data) => postItemImage(data));
+
+  const onChange = async (formData: FormData, iid: number) => {
+    const res = uploadImage(formData).then((data) => {
+      console.log("response", data);
+
+      const newImage = { item_id: iid, link: data.path };
+      imageMutation.mutate(newImage, {
+        onError: (error) => {
+          console.log(error.message);
+          setReqStatus({ loading: false, error: true });
+        },
+        onSuccess: (data) => {
+          console.log(data);
+          closeThisModal();
+
+          setReqStatus({ loading: false, error: false });
+        },
+      });
+    });
+  };
+
+  const onClickHandler = () => {
+    fileInputRef.current?.click();
+  };
+  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+    if (!event.target.files?.length) {
+      return;
+    }
+
+    const formData = new FormData();
+    Array.from(event.target.files).forEach((file) => {
+      formData.append(event.target.name, file);
+    });
+
+    setImg(formData);
+    formRef.current?.reset();
+  };
 
   const onSubmit: SubmitHandler<InputType> = (data) => {
+    setReqStatus({ loading: true, error: false });
     console.log(data);
-    console.log(new Date(data.closing_time).getTime());
+
+    if (img) {
+      itemMutation.mutate(data, {
+        onError: (error) => {
+          console.log(error.message);
+          setReqStatus({ loading: false, error: true });
+        },
+        onSuccess: async (data) => {
+          console.log(data);
+          onChange(img, data.id);
+        },
+      });
+    }
   };
 
   return (
@@ -161,6 +245,32 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
                 </label>
               </div>
 
+              {/* KELIPATAN PENAWARAN */}
+              <div>
+                <label
+                  htmlFor="kelipatanPenawaran"
+                  className="block mb-2 text-sm font-medium text-gray-900"
+                >
+                  Kelipatan Penawaran
+                </label>
+                <div className="flex">
+                  <span className="inline-flex items-center px-3 text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-lg sm:text-sm">
+                    Rp
+                  </span>
+                  <input
+                    type="number"
+                    id="kelipatanPenawaran"
+                    placeholder="0"
+                    className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                    {...register("bid_ratio")}
+                  />
+                </div>
+                {errors.bid_ratio && (
+                  <p className="m-1 text-sm text-red-600">
+                    Nilai Harga Invalid
+                  </p>
+                )}
+              </div>
               {/* LOKASI */}
               <div>
                 <label
@@ -195,6 +305,25 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
                   placeholder="Event (optional)"
                   className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
                   {...register("event")}
+                />
+              </div>
+              {/* IMAGE */}
+              <div>
+                <label
+                  className="block mb-2 text-sm font-medium text-gray-900"
+                  htmlFor="item_image"
+                  onClick={onClickHandler}
+                >
+                  Upload Foto Barang
+                </label>
+                <input
+                  className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none focus:border-transparent"
+                  aria-describedby="item_image_help"
+                  name="itemImage"
+                  id="item_image"
+                  type="file"
+                  onChange={onChangeHandler}
+                  ref={fileInputRef}
                 />
               </div>
             </div>

@@ -1,11 +1,9 @@
 import { GetServerSideProps, NextPage } from "next";
 import React, { useState } from "react";
 import Head from "next/head";
-import Image from "next/image";
 import nookies from "nookies";
 import LelangBaruButton from "../../components/halamanPelelang/lelangBaru/LelangBaruButton";
 import DilelangkanTable from "../../components/halamanPelelang/DilelangkanTable";
-import { uploadImage } from "../../lib/mutations/imageMutations";
 
 export interface DilelangkanInterface {
   id: number;
@@ -81,36 +79,6 @@ const data = [
 ];
 
 const HalamanPelelang: NextPage = () => {
-  const fileInputRef = React.useRef<HTMLInputElement | null>(null);
-  const formRef = React.useRef<HTMLFormElement | null>(null);
-
-  const [res, setRes] = useState("");
-
-  const onChange = async (formData: FormData) => {
-    const res = await uploadImage(formData);
-    console.log("response", res.data);
-    setRes(res.data.path);
-  };
-
-  const onClickHandler = () => {
-    fileInputRef.current?.click();
-  };
-  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (!event.target.files?.length) {
-      return;
-    }
-
-    const formData = new FormData();
-
-    Array.from(event.target.files).forEach((file) => {
-      formData.append(event.target.name, file);
-    });
-
-    onChange(formData);
-
-    formRef.current?.reset();
-  };
-
   return (
     <>
       <Head>
@@ -131,32 +99,14 @@ const HalamanPelelang: NextPage = () => {
           <DilelangkanTable data={data} />
         </div>
 
-        <div className="my-8">
+        {/* <div className="my-8">
           <form>
-            <label
-              className="block mb-2 text-sm font-medium text-gray-900"
-              htmlFor="item_image"
-              onClick={onClickHandler}
-            >
-              Upload file
-            </label>
-            <input
-              className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none focus:border-transparent"
-              aria-describedby="item_image_help"
-              name="itemImage"
-              id="item_image"
-              type="file"
-              onChange={onChangeHandler}
-              ref={fileInputRef}
-            />
-            <div className="mt-1 text-sm text-gray-500" id="item_image_help">
-              Upload gambar barang disini
-            </div>
+         
           </form>
-        </div>
+        </div> */}
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        {res && <Image src={res} alt="me" width="200" height="200" />}
+        {/* {res && <Image src={res} alt="me" width="200" height="200" />} */}
       </div>
     </>
   );

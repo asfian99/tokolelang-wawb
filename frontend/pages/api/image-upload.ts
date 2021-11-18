@@ -37,7 +37,7 @@ apiRoute.post((req: FileUploadRequest, res: NextApiResponse) => {
   // console.log(req.file.originalname);
   res
     .status(200)
-    .json({ data: "success", path: "/uploads/" + req.file.filename });
+    .json({ status: "success", path: "/uploads/" + req.file.filename });
 });
 
 export default apiRoute;
