@@ -1,6 +1,7 @@
 import axios from "axios";
 import { parseCookies } from "nookies";
 import { formatUnixTime, getTimeStamp } from "../formatDateTime";
+import { API_URL } from "../url";
 import { LoginResponse } from "./authMutations";
 
 export interface PostItemInputs {
@@ -37,7 +38,7 @@ export const postItem = async (input: PostItemInputs) => {
       created_at: ts,
       updated_at: ts,
     };
-    const res = await axios.post("http://localhost:8080/api/items", req, {
+    const res = await axios.post(`${API_URL}/items`, req, {
       headers: { Authorization: `Bearer ${access_token}` },
     });
 

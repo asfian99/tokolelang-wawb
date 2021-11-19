@@ -1,4 +1,5 @@
 import axios from "axios";
+import { API_URL } from "../url";
 
 export type LoginInputs = {
   username: string;
@@ -20,13 +21,13 @@ export type RegisterInputs = {
 export type RegisterResponse = LoginResponse;
 
 export const postLogin = async (data: LoginInputs) => {
-  const res = await axios.post("http://localhost:8080/api/user/login", data);
+  const res = await axios.post(`${API_URL}/user/login`, data);
 
   return res.data;
 };
 
 export const postRegister = async (data: RegisterInputs) => {
-  const res = await axios.post("http://localhost:8080/api/user/register", data);
+  const res = await axios.post(`${API_URL}/user/register`, data);
 
   return res.data;
 };

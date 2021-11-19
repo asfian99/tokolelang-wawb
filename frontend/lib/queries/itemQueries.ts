@@ -1,8 +1,9 @@
 import axios from "axios";
 import { LoginResponse } from "../mutations/authMutations";
+import { API_URL } from "../url";
 
 export const getItems = async (data: LoginResponse) => {
-  const res = await axios.get("http://localhost:8080/api/items", {
+  const res = await axios.get(`${API_URL}/items`, {
     headers: { Authorization: `Bearer ${data.access_token}` },
   });
 
@@ -18,7 +19,7 @@ export const getItemDetail = async (
     if (Array.isArray(slug)) id = slug.join().split("_");
     else id = slug.split("_");
 
-    const res = await axios.get(`http://localhost:8080/api/items/${id[1]}`, {
+    const res = await axios.get(`${API_URL}/items/${id[1]}`, {
       headers: { Authorization: `Bearer ${data.access_token}` },
     });
 

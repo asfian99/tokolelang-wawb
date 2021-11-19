@@ -1,9 +1,10 @@
 import axios from "axios";
 import { LoginResponse } from "../mutations/authMutations";
 import { PostImageResponse } from "../mutations/imageMutations";
+import { API_URL } from "../url";
 
 export const getImages = async (data: LoginResponse) => {
-  const res = await axios.get("http://localhost:8080/api/images", {
+  const res = await axios.get(`${API_URL}/images`, {
     headers: { Authorization: `Bearer ${data.access_token}` },
   });
 
@@ -15,7 +16,7 @@ export const getItemImages = async (
   itemId: string | number
 ) => {
   if (itemId) {
-    const res = await axios.get(`http://localhost:8080/api/images`, {
+    const res = await axios.get(`${API_URL}/images`, {
       headers: { Authorization: `Bearer ${data.access_token}` },
     });
 

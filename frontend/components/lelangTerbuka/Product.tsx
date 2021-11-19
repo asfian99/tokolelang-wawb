@@ -8,6 +8,7 @@ import { formatRupiah } from "../../lib/formatCurrency";
 import { formatSlug } from "../../lib/formatString";
 import { PostImageResponse } from "../../lib/mutations/imageMutations";
 import { rgbDataURL } from "../../lib/formatImage";
+import { IMAGE_URL } from "../../lib/url";
 
 interface ProductProps {
   data: PostItemResponse;
@@ -25,12 +26,13 @@ const Product = ({ data, images }: ProductProps) => {
 
   // console.log(images);
 
+  const img = images.length > 0 ? IMAGE_URL + "/w_400" + images[0].link : "";
   return (
     <div className="p-5 border border-gray-300 rounded-xl group hover:bg-gray-50">
       <Image
         className="border border-gray-300 cursor-pointer rounded-xl"
         onClick={onClick}
-        src={images.length > 0 ? images[0].link : placeholderImg}
+        src={images.length ? img : placeholderImg}
         alt="placeholderImage"
         height="400"
         width="400"

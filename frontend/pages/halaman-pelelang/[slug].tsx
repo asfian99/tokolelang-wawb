@@ -3,7 +3,6 @@ import Head from "next/head";
 import React from "react";
 import nookies from "nookies";
 import Image from "next/image";
-import PlaceholderImg from "../../assets/placeholder-img.png";
 import ProductInfo from "../../components/productDetail/ProductInfo";
 import BuatPenawaranButton from "../../components/productDetail/BuatPenawaranButton";
 import LelangTable from "../../components/productDetail/LelangTable";
@@ -49,6 +48,8 @@ const productPenawaran: PenawaranInterface[] = [
   },
 ];
 
+const placeholderImg = "/uploads/item_placeholder.png";
+
 const ProductDilelangkanDetail: NextPage = () => {
   return (
     <>
@@ -63,7 +64,7 @@ const ProductDilelangkanDetail: NextPage = () => {
           <div className="my-4 mr-2">
             <Image
               className="border border-gray-300 cursor-pointer rounded-2xl"
-              src={PlaceholderImg}
+              src={placeholderImg}
               alt="placeholderImageDetail"
               height="400"
               width="540"

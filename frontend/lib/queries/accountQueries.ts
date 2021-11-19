@@ -1,5 +1,6 @@
 import axios from "axios";
 import type { LoginResponse } from "../mutations/authMutations";
+import { API_URL } from "../url";
 
 export type AccountResponse = {
   id: number;
@@ -14,7 +15,7 @@ export type AccountResponse = {
 };
 
 export const getAccountDetail = async (data: LoginResponse) => {
-  const res = await axios.get("http://localhost:8080/api/accounts", {
+  const res = await axios.get(`${API_URL}/accounts`, {
     headers: { Authorization: `Bearer ${data.access_token}` },
   });
 

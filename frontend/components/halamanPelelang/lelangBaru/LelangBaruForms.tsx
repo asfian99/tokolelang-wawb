@@ -21,6 +21,7 @@ import {
   PostItemResponse,
 } from "../../../lib/mutations/itemMutations";
 import { formatUnixTime } from "../../../lib/formatDateTime";
+import UploadImage from "../../forms/UploadImage";
 
 interface LelangBaruFormsProps {
   isAccept: boolean;
@@ -58,8 +59,8 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
   const { errors } = formState;
   const fileInputRef = React.useRef<HTMLInputElement | null>(null);
   const formRef = React.useRef<HTMLFormElement | null>(null);
-  const [img, setImg] = useState<FormData>();
   const [reqStatus, setReqStatus] = useState({ loading: false, error: false });
+  const [selectedImg, setSelectedImg] = useState();
 
   const itemMutation = useMutation<
     PostItemResponse,
@@ -72,48 +73,68 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
     PostImageInputs
   >((data) => postItemImage(data));
 
-  const onChange = async (formData: FormData, iid: number) => {
-    const res = uploadImage(formData).then((data) => {
-      console.log("response", data);
+  const upload = async (iid: number) => {
+    if (!selectedImg) return;
+    const reader = new FileReader();
+    reader.readAsDataURL(selectedImg);
 
-      const newImage = { item_id: iid, link: data.path };
-      imageMutation.mutate(newImage, {
-        onError: (error) => {
-          console.log(error.message);
-          setReqStatus({ loading: false, error: true });
-        },
-        onSuccess: (data) => {
-          console.log(data);
-          closeThisModal();
+    reader.onloadend = () => {
+      uploadImage(reader.result).then((data) => {
+        setSelectedImg(undefined);
+        console.log(data.path);
 
-          setReqStatus({ loading: false, error: false });
-        },
+        const newImage = { item_id: iid, link: data.path };
+        imageMutation.mutate(newImage, {
+          onError: (error) => {
+            console.log(error.message);
+            setReqStatus({ loading: false, error: true });
+          },
+          onSuccess: (data) => {
+            console.log(data);
+            closeThisModal();
+            setReqStatus({ loading: false, error: false });
+          },
+        });
       });
-    });
+    };
+    // const res = uploadImage(formData).then((data) => {
+    //   console.log("response", data);
+
+    //   const newImage = { item_id: iid, link: data.path };
+    //   imageMutation.mutate(newImage, {
+    //     onError: (error) => {
+    //       console.log(error.message);
+    //       setReqStatus({ loading: false, error: true });
+    //     },
+    //     onSuccess: (data) => {
+    //       console.log(data);
+    //       closeThisModal();
+
+    //       setReqStatus({ loading: false, error: false });
+    //     },
+    //   });
+    // });
   };
 
-  const onClickHandler = () => {
-    fileInputRef.current?.click();
-  };
-  const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-    if (!event.target.files?.length) {
-      return;
-    }
+  // const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+  //   if (!event.target.files?.length) {
+  //     return;
+  //   }
 
-    const formData = new FormData();
-    Array.from(event.target.files).forEach((file) => {
-      formData.append(event.target.name, file);
-    });
+  //   const formData = new FormData();
+  //   Array.from(event.target.files).forEach((file) => {
+  //     formData.append(event.target.name, file);
+  //   });
 
-    setImg(formData);
-    formRef.current?.reset();
-  };
+  //   setImg(formData);
+  //   formRef.current?.reset();
+  // };
 
   const onSubmit: SubmitHandler<InputType> = (data) => {
     setReqStatus({ loading: true, error: false });
     console.log(data);
 
-    if (img) {
+    if (selectedImg) {
       itemMutation.mutate(data, {
         onError: (error) => {
           console.log(error.message);
@@ -121,7 +142,7 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
         },
         onSuccess: async (data) => {
           console.log(data);
-          onChange(img, data.id);
+          upload(data.id);
         },
       });
     }
@@ -307,25 +328,9 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
                   {...register("event")}
                 />
               </div>
+
               {/* IMAGE */}
-              <div>
-                <label
-                  className="block mb-2 text-sm font-medium text-gray-900"
-                  htmlFor="item_image"
-                  onClick={onClickHandler}
-                >
-                  Upload Foto Barang
-                </label>
-                <input
-                  className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none focus:border-transparent"
-                  aria-describedby="item_image_help"
-                  name="itemImage"
-                  id="item_image"
-                  type="file"
-                  onChange={onChangeHandler}
-                  ref={fileInputRef}
-                />
-              </div>
+              <UploadImage img={{ selectedImg, setSelectedImg }} />
             </div>
           </form>
 
@@ -364,7 +369,7 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
           disabled={!isAccept}
           className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-primary hover:bg-blue-600 focus:outline-none disabled:bg-blue-300 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
         >
-          Buat Lelang Baru
+          {reqStatus.loading ? "Loading" : "Buat Lelang Baru"}
         </button>
       </div>
     </>

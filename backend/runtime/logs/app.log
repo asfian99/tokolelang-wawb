@@ -8657,3 +8657,99 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1637238433.9641
     'REQUEST_TIME' => 1637238433
 ]
+2021-11-18 16:15:23 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php:93
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure()
+#1 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/filters/auth/CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction()
+#5 [internal function]: yii\base\ActionFilter->beforeFilter()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Component.php(628): call_user_func()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(300): yii\base\Component->trigger()
+#8 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Controller.php(216): yii\base\Controller->beforeAction()
+#9 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(179): yii\web\Controller->beforeAction()
+#10 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#11 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#12 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#13 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-18 16:15:23 [::1][-][-][info][application] $_GET = [
+    'id' => '13'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '41ccd186c01fb66baae0a1ad373dc5772789bb792ff549b2ac7613d01f18110ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"zObl6WpiBMjqN7hBErL4pYa6atNgv5SD\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '33416'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/13'
+    'REQUEST_METHOD' => 'DELETE'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/13'
+    'PHP_SELF' => '/index.php/api/items/13'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=41ccd186c01fb66baae0a1ad373dc5772789bb792ff549b2ac7613d01f18110ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22zObl6WpiBMjqN7hBErL4pYa6atNgv5SD%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637252123.2179
+    'REQUEST_TIME' => 1637252123
+]
+2021-11-19 10:39:22 [::1][1][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 23 in /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/Action.php:104
+Stack trace:
+#0 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/rest/DeleteAction.php(30): yii\rest\Action->findModel()
+#1 [internal function]: yii\rest\DeleteAction->run()
+#2 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Action.php(94): call_user_func_array()
+#3 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Controller.php(181): yii\base\Action->runWithParams()
+#4 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Module.php(534): yii\base\Controller->runAction()
+#5 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/web/Application.php(104): yii\base\Module->runAction()
+#6 /home/asfian99/Documents/Project/TokoLelang/backend/vendor/yiisoft/yii2/base/Application.php(392): yii\web\Application->handleRequest()
+#7 /home/asfian99/Documents/Project/TokoLelang/backend/web/index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-19 10:39:22 [::1][1][-][info][application] $_GET = [
+    'id' => '23'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '6f93a6a3406621b040573a0ea5e5750b09aa651de865a24f1e7de6c0f500b957a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"VjUM5azS3Ea8TTe7k6u9olLX57t-LEVC\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => '/home/asfian99/Documents/Project/TokoLelang/backend/web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59892'
+    'SERVER_SOFTWARE' => 'PHP 8.0.13 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/23'
+    'REQUEST_METHOD' => 'DELETE'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => '/home/asfian99/Documents/Project/TokoLelang/backend/web/index.php'
+    'PATH_INFO' => '/api/items/23'
+    'PHP_SELF' => '/index.php/api/items/23'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=6f93a6a3406621b040573a0ea5e5750b09aa651de865a24f1e7de6c0f500b957a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22VjUM5azS3Ea8TTe7k6u9olLX57t-LEVC%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637318362.6696
+    'REQUEST_TIME' => 1637318362
+]

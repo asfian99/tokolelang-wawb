@@ -1,6 +1,7 @@
 import axios from "axios";
 import { parseCookies } from "nookies";
 import { getTimeStamp } from "../formatDateTime";
+import { API_URL } from "../url";
 import { LoginResponse } from "./authMutations";
 
 export interface PostImageInputs {
@@ -23,9 +24,12 @@ const cookie = parseCookies();
 const cValue = cookie.token ? cookie.token?.split("&") : ["", "", ""];
 const [access_token, id, username] = cValue;
 
-export const uploadImage = async (formData: any) => {
+export const uploadImage = async (
+  base64EncodedImg: string | ArrayBuffer | null
+) => {
+  console.log(base64EncodedImg);
   const config = {
-    headers: { "content-type": "multipart/form-data" },
+    // headers: { "content-type": "multipart/form-data" },
     onUploadProgress: (event: any) => {
       console.log(
         `Current progress:`,
@@ -34,9 +38,21 @@ export const uploadImage = async (formData: any) => {
     },
   };
 
-  const res = await axios.post("/api/image-upload", formData, config);
+  // const res = await axios.post("/api/image-upload", formData, config);
 
-  return res.data;
+  // return res.data;
+  try {
+    const res = await axios.post(
+      "/api/upload",
+      { data: base64EncodedImg },
+      config
+    );
+
+    return res.data;
+  } catch (err) {
+    console.error(err);
+    return err;
+  }
 };
 
 export const postItemImage = async (input: PostImageInputs) => {
@@ -46,7 +62,7 @@ export const postItemImage = async (input: PostImageInputs) => {
     return {};
   } else {
     const req = { ...input, created_at: ts, updated_at: ts };
-    const res = await axios.post("http://localhost:8080/api/images", req, {
+    const res = await axios.post(`${API_URL}/images`, req, {
       headers: { Authorization: `Bearer ${access_token}` },
     });
 
