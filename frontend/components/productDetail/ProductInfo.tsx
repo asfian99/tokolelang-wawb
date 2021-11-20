@@ -3,8 +3,13 @@ import { ClockIcon } from "@heroicons/react/outline";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { formatDate, formatTime } from "../../lib/formatDateTime";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { PostImageResponse } from "../../lib/mutations/imageMutations";
 
-const ProductInfo = (props: { data: PostItemResponse }) => {
+interface ProductInfoProps {
+  data: PostItemResponse;
+}
+
+const ProductInfo = (props: ProductInfoProps) => {
   const { data } = props;
   return (
     <div>

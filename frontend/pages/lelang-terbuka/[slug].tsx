@@ -17,6 +17,10 @@ import { PostItemResponse } from "../../lib/mutations/itemMutations";
 import { AxiosError } from "axios";
 import { getItemDetail } from "../../lib/queries/itemQueries";
 import Loading from "../../components/pageStatus/Loading";
+import { PostImageResponse } from "../../lib/mutations/imageMutations";
+import { getItemImages } from "../../lib/queries/imageQueries";
+import { IMAGE_URL } from "../../lib/url";
+import { rgbDataURL } from "../../lib/formatImage";
 
 export interface PenawaranInterface {
   id: number;
@@ -67,21 +71,24 @@ const ProductDetail: NextPage = (
   const { cookie } = props;
   const { slug } = query;
 
-  const { data, status } = useQuery<PostItemResponse, AxiosError>(
-    `itemDetail${slug}`,
-    () => getItemDetail(cookie, slug)
+  const item = useQuery<PostItemResponse, AxiosError>(`item_${slug}`, () =>
+    getItemDetail(cookie, slug)
+  );
+  const image = useQuery<PostImageResponse, AxiosError>(`image_${slug}`, () =>
+    getItemImages(cookie, slug)
   );
 
-  console.log(data);
+  console.log(image.data);
 
+  const img = image.data ? IMAGE_URL + "/w_540" + image.data.link : "";
   return (
     <>
       <Head>
-        <title>{data && data.name + " -"} TokoLelang</title>
+        <title>{item.data && item.data.name + " -"} TokoLelang</title>
       </Head>
-      {status === "loading" && <Loading />}
-      {status === "error" && <Loading />}
-      {data && (
+      {item.status === "loading" && <Loading />}
+      {item.status === "error" && <Loading />}
+      {item.data && (
         <div>
           <h2 className="mb-4 text-2xl font-semibold">Product Detail</h2>
 
@@ -89,17 +96,20 @@ const ProductDetail: NextPage = (
             <div className="my-4 mr-2">
               <Image
                 className="border border-gray-300 cursor-pointer rounded-2xl"
-                src={placeholderImg}
+                src={image.data ? img : placeholderImg}
                 alt="placeholderImageDetail"
                 height="400"
                 width="540"
                 objectFit="cover"
+                layout="responsive"
+                placeholder="blur"
+                blurDataURL={rgbDataURL(220, 220, 220)}
               />
             </div>
 
             <div className="flex flex-col pr-8 mb-4">
-              <ProductInfo data={data} />
-              <BuatPenawaranButton />
+              <ProductInfo data={item.data} />
+              <BuatPenawaranButton data={item.data} />
             </div>
           </div>
 

@@ -116,7 +116,17 @@ const Login: NextPage = () => {
                 disabled={reqStatus.loading}
                 className="py-2 mt-4 font-bold text-white bg-blue-500 rounded-lg disabled:bg-blue-300 hover:bg-blue-600 "
               >
-                {reqStatus.loading ? "Loading" : "Login"}
+                {reqStatus.loading ? (
+                  "Login"
+                ) : (
+                  <>
+                    <svg
+                      className="w-5 h-5 mr-3 animate-spin"
+                      viewBox="0 0 24 24"
+                    ></svg>
+                    Loading
+                  </>
+                )}
               </button>
 
               {/* Error */}

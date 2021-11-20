@@ -13,18 +13,22 @@ export const getImages = async (data: LoginResponse) => {
 
 export const getItemImages = async (
   data: LoginResponse,
-  itemId: string | number
+  slug: string | string[] | undefined
 ) => {
-  if (itemId) {
+  if (slug) {
+    let id = ["", ""];
+    if (Array.isArray(slug)) id = slug.join().split("_");
+    else id = slug.split("_");
+
     const res = await axios.get(`${API_URL}/images`, {
       headers: { Authorization: `Bearer ${data.access_token}` },
     });
 
     const itemImages = res.data.filter(
-      (item: PostImageResponse) => item.item_id === Number(itemId)
+      (item: PostImageResponse) => item.item_id === Number(id[1])
     );
 
-    return itemImages;
+    return itemImages[0];
   } else {
     return [];
   }

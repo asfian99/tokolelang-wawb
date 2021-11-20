@@ -1,8 +1,14 @@
 import clsx from "clsx";
 import React, { useState } from "react";
+import { formatRupiah } from "../../lib/formatCurrency";
+import { PostItemResponse } from "../../lib/mutations/itemMutations";
 import BuatPenawaranModal from "./BuatPenawaranModal";
 
-const BuatPenawaranButton = () => {
+interface BuatPenawaranButtonProps {
+  data: PostItemResponse;
+}
+
+const BuatPenawaranButton = (props: BuatPenawaranButtonProps) => {
   const [isExpired, setIsExpired] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
@@ -23,7 +29,7 @@ const BuatPenawaranButton = () => {
           {isExpired ? "Penawaran Berakhir" : "Buat Penawaran"}
         </button>
         <p className="w-1/2 my-2 text-xs font-medium text-center ">
-          Kelipatan Rp100.000
+          Kelipatan {formatRupiah(props.data.bid_ratio)}
         </p>
       </div>
 
