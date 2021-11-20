@@ -3,38 +3,38 @@ import Link from "next/link";
 import clsx from "clsx";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/outline";
 import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
-import { DilelangkanInterface } from "../../pages/halaman-pelelang";
 import DilelangkanDetailModal from "./DilelangkanDetailModal";
+import { PostItemResponse } from "../../lib/mutations/itemMutations";
 
 interface DilelangkanTableProps {
-  data: DilelangkanInterface[];
+  data: PostItemResponse[];
 }
 
 const DilelangkanTable = (props: DilelangkanTableProps) => {
-  const columns = useMemo<Column<DilelangkanInterface>[]>(
+  const columns = useMemo<Column<PostItemResponse>[]>(
     () => [
-      { Header: "Nama Barang", accessor: "name" as keyof DilelangkanInterface },
+      { Header: "Nama Barang", accessor: "name" as keyof PostItemResponse },
       {
         Header: "Harga Pembukaan",
-        accessor: "open_bid" as keyof DilelangkanInterface,
+        accessor: "open_bid" as keyof PostItemResponse,
       },
       {
         Header: "Waktu Penutupan",
-        accessor: "closing_time" as keyof DilelangkanInterface,
+        accessor: "closing_time" as keyof PostItemResponse,
       },
-      {
-        Header: "Penggalangan Dana",
-        accessor: "fundraising" as keyof DilelangkanInterface,
-      },
-      { Header: "Lokasi ", accessor: "location" as keyof DilelangkanInterface },
-      { Header: "Event", accessor: "event" as keyof DilelangkanInterface },
-      { Header: "Aksi", accessor: "action" as keyof DilelangkanInterface },
+      // {
+      //   Header: "Penggalangan Dana",
+      //   accessor: "fundraising" as keyof PostItemResponse,
+      // },
+      { Header: "Lokasi ", accessor: "location" as keyof PostItemResponse },
+      { Header: "Event", accessor: "event" as keyof PostItemResponse },
+      { Header: "Aksi", accessor: "action" as keyof PostItemResponse },
     ],
     []
   );
 
   const data = React.useMemo(() => {
-    const temp = props.data.map((item: DilelangkanInterface) => {
+    const temp = props.data?.map((item: PostItemResponse) => {
       const datetime = new Date(item.closing_time);
       return {
         ...item,
@@ -56,10 +56,10 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
     return temp;
   }, [props.data]);
 
-  // const initialState = { sortBy: [{ id: "bid", desc: true }] };
+  const initialState = { sortBy: [{ id: "closing_time", desc: true }] };
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     // @ts-ignore
-    useTable({ columns, data }, useGlobalFilter, useSortBy);
+    useTable({ columns, data, initialState }, useGlobalFilter, useSortBy);
 
   return (
     <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">

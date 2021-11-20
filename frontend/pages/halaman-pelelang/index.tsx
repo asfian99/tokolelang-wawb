@@ -1,9 +1,17 @@
-import { GetServerSideProps, NextPage } from "next";
+import {
+  GetServerSideProps,
+  InferGetServerSidePropsType,
+  NextPage,
+} from "next";
 import React, { useState } from "react";
 import Head from "next/head";
 import nookies from "nookies";
 import LelangBaruButton from "../../components/halamanPelelang/lelangBaru/LelangBaruButton";
 import DilelangkanTable from "../../components/halamanPelelang/DilelangkanTable";
+import { useQuery } from "react-query";
+import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { AxiosError } from "axios";
+import { getItems } from "../../lib/queries/itemQueries";
 
 export interface DilelangkanInterface {
   id: number;
@@ -78,7 +86,19 @@ const data = [
   },
 ];
 
-const HalamanPelelang: NextPage = () => {
+const HalamanPelelang: NextPage = (
+  props: InferGetServerSidePropsType<typeof getServerSideProps>
+) => {
+  const { cookie } = props;
+
+  const items = useQuery<PostItemResponse[], AxiosError>("items", () =>
+    getItems(cookie)
+  );
+
+  const userItems = items.data
+    ? items.data.filter((item) => item.account_id === cookie.id)
+    : [];
+
   return (
     <>
       <Head>
@@ -96,7 +116,7 @@ const HalamanPelelang: NextPage = () => {
         </div>
 
         <div className="flex flex-col mt-4">
-          <DilelangkanTable data={data} />
+          {items.data && <DilelangkanTable data={userItems} />}
         </div>
 
         {/* <div className="my-8">
@@ -126,7 +146,11 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
     };
   }
 
+  const cValue = cookies.token.split("&");
+  const [access_token, id, username] = cValue;
   return {
-    props: {},
+    props: {
+      cookie: { access_token, id: Number(id), username },
+    },
   };
 };

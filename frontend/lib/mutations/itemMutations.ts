@@ -15,6 +15,7 @@ export interface PostItemInputs {
   location: string;
 }
 export interface PostItemResponse extends PostItemInputs {
+  account_id?: number;
   id: number;
   created_at: number;
   updated_at: number;
