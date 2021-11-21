@@ -14,7 +14,7 @@ const Navbar = ({ user }: NavbarProps) => {
 
   return (
     <>
-      <div className="sticky top-0 z-10 grid items-center justify-between grid-cols-3 px-16 py-6 font-sans bg-white border-b-2 border-gray-300">
+      <div className="sticky top-0 z-10 grid items-center justify-between grid-cols-3 px-16 py-6 font-sans bg-white border-b border-gray-300">
         <div className="flex flex-row items-center justify-start gap-4">
           <Link href="/">
             <a className="mr-4 text-2xl font-bold text-blue-500">TokoLelang</a>

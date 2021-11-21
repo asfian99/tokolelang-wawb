@@ -5,6 +5,7 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/outline";
 import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
 import DilelangkanDetailModal from "./DilelangkanDetailModal";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { formatSlug } from "../../lib/formatString";
 
 interface DilelangkanTableProps {
   data: PostItemResponse[];
@@ -43,7 +44,7 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
         fundraising: item.fundraising ? "Ya" : "Tidak",
         event: item.event || "-",
         action: (
-          <Link href={`/halaman-pelelang/${item.id}`}>
+          <Link href={`/halaman-pelelang/${formatSlug(item.name, item.id)}`}>
             <a className="cursor-pointer text-primary hover:text-blue-600 hover:underline">
               Detail
             </a>

@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Avatar from "../../assets/avatar-default.png";
+import { rgbDataURL } from "../../lib/formatImage";
 import type { AccountResponse } from "../../lib/queries/accountQueries";
 
 interface UserProfileType extends AccountResponse {
@@ -11,16 +11,20 @@ interface UserProfileProps {
   data: UserProfileType;
 }
 
+const placeholderAvatar = "/uploads/avatar-default.png";
+
 const UserProfile = ({ data }: UserProfileProps) => {
   return (
     <div className="flex flex-row justify-between mb-6">
       <div className="w-1/3 ">
         <Image
           className="border border-gray-300 rounded-xl"
-          src={Avatar}
+          src={placeholderAvatar}
           alt="avatar"
           height="200"
           width="200"
+          placeholder="blur"
+          blurDataURL={rgbDataURL(220, 220, 220)}
         />
       </div>
       <div className="grid w-2/3 grid-cols-1 gap-y-8 md:grid-cols-2">
