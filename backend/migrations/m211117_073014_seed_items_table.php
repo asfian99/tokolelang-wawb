@@ -18,20 +18,20 @@ class m211117_073014_seed_items_table extends Migration
     private function insertFakeItems()
     {
         $faker = \Faker\Factory::create();
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 8; $i++) {
             $this->insert(
                 'items',
                 [
                     'account_id'    => 1,
-                    'name'          => $faker->realText(25),
+                    'name'          => $faker->realText(30),
                     'description'   => $faker->paragraph(3),
-                    'open_bid'      => ((int)$faker->randomNumber(4, true)) * 1000,
-                    'closing_time'  => time() + 1209600,
+                    'open_bid'      => ((int)$faker->randomNumber(3, true)) * 10000,
+                    'closing_time'  => 1639638848,
                     'fundraising'   => (int)$faker->randomElement([0,1]),
                     'is_cancelled'  => 0,
                     'event'         => '-',
                     'location'      => $faker->city,
-                    'bid_ratio'     => $faker->randomNumber(3) * 1000,
+                    'bid_ratio'     => ((int)$faker->randomNumber(3)) * 1000,
                     'created_at'    => time(), 
                     'updated_at'    => time()
                 ]

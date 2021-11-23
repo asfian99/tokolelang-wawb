@@ -20,7 +20,6 @@ const placeholderImg = "/uploads/item_placeholder.png";
 const Product = ({ data, images }: ProductProps) => {
   const router = useRouter();
   const onClick = () => {
-    console.log("porduct");
     router.push(`/lelang-terbuka/${formatSlug(data.name, data.id)}`);
   };
 
@@ -41,7 +40,6 @@ const Product = ({ data, images }: ProductProps) => {
           layout="responsive"
           placeholder="blur"
           blurDataURL={rgbDataURL(220, 220, 220)}
-          priority
         />
       </figure>
 

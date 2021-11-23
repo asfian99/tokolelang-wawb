@@ -80,7 +80,7 @@ const ProductDetail: NextPage = (
 
   console.log(image.data);
 
-  const img = image.data ? IMAGE_URL + "/w_540" + image.data.link : "";
+  const img = image.data ? IMAGE_URL + "/w_600" + image.data.link : "";
   return (
     <>
       <Head>

@@ -8753,3 +8753,244 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1637318362.6696
     'REQUEST_TIME' => 1637318362
 ]
+2021-11-22 08:12:30 [::1][-][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT EXISTS(S...')
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(436): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(446): yii\db\Command->queryScalar()
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\validators\UniqueValidator.php(187): yii\db\Query->exists()
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\validators\UniqueValidator.php(145): yii\validators\UniqueValidator->modelExists('\\app\\modules\\ap...', Array, Object(app\modules\api\models\RegisterForm))
+#6 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1126): call_user_func(Object(Closure), Object(yii\db\Connection))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\validators\UniqueValidator.php(146): yii\db\Connection->useMaster(Object(Closure))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\UniqueValidator->validateAttribute(Object(app\modules\api\models\RegisterForm), 'username')
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\RegisterForm), Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\modules\api\models\RegisterForm.php(42): yii\base\Model->validate()
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\modules\api\controllers\UserController.php(51): app\modules\api\models\RegisterForm->register()
+#13 [internal function]: app\modules\api\controllers\UserController->actionRegister()
+#14 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('register', Array)
+#17 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/regist...', Array)
+#18 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'wabw_pa_dev.users' doesn't exist
+The SQL being executed was: SELECT EXISTS(SELECT * FROM `users` WHERE `users`.`username`='asfian99') in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'SELECT EXISTS(S...')
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1168): yii\db\Command->internalExecute('SELECT EXISTS(S...')
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(436): yii\db\Command->queryInternal('fetchColumn', 0)
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Query.php(446): yii\db\Command->queryScalar()
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\validators\UniqueValidator.php(187): yii\db\Query->exists()
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\validators\UniqueValidator.php(145): yii\validators\UniqueValidator->modelExists('\\app\\modules\\ap...', Array, Object(app\modules\api\models\RegisterForm))
+#6 [internal function]: yii\validators\UniqueValidator->yii\validators\{closure}(Object(yii\db\Connection))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Connection.php(1126): call_user_func(Object(Closure), Object(yii\db\Connection))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\validators\UniqueValidator.php(146): yii\db\Connection->useMaster(Object(Closure))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\validators\Validator.php(261): yii\validators\UniqueValidator->validateAttribute(Object(app\modules\api\models\RegisterForm), 'username')
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Model.php(368): yii\validators\Validator->validateAttributes(Object(app\modules\api\models\RegisterForm), Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\modules\api\models\RegisterForm.php(42): yii\base\Model->validate()
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\modules\api\controllers\UserController.php(51): app\modules\api\models\RegisterForm->register()
+#13 [internal function]: app\modules\api\controllers\UserController->actionRegister()
+#14 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#15 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#16 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('register', Array)
+#17 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/user/regist...', Array)
+#18 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#20 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'wabw_pa_dev.users' doesn't exist
+)
+
+2021-11-22 08:12:30 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'f10643fe830ad307c397123912f57d18dba3ccb4f214c2dfacc5912d3ae5362ca:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"tgYuSqRveatL58E92aFRGL9PPEPA7K8T\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63269'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/user/register'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/user/register'
+    'PHP_SELF' => '/index.php/api/user/register'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=f10643fe830ad307c397123912f57d18dba3ccb4f214c2dfacc5912d3ae5362ca%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22tgYuSqRveatL58E92aFRGL9PPEPA7K8T%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '76'
+    'HTTP_CONTENT_LENGTH' => '76'
+    'REQUEST_TIME_FLOAT' => 1637565150.484
+    'REQUEST_TIME' => 1637565150
+]
+2021-11-22 08:17:07 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\CreateAction))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\CreateAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\CreateAction))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\CreateAction))
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/cre...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-22 08:17:07 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '93d1ab6c1b2c1ea94a10f62a7984ef287164a434b0abdb5dff8a0b788ee784dea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"dJqpDWaHFAvgsEvLD5vCtvC2Z_1R80-l\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55262'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=93d1ab6c1b2c1ea94a10f62a7984ef287164a434b0abdb5dff8a0b788ee784dea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22dJqpDWaHFAvgsEvLD5vCtvC2Z_1R80-l%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '134'
+    'HTTP_CONTENT_LENGTH' => '134'
+    'REQUEST_TIME_FLOAT' => 1637565427.722
+    'REQUEST_TIME' => 1637565427
+]
+2021-11-22 08:18:52 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/index', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-22 08:18:52 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '3fec18279de5c8f567e758c4e2ccd78a537549ee3ece3f27213dc2dfae5de153a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"MfRGDLr7LEqSH081A-Xav_5w7agg9Fxt\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55331'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items'
+    'PHP_SELF' => '/index.php/api/items'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=3fec18279de5c8f567e758c4e2ccd78a537549ee3ece3f27213dc2dfae5de153a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22MfRGDLr7LEqSH081A-Xav_5w7agg9Fxt%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637565532.5773
+    'REQUEST_TIME' => 1637565532
+]
+2021-11-22 08:20:17 [::1][-][-][error][yii\web\HttpException:405] yii\web\MethodNotAllowedHttpException: Method Not Allowed. This URL can only handle the following request methods: GET, HEAD. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\VerbFilter.php:108
+Stack trace:
+#0 [internal function]: yii\filters\VerbFilter->beforeAction(Object(yii\base\ActionEvent))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('', Array)
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/image', Array)
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#9 {main}
+2021-11-22 08:20:17 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'f79ec9d7e95346d9d25cae2a6e908f8294a1cf3602a9f9ef5ae70aa5690af4cba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"233WsjJwevJl2_1FRIX96A1me86tSUmN\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '55344'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/image'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/image'
+    'PHP_SELF' => '/index.php/api/image'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=f79ec9d7e95346d9d25cae2a6e908f8294a1cf3602a9f9ef5ae70aa5690af4cba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22233WsjJwevJl2_1FRIX96A1me86tSUmN%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '130'
+    'HTTP_CONTENT_LENGTH' => '130'
+    'REQUEST_TIME_FLOAT' => 1637565617.8766
+    'REQUEST_TIME' => 1637565617
+]
