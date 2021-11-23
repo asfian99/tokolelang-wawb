@@ -4,7 +4,7 @@ import Link from "next/link";
 const LoginRegisterSection = () => {
   return (
     <>
-      <Link href="/signup">
+      <Link href="/register">
         <a className="px-6 py-2 font-bold text-blue-500 bg-blue-100 rounded-lg hover:bg-blue-200 ">
           Daftar
         </a>

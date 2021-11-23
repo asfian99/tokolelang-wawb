@@ -20,7 +20,7 @@ import {
   PostItemInputs,
   PostItemResponse,
 } from "../../../lib/mutations/itemMutations";
-import { formatUnixTime } from "../../../lib/formatDateTime";
+// import { formatUnixTime } from "../../../lib/formatDateTime";
 import UploadImage from "../../forms/UploadImage";
 
 interface LelangBaruFormsProps {
@@ -57,8 +57,8 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
     resolver: yupResolver(schema),
   });
   const { errors } = formState;
-  const fileInputRef = React.useRef<HTMLInputElement | null>(null);
-  const formRef = React.useRef<HTMLFormElement | null>(null);
+  // const fileInputRef = React.useRef<HTMLInputElement | null>(null);
+  // const formRef = React.useRef<HTMLFormElement | null>(null);
   const [reqStatus, setReqStatus] = useState({ loading: false, error: false });
   const [selectedImg, setSelectedImg] = useState();
 
@@ -97,38 +97,7 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
         });
       });
     };
-    // const res = uploadImage(formData).then((data) => {
-    //   console.log("response", data);
-
-    //   const newImage = { item_id: iid, link: data.path };
-    //   imageMutation.mutate(newImage, {
-    //     onError: (error) => {
-    //       console.log(error.message);
-    //       setReqStatus({ loading: false, error: true });
-    //     },
-    //     onSuccess: (data) => {
-    //       console.log(data);
-    //       closeThisModal();
-
-    //       setReqStatus({ loading: false, error: false });
-    //     },
-    //   });
-    // });
   };
-
-  // const onChangeHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
-  //   if (!event.target.files?.length) {
-  //     return;
-  //   }
-
-  //   const formData = new FormData();
-  //   Array.from(event.target.files).forEach((file) => {
-  //     formData.append(event.target.name, file);
-  //   });
-
-  //   setImg(formData);
-  //   formRef.current?.reset();
-  // };
 
   const onSubmit: SubmitHandler<InputType> = (data) => {
     setReqStatus({ loading: true, error: false });
