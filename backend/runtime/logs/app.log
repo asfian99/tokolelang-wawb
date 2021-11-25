@@ -8994,3 +8994,120 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1637565617.8766
     'REQUEST_TIME' => 1637565617
 ]
+2021-11-25 04:23:08 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-25 04:23:08 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52100'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.29'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637810588.0081
+    'REQUEST_TIME' => 1637810588
+]
+2021-11-25 04:25:20 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(76): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\CreateAction))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\CreateAction))
+#3 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\CreateAction))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\CreateAction))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/cre...', Array)
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2021-11-25 04:25:20 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52683'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'CONTENT_LENGTH' => '113'
+    'HTTP_CONTENT_LENGTH' => '113'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36 Edg/96.0.1054.29'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1637810720.1154
+    'REQUEST_TIME' => 1637810720
+]

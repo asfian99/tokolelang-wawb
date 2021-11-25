@@ -64,7 +64,7 @@ const Login: NextPage = () => {
 
       <div className="flex flex-row items-center justify-center min-h-[80vh]">
         <div className="w-1/2 px-12 py-12 border-2 border-gray-300 rounded-lg md:w-1/3">
-          <h2 className="mb-4 text-2xl font-bold">Login</h2>
+          <h2 className="mb-4 text-2xl font-bold">Masuk</h2>
           <form onSubmit={handleSubmit(onSubmit)}>
             <div className="grid grid-cols-1 gap-4">
               <div className="">
@@ -116,17 +116,7 @@ const Login: NextPage = () => {
                 disabled={reqStatus.loading}
                 className="py-2 mt-4 font-bold text-white bg-blue-500 rounded-lg disabled:bg-blue-300 hover:bg-blue-600 "
               >
-                {reqStatus.loading ? (
-                  "Login"
-                ) : (
-                  <>
-                    <svg
-                      className="w-5 h-5 mr-3 animate-spin"
-                      viewBox="0 0 24 24"
-                    ></svg>
-                    Loading
-                  </>
-                )}
+                {reqStatus.loading ? "Loading" : "Masuk"}
               </button>
 
               {/* Error */}

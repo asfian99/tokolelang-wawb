@@ -33,7 +33,7 @@ const UserProfile = ({ data }: UserProfileProps) => {
           <h2 className="text-2xl font-bold">{data.first_name}</h2>
         </div>
         <div>
-          <h5 className="text-lg text-gray-600">First Name</h5>
+          <h5 className="text-lg text-gray-600">Last Name</h5>
           <h2 className="text-2xl font-bold">{data.last_name}</h2>
         </div>
         <div>

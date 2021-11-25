@@ -31,7 +31,7 @@ const Layout = ({ children }: AppProps): JSX.Element => {
       <QueryClientProvider client={queryClient}>
         <userContext.Provider value={{ user, setUser }}>
           {pathname === "/login" ||
-          pathname === "/signup" ||
+          pathname === "/register" ||
           pathname === "/tentang-kami" ||
           pathname === "/_error" ||
           pathname === "/" ? (
