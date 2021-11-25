@@ -7,6 +7,7 @@ export type NewAccountInputs = {
   first_name: string;
   last_name: string;
   email: string;
+  access_token: string;
 };
 
 export interface NewAccountResponse extends NewAccountInputs {
@@ -18,8 +19,11 @@ export interface NewAccountResponse extends NewAccountInputs {
 }
 
 export const postNewAccount = async (data: NewAccountInputs) => {
+  const { access_token } = data;
   const newAcc = { ...data, is_member: 1, is_master: 0 };
-  const res = await axios.post(`${API_URL}/accounts`, newAcc);
+  const res = await axios.post(`${API_URL}/accounts`, newAcc, {
+    headers: { Authorization: `Bearer ${access_token}` },
+  });
 
   return res.data;
 };

@@ -82,9 +82,9 @@ const RegForms = (props: RegFormsProps) => {
         setReqStatus({ loading: false, error: true, success: false });
       },
       onSuccess: (user) => {
-        const { id } = user;
+        const { id, access_token } = user;
         newAccountMutation.mutate(
-          { ...newAccountData, user_id: id },
+          { ...newAccountData, user_id: id, access_token },
           {
             onError: (err) => {
               console.log(err.message);
