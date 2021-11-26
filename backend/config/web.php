@@ -55,7 +55,7 @@ $config = [
                 [
                     'class' => 'yii\rest\UrlRule',
                     'pluralize' => true,
-                    'controller' => ['api/account', 'api/item', 'api/image'],
+                    'controller' => ['api/account', 'api/item', 'api/image', 'api/transaction'],
                 ]
             ],
         ],

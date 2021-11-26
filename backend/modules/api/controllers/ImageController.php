@@ -1,9 +1,4 @@
 <?php
-/**
- * User: TheCodeholic
- * Date: 3/7/2020
- * Time: 9:35 AM
- */
 
 namespace app\modules\api\controllers;
 

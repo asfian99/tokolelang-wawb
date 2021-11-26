@@ -1,9 +1,4 @@
 <?php
-/**
- * User: TheCodeholic
- * Date: 3/7/2020
- * Time: 9:35 AM
- */
 
 namespace app\modules\api\controllers;
 
@@ -15,7 +10,6 @@ use yii\rest\ActiveController;
 /**
  * Class ItemController
  *
- * @author Zura Sekhniashvili <zurasekhniashvili@gmail.com>
  * @package app\modules\api\controllers
  */
 class ItemController extends ActiveController
@@ -39,18 +33,18 @@ class ItemController extends ActiveController
         return $behaviors;
     }
 
-    public function actions()
-    {
-        $actions = parent::actions();
-        $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
+    // public function actions()
+    // {
+    //     $actions = parent::actions();
+    //     $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
 
-        return $actions;
-    }
+    //     return $actions;
+    // }
 
-    public function prepareDataProvider()
-    {
-        return new ActiveDataProvider([
-            'query' => $this->modelClass::find()->andWhere(['account_id' => \Yii::$app->user->id])
-        ]);
-    }
+    // public function prepareDataProvider()
+    // {
+    //     return new ActiveDataProvider([
+    //         'query' => $this->modelClass::find()->andWhere(['account_id' => \Yii::$app->user->id])
+    //     ]);
+    // }
 }
