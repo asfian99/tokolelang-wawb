@@ -33,7 +33,11 @@ const BuatPenawaranButton = (props: BuatPenawaranButtonProps) => {
         </p>
       </div>
 
-      <BuatPenawaranModal isOpen={isOpen} closeModal={closeModal} />
+      <BuatPenawaranModal
+        data={props.data}
+        isOpen={isOpen}
+        closeModal={closeModal}
+      />
     </>
   );
 };
