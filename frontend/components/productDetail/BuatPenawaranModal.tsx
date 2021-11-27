@@ -7,6 +7,13 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
 import { formatRupiah } from "../../lib/formatCurrency";
+import { useMutation } from "react-query";
+import {
+  postTransaction,
+  TransactionInputs,
+  TransactionResponse,
+} from "../../lib/mutations/transactionMutation";
+import { AxiosError } from "axios";
 interface PenawaranModalProps {
   isOpen: boolean;
   closeModal: () => void;
@@ -23,17 +30,22 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
   const { isOpen, closeModal } = props;
   const [isAccept, setIsAccept] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
-  const { formState, handleSubmit, register, reset } = useForm<InputType>({
+  const { handleSubmit, register, reset } = useForm<InputType>({
     resolver: yupResolver(schema),
   });
-  const { errors } = formState;
+
+  const transactionMutation = useMutation<
+    TransactionResponse,
+    AxiosError,
+    TransactionInputs
+  >((data) => postTransaction(data));
 
   const reqStatusDefault = { loading: false, error: false, success: false };
   const [reqStatus, setReqStatus] = useState({ ...reqStatusDefault });
 
   const onSubmit: SubmitHandler<InputType> = (data) => {
     setReqStatus({ loading: true, error: false, success: false });
-    const { bid_ratio, open_bid } = props.data;
+    const { bid_ratio, open_bid, id } = props.data;
     console.log(data);
 
     if (data.penawaran < open_bid) {
@@ -43,8 +55,17 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
       setReqStatus({ loading: false, error: true, success: false });
       setErrorMsg("Penawaran tidak sesuai dengan kelipatan penawaran!");
     } else {
-      console.log("Success");
-      setReqStatus({ loading: false, error: false, success: true });
+      const newTrans = { bid_value: data.penawaran, item_id: id };
+      transactionMutation.mutate(newTrans, {
+        onError: (err) => {
+          console.log(err.message);
+          setReqStatus({ loading: false, error: true, success: false });
+        },
+        onSuccess: (data) => {
+          console.log(data);
+          setReqStatus({ loading: false, error: false, success: true });
+        },
+      });
     }
   };
 

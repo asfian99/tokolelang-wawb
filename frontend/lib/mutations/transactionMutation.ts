@@ -4,12 +4,12 @@ import { getTimeStamp } from "../formatDateTime";
 import { API_URL } from "../url";
 import { LoginResponse } from "./authMutations";
 
-export type NewTransactionInputs = {
+export type TransactionInputs = {
   bid_value: number;
   item_id: number;
 };
 
-export interface NewTransactionResponse extends NewTransactionInputs {
+export interface TransactionResponse extends TransactionInputs {
   account_id: number;
   is_highest: number;
   created_at: number;
@@ -20,7 +20,7 @@ const cookie = parseCookies();
 const cValue = cookie.token ? cookie.token?.split("&") : ["", "", ""];
 const [access_token, id, username] = cValue;
 
-export const postNewTransaction = async (data: NewTransactionInputs) => {
+export const postTransaction = async (data: TransactionInputs) => {
   const ts = getTimeStamp();
   const newTrans = {
     ...data,
