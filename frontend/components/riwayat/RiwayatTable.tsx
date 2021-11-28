@@ -3,45 +3,50 @@ import Link from "next/link";
 import clsx from "clsx";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/outline";
 import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
-import { RiwayatInterface } from "../../pages/riwayat";
+import { TransactionUserResponse } from "../../lib/mutations/transactionMutations";
+import { formatDateTime } from "../../lib/formatDateTime";
+import { formatRupiah } from "../../lib/formatCurrency";
+import { formatSlug } from "../../lib/formatString";
 
 interface RiwayatTableInterface {
-  data: RiwayatInterface[];
+  data: TransactionUserResponse[];
 }
 
 const RiwayatTable = (props: RiwayatTableInterface) => {
-  const columns = useMemo<Column<RiwayatInterface>[]>(
+  const columns = useMemo<Column<TransactionUserResponse>[]>(
     () => [
-      { Header: "Nama Barang", accessor: "name" as keyof RiwayatInterface },
+      {
+        Header: "Nama Barang",
+        accessor: "name" as keyof TransactionUserResponse,
+      },
       {
         Header: "Harga Pembukaan",
-        accessor: "open_bid" as keyof RiwayatInterface,
+        accessor: "open_bid" as keyof TransactionUserResponse,
       },
       {
         Header: "Harga Tawaran",
-        accessor: "bid_value" as keyof RiwayatInterface,
+        accessor: "bid_value" as keyof TransactionUserResponse,
       },
       {
         Header: "Waktu",
-        accessor: "date" as keyof RiwayatInterface,
+        accessor: "date" as keyof TransactionUserResponse,
       },
-      { Header: "Status", accessor: "status" as keyof RiwayatInterface },
-      { Header: "Aksi", accessor: "action" as keyof RiwayatInterface },
+      { Header: "Status", accessor: "status" as keyof TransactionUserResponse },
+      { Header: "Aksi", accessor: "action" as keyof TransactionUserResponse },
     ],
     []
   );
 
   const data = React.useMemo(() => {
-    const temp = props.data.map((item: RiwayatInterface) => {
-      const datetime = new Date(item.created_at);
+    const temp = props.data.map((item: TransactionUserResponse) => {
       return {
         ...item,
-        open_bid: "Rp " + item.open_bid,
-        bid_value: "Rp " + item.bid_value,
-        date: datetime.toLocaleDateString(),
-        status: item.status ? "Selesai" : "Gagal",
+        open_bid: formatRupiah(item.open_bid),
+        bid_value: formatRupiah(item.bid_value),
+        date: formatDateTime(item.updated_at),
+        status: item.is_highest ? "Selesai" : "Gagal",
         action: (
-          <Link href={`/halaman-pelelang/${item.id}`}>
+          <Link href={`/lelang-terbuka/${formatSlug(item.name, item.id)}`}>
             <a className="cursor-pointer text-primary hover:text-blue-600 hover:underline">
               Detail
             </a>

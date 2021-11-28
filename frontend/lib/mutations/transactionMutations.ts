@@ -10,6 +10,7 @@ export type TransactionInputs = {
 };
 
 export interface TransactionResponse extends TransactionInputs {
+  id: number;
   account_id: number;
   is_highest: number;
   created_at: number;
@@ -18,6 +19,11 @@ export interface TransactionResponse extends TransactionInputs {
 
 export interface TransactionItemResponse extends TransactionResponse {
   username: string;
+}
+
+export interface TransactionUserResponse extends TransactionResponse {
+  name: string;
+  open_bid: number;
 }
 
 const cookie = parseCookies();

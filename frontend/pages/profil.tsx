@@ -11,6 +11,7 @@ import UserProfile from "../components/profil/UserProfile";
 import { getAccountDetail } from "../lib/queries/accountQueries";
 import { useQuery } from "react-query";
 import Loading from "../components/pageStatus/Loading";
+import RequestFailed from "../components/pageStatus/RequestFailed";
 
 const Profil: NextPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
@@ -27,7 +28,7 @@ const Profil: NextPage = (
 
       <div>
         {status === "loading" && <Loading />}
-        {status === "error" && <Loading />}
+        {status === "error" && <RequestFailed />}
         {data && (
           <>
             <h2 className="mb-4 text-2xl font-semibold">Profil</h2>

@@ -1,9 +1,10 @@
 import axios from "axios";
 import { LoginResponse } from "../mutations/authMutations";
+import { PostItemResponse } from "../mutations/itemMutations";
 import { API_URL } from "../url";
 
 export const getItems = async (data: LoginResponse) => {
-  const res = await axios.get(`${API_URL}/items`, {
+  const res = await axios.get<PostItemResponse[]>(`${API_URL}/items`, {
     headers: { Authorization: `Bearer ${data.access_token}` },
   });
 
