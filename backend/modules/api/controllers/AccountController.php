@@ -38,18 +38,18 @@ class AccountController extends ActiveController
         return $behaviors;
     }
 
-    public function actions()
-    {
-        $actions = parent::actions();
-        $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
+    // public function actions()
+    // {
+    //     $actions = parent::actions();
+    //     $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
 
-        return $actions;
-    }
+    //     return $actions;
+    // }
 
-    public function prepareDataProvider()
-    {
-        return new ActiveDataProvider([
-            'query' => $this->modelClass::find()->andWhere(['user_id' => \Yii::$app->user->id])
-        ]);
-    }
+    // public function prepareDataProvider()
+    // {
+    //     return new ActiveDataProvider([
+    //         'query' => $this->modelClass::find()->andWhere(['user_id' => \Yii::$app->user->id])
+    //     ]);
+    // }
 }

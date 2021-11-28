@@ -10,12 +10,23 @@ export type AccountResponse = {
   is_member: number;
   is_master: number;
   user_id: number;
+  username: string;
   created_at: number;
   updated_at: number;
 };
 
+export const getAllAccounts = async (data: LoginResponse) => {
+  const res = await axios.get<AccountResponse[]>(`${API_URL}/accounts`, {
+    headers: { Authorization: `Bearer ${data.access_token}` },
+  });
+
+  // const user = { ...users[0], username: data.username };
+
+  return res.data;
+};
+
 export const getAccountDetail = async (data: LoginResponse) => {
-  const res = await axios.get(`${API_URL}/accounts`, {
+  const res = await axios.get<AccountResponse[]>(`${API_URL}/accounts`, {
     headers: { Authorization: `Bearer ${data.access_token}` },
   });
 
@@ -23,7 +34,7 @@ export const getAccountDetail = async (data: LoginResponse) => {
     (user: AccountResponse) => user.user_id === data.id
   );
 
-  const user = { ...users[0], username: data.username };
+  const user = { ...users[0] };
 
   return user;
 };

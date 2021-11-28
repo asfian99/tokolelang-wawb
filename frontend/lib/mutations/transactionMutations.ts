@@ -16,6 +16,10 @@ export interface TransactionResponse extends TransactionInputs {
   updated_at: number;
 }
 
+export interface TransactionItemResponse extends TransactionResponse {
+  username: string;
+}
+
 const cookie = parseCookies();
 const cValue = cookie.token ? cookie.token?.split("&") : ["", "", ""];
 const [access_token, id, username] = cValue;

@@ -12,7 +12,7 @@ import {
   postTransaction,
   TransactionInputs,
   TransactionResponse,
-} from "../../lib/mutations/transactionMutation";
+} from "../../lib/mutations/transactionMutations";
 import { AxiosError } from "axios";
 interface PenawaranModalProps {
   isOpen: boolean;

@@ -2,24 +2,41 @@ import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/outline";
 import clsx from "clsx";
 import React, { useMemo } from "react";
 import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
-import type { PenawaranInterface } from "../../pages/lelang-terbuka/[slug]";
+import { formatRupiah } from "../../lib/formatCurrency";
+import { formatDate } from "../../lib/formatDateTime";
+import { TransactionItemResponse } from "../../lib/mutations/transactionMutations";
 
 interface LelangTableProps {
-  data: PenawaranInterface[];
+  data: TransactionItemResponse[];
 }
 
 const LelangTable = (props: LelangTableProps) => {
-  const columns = useMemo<Column<PenawaranInterface>[]>(
+  const columns = useMemo<Column<TransactionItemResponse>[]>(
     () => [
-      { Header: "Username", accessor: "username" as keyof PenawaranInterface },
-      { Header: "Waktu", accessor: "datetime" as keyof PenawaranInterface },
-      { Header: "Nilai", accessor: "bid" as keyof PenawaranInterface },
+      {
+        Header: "Username",
+        accessor: "username" as keyof TransactionItemResponse,
+      },
+      {
+        Header: "Waktu",
+        accessor: "datetime" as keyof TransactionItemResponse,
+      },
+      {
+        Header: "Nilai",
+        accessor: "bid" as keyof TransactionItemResponse,
+      },
     ],
     []
   );
 
-  const data = React.useMemo<PenawaranInterface[]>(() => {
-    return props.data.slice(0, 10);
+  const data = React.useMemo(() => {
+    const topTen = props.data.slice(0, 10);
+    const list = topTen.map((tran) => ({
+      username: tran.username,
+      datetime: formatDate(tran.updated_at),
+      bid: formatRupiah(tran.bid_value),
+    }));
+    return list;
   }, [props.data]);
 
   const initialState = { sortBy: [{ id: "bid", desc: true }] };

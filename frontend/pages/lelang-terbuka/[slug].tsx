@@ -5,7 +5,7 @@ import {
 } from "next";
 import { useRouter } from "next/router";
 import Head from "next/head";
-import React from "react";
+import React, { useContext } from "react";
 import nookies from "nookies";
 import Image from "next/image";
 import ProductInfo from "../../components/productDetail/ProductInfo";
@@ -21,6 +21,8 @@ import { PostImageResponse } from "../../lib/mutations/imageMutations";
 import { getItemImages } from "../../lib/queries/imageQueries";
 import { IMAGE_URL } from "../../lib/url";
 import { rgbDataURL } from "../../lib/formatImage";
+import { TransactionItemResponse } from "../../lib/mutations/transactionMutations";
+import { getTransactionsOnItem } from "../../lib/queries/transactionQueries";
 
 export interface PenawaranInterface {
   id: number;
@@ -77,8 +79,10 @@ const ProductDetail: NextPage = (
   const image = useQuery<PostImageResponse, AxiosError>(`image_${slug}`, () =>
     getItemImages(cookie, slug)
   );
-
-  console.log(image.data);
+  const transactions = useQuery<TransactionItemResponse[], AxiosError>(
+    `transaction_${slug}`,
+    () => getTransactionsOnItem(cookie, slug)
+  );
 
   const img = image.data ? IMAGE_URL + "/w_600" + image.data.link : "";
   return (
@@ -115,10 +119,14 @@ const ProductDetail: NextPage = (
 
           <PelelangInfo />
 
-          <div className="flex flex-col mt-4">
-            <h3 className="text-xl font-bold">Daftar Penawaran</h3>
-            <LelangTable data={productPenawaran} />
-          </div>
+          {transactions.status === "loading" && <Loading />}
+          {transactions.status === "error" && <Loading />}
+          {transactions.data && (
+            <div className="flex flex-col mt-4">
+              <h3 className="text-xl font-bold">Daftar Penawaran</h3>
+              <LelangTable data={transactions.data} />
+            </div>
+          )}
         </div>
       )}
     </>
