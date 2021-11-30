@@ -30,8 +30,10 @@ export const getAccountDetail = async (data: LoginResponse) => {
     headers: { Authorization: `Bearer ${data.access_token}` },
   });
 
+  console.log(data);
+
   const users: AccountResponse[] = res.data.filter(
-    (user: AccountResponse) => user.user_id === data.id
+    (user: AccountResponse) => user.id === data.id
   );
 
   const user = { ...users[0] };

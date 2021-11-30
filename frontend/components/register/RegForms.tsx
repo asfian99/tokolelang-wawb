@@ -94,7 +94,7 @@ const RegForms = (props: RegFormsProps) => {
               console.log(account);
               const { id, username, user_id, is_master } = account;
 
-              const cookieValue = `${user.access_token}&${user.id}&${account.username}`;
+              const cookieValue = `${user.access_token}&${id}&${username}`;
               setCookie(null, "token", cookieValue, {
                 maxAge: 1 * 24 * 60 * 60,
                 path: "/",

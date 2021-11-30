@@ -9720,3 +9720,166 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1638258706.2296
     'REQUEST_TIME' => 1638258706
 ]
+2021-11-30 16:11:32 [::1][7][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 7 in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\rest\UpdateAction.php(40): yii\rest\Action->findModel('7')
+#1 [internal function]: yii\rest\UpdateAction->run('7')
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/upd...', Array)
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-30 16:11:32 [::1][7][-][info][application] $_GET = [
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60840'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts/7'
+    'REQUEST_METHOD' => 'PATCH'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts/7'
+    'PHP_SELF' => '/index.php/api/accounts/7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'CONTENT_LENGTH' => '15'
+    'HTTP_CONTENT_LENGTH' => '15'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'cross-site'
+    'REQUEST_TIME_FLOAT' => 1638285092.3591
+    'REQUEST_TIME' => 1638285092
+]
+2021-11-30 16:12:52 [::1][7][-][error][yii\web\HttpException:404] yii\web\NotFoundHttpException: Object not found: 7 in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\rest\Action.php:104
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\rest\UpdateAction.php(40): yii\rest\Action->findModel('7')
+#1 [internal function]: yii\rest\UpdateAction->run('7')
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/upd...', Array)
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#8 {main}
+2021-11-30 16:12:51 [::1][7][-][info][application] $_GET = [
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60893'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts/7'
+    'REQUEST_METHOD' => 'PATCH'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts/7'
+    'PHP_SELF' => '/index.php/api/accounts/7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:94.0) Gecko/20100101 Firefox/94.0'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.5'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'CONTENT_LENGTH' => '15'
+    'HTTP_CONTENT_LENGTH' => '15'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'cross-site'
+    'REQUEST_TIME_FLOAT' => 1638285171.9408
+    'REQUEST_TIME' => 1638285171
+]
+2021-11-30 16:23:54 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\UpdateAction))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\UpdateAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\UpdateAction))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\UpdateAction))
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('update', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/upd...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-30 16:23:54 [::1][-][-][info][application] $_GET = [
+    'id' => '10'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7c49b1f547620d4a3e8547ce07dc1fb8d63cd389e95d1881f5ca97d0f02f43b6a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ifUUvXRhj9o1Rt_Y3n3EqXm-lLX_1dAk\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '59597'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts/10'
+    'REQUEST_METHOD' => 'PATCH'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts/10'
+    'PHP_SELF' => '/index.php/api/accounts/10'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7c49b1f547620d4a3e8547ce07dc1fb8d63cd389e95d1881f5ca97d0f02f43b6a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ifUUvXRhj9o1Rt_Y3n3EqXm-lLX_1dAk%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '19'
+    'HTTP_CONTENT_LENGTH' => '19'
+    'REQUEST_TIME_FLOAT' => 1638285834.7189
+    'REQUEST_TIME' => 1638285834
+]

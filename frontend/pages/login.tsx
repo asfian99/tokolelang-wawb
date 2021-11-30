@@ -39,7 +39,7 @@ const Login: NextPage = () => {
         const account = await getAccountDetail(data);
         const { id, username, user_id, is_master, is_member } = account;
 
-        const cookieValue = `${data.access_token}&${data.id}&${data.username}`;
+        const cookieValue = `${data.access_token}&${id}&${username}`;
         setCookie(null, "token", cookieValue, {
           maxAge: 1 * 24 * 60 * 60,
           path: "/",

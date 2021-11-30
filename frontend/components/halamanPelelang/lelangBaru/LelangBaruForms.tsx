@@ -8,7 +8,7 @@ import {
   postItemImage,
   uploadImage,
 } from "../../../lib/mutations/imageMutations";
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import { AxiosError } from "axios";
 import type {
   PostImageInputs,
@@ -52,6 +52,7 @@ const schema = yup.object({
 
 const LelangBaruForms = (props: LelangBaruFormsProps) => {
   const { isAccept, setIsAccept, closeThisModal } = props;
+  const queryClient = useQueryClient();
   const { formState, handleSubmit, register } = useForm<InputType>({
     resolver: yupResolver(schema),
   });
@@ -90,6 +91,7 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
           },
           onSuccess: (data) => {
             console.log(data);
+            queryClient.invalidateQueries("items");
             closeThisModal();
             setReqStatus({ loading: false, error: false });
           },

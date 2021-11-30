@@ -3,22 +3,29 @@ import {
   InferGetServerSidePropsType,
   NextPage,
 } from "next";
-import React from "react";
+import React, { useState } from "react";
 import Head from "next/head";
 import nookies from "nookies";
+import { useQuery } from "react-query";
+import { PencilAltIcon } from "@heroicons/react/outline";
 import LogoutButton from "../components/profil/LogoutButton";
 import UserProfile from "../components/profil/UserProfile";
 import { getAccountDetail } from "../lib/queries/accountQueries";
-import { useQuery } from "react-query";
 import Loading from "../components/pageStatus/Loading";
 import RequestFailed from "../components/pageStatus/RequestFailed";
+import UserStatusUpgrade from "../components/profil/UserStatusUpgrade";
 
 const Profil: NextPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
   const { cookie } = props;
+  const [isOpen, setIsOpen] = useState(false);
+  const { data, status } = useQuery(`profile_${cookie.username}`, () =>
+    getAccountDetail(cookie)
+  );
 
-  const { data, status } = useQuery("profile", () => getAccountDetail(cookie));
+  const openModal = () => setIsOpen(true);
+  const closeModal = () => setIsOpen(false);
 
   return (
     <>
@@ -31,10 +38,21 @@ const Profil: NextPage = (
         {status === "error" && <RequestFailed />}
         {data && (
           <>
-            <h2 className="mb-4 text-2xl font-semibold">Profil</h2>
-            <UserProfile data={data} />
+            <div className="flex flex-row items-center gap-4 mb-4">
+              <h2 className="text-2xl font-semibold">Profil</h2>
+
+              <PencilAltIcon
+                className="w-6 h-6 cursor-pointer text-primary hover:text-blue-600"
+                onClick={openModal}
+              />
+            </div>
+
+            <UserProfile modal={{ isOpen, closeModal }} data={data} />
             <hr />
-            <LogoutButton />
+            <div className="flex flex-row items-center justify-between mt-6">
+              <UserStatusUpgrade data={data} />
+              <LogoutButton />
+            </div>
           </>
         )}
       </div>

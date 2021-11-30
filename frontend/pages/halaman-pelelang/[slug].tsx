@@ -26,6 +26,7 @@ import { PencilAltIcon } from "@heroicons/react/outline";
 import RequestFailed from "../../components/pageStatus/RequestFailed";
 import LelangDetailView from "../../components/halamanPelelang/lelangDetail/LelangDetailView";
 import LelangDetailEdit from "../../components/halamanPelelang/lelangDetail/LelangDetailEdit";
+import { IMAGE_URL } from "../../lib/url";
 
 export interface PenawaranInterface {
   id: number;
@@ -33,39 +34,6 @@ export interface PenawaranInterface {
   datetime: string;
   bid: string;
 }
-
-const productPenawaran: PenawaranInterface[] = [
-  {
-    id: 1,
-    username: "k_asfian",
-    datetime: "12/11/2021 - 19.20",
-    bid: "10.250.000",
-  },
-  {
-    id: 2,
-    username: "k_asfian",
-    datetime: "12/11/2021 - 19.20",
-    bid: "10.110.000",
-  },
-  {
-    id: 3,
-    username: "k_asfian",
-    datetime: "12/11/2021 - 19.20",
-    bid: "10.210.000",
-  },
-  {
-    id: 4,
-    username: "k_asfian",
-    datetime: "12/11/2021 - 19.20",
-    bid: "10.050.000",
-  },
-  {
-    id: 5,
-    username: "k_asfian",
-    datetime: "12/11/2021 - 19.20",
-    bid: "9.800.000",
-  },
-];
 
 const placeholderImg = "/uploads/item_placeholder.png";
 
@@ -87,9 +55,8 @@ const ProductDilelangkanDetail: NextPage = (
     () => getTransactionsOnItem(cookie, slug)
   );
 
-  const toggleEdit = () => {
-    setIsEdit(!isEdit);
-  };
+  const toggleEdit = () => setIsEdit(!isEdit);
+  const img = image.data ? IMAGE_URL + "/w_600" + image.data.link : "";
 
   return (
     <>
@@ -123,7 +90,7 @@ const ProductDilelangkanDetail: NextPage = (
             <div>
               <Image
                 className="border border-gray-300 cursor-pointer rounded-2xl"
-                src={placeholderImg}
+                src={image.data ? img : placeholderImg}
                 alt="placeholderImageDetail"
                 height="400"
                 width="540"

@@ -36,9 +36,8 @@ const placeholderImg = "/uploads/item_placeholder.png";
 const ProductDetail: NextPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
-  const { query } = useRouter();
+  const { slug } = useRouter().query;
   const { cookie } = props;
-  const { slug } = query;
 
   const item = useQuery<PostItemResponse, AxiosError>(`item_${slug}`, () =>
     getItemDetail(cookie, slug)

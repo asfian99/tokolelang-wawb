@@ -15,15 +15,13 @@ const LogoutButton = () => {
   };
 
   return (
-    <div className="flex flex-row justify-end mt-6">
-      <button
-        onClick={onLogout}
-        // disabled={reqStatus.loading}
-        className="w-32 py-2 font-bold text-white bg-red-500 rounded-lg disabled:bg-red-300 hover:bg-red-600 "
-      >
-        {"Logout"}
-      </button>
-    </div>
+    <button
+      onClick={onLogout}
+      // disabled={reqStatus.loading}
+      className="w-32 py-2 font-bold text-white bg-red-500 rounded-lg disabled:bg-red-300 hover:bg-red-600 "
+    >
+      {"Logout"}
+    </button>
   );
 };
 
