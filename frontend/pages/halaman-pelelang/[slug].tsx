@@ -4,7 +4,7 @@ import {
   NextPage,
 } from "next";
 import Head from "next/head";
-import React from "react";
+import React, { useState } from "react";
 import nookies from "nookies";
 import Image from "next/image";
 import ProductInfo from "../../components/productDetail/ProductInfo";
@@ -20,6 +20,12 @@ import { getItemDetail } from "../../lib/queries/itemQueries";
 import { getItemImages } from "../../lib/queries/imageQueries";
 import { rgbDataURL } from "../../lib/formatImage";
 import Loading from "../../components/pageStatus/Loading";
+import { TransactionItemResponse } from "../../lib/mutations/transactionMutations";
+import { getTransactionsOnItem } from "../../lib/queries/transactionQueries";
+import { PencilAltIcon } from "@heroicons/react/outline";
+import RequestFailed from "../../components/pageStatus/RequestFailed";
+import LelangDetailView from "../../components/halamanPelelang/lelangDetail/LelangDetailView";
+import LelangDetailEdit from "../../components/halamanPelelang/lelangDetail/LelangDetailEdit";
 
 export interface PenawaranInterface {
   id: number;
@@ -66,9 +72,9 @@ const placeholderImg = "/uploads/item_placeholder.png";
 const ProductDilelangkanDetail: NextPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
-  const { query } = useRouter();
+  const { slug } = useRouter().query;
   const { cookie } = props;
-  const { slug } = query;
+  const [isEdit, setIsEdit] = useState(false);
 
   const item = useQuery<PostItemResponse, AxiosError>(`item_${slug}`, () =>
     getItemDetail(cookie, slug)
@@ -76,6 +82,14 @@ const ProductDilelangkanDetail: NextPage = (
   const image = useQuery<PostImageResponse, AxiosError>(`image_${slug}`, () =>
     getItemImages(cookie, slug)
   );
+  const transactions = useQuery<TransactionItemResponse[], AxiosError>(
+    `transaction_${slug}`,
+    () => getTransactionsOnItem(cookie, slug)
+  );
+
+  const toggleEdit = () => {
+    setIsEdit(!isEdit);
+  };
 
   return (
     <>
@@ -84,37 +98,26 @@ const ProductDilelangkanDetail: NextPage = (
       </Head>
 
       <div>
-        <h2 className="mb-4 text-2xl font-semibold">Product Detail</h2>
+        <div className="flex flex-row items-center gap-4 mb-4">
+          <h2 className="text-2xl font-semibold ">Product Detail</h2>
+          {!isEdit && (
+            <PencilAltIcon
+              className="w-6 h-6 cursor-pointer text-primary hover:text-blue-600"
+              onClick={toggleEdit}
+            />
+          )}
+        </div>
 
         {item.status === "loading" && <Loading />}
-        {item.status === "error" && <Loading />}
+        {item.status === "error" && <RequestFailed />}
         {item.data && (
           <div className="grid grid-cols-2 gap-4">
-            <div>
-              <div className="flex flex-col mt-4">
-                <label className="text-xs font-bold uppercase">
-                  Nama Barang
-                </label>
-                <h5 className="text-xl ">{item.data.name}</h5>
-              </div>
-              <div className="flex flex-col mt-4">
-                <label className="text-xs font-bold uppercase">
-                  Deskripsi Barang
-                </label>
-                <h5 className="text-base">{item.data.description}</h5>
-              </div>
-              <div className="flex flex-col mt-4">
-                <label className="text-xs font-bold uppercase">
-                  Nama Barang
-                </label>
-                <h5 className="text-xl ">{item.data.name}</h5>
-              </div>
-              <div className="flex flex-col mt-4">
-                <label className="text-xs font-bold uppercase">
-                  Nama Barang
-                </label>
-                <h5 className="text-xl ">{item.data.name}</h5>
-              </div>
+            <div className="flex flex-col justify-between">
+              {isEdit ? (
+                <LelangDetailEdit data={item.data} toggleEdit={toggleEdit} />
+              ) : (
+                <LelangDetailView data={item.data} />
+              )}
             </div>
 
             <div>
@@ -130,6 +133,15 @@ const ProductDilelangkanDetail: NextPage = (
                 blurDataURL={rgbDataURL(220, 220, 220)}
               />
             </div>
+          </div>
+        )}
+
+        {transactions.status === "loading" && <Loading />}
+        {transactions.status === "error" && <RequestFailed />}
+        {transactions.data && (
+          <div className="flex flex-col mt-4">
+            <h3 className="text-xl font-bold">Daftar Penawaran</h3>
+            <LelangTable data={transactions.data} />
           </div>
         )}
       </div>

@@ -9111,3 +9111,412 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1637810720.1154
     'REQUEST_TIME' => 1637810720
 ]
+2021-11-26 18:51:54 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/transactions". in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/transaction...', Array)
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-26 18:51:54 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => 'fb6a817bb7855fa2338df0e9ad360a3a035c9233a9f2d98c7bd85d855affc472a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"9R2YKhkypAPz8_R7KZkeAYhBnReGmVTd\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '61937'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/transactions'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/transactions'
+    'PHP_SELF' => '/index.php/api/transactions'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=fb6a817bb7855fa2338df0e9ad360a3a035c9233a9f2d98c7bd85d855affc472a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%229R2YKhkypAPz8_R7KZkeAYhBnReGmVTd%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1637949114.2714
+    'REQUEST_TIME' => 1637949114
+]
+2021-11-26 18:59:03 [::1][5][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE) in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('{{%userAccounts...', Array)
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\rest\CreateAction.php(52): yii\db\BaseActiveRecord->save()
+#7 [internal function]: yii\rest\CreateAction->run()
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/cre...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `userAccounts` (`created_at`, `updated_at`) VALUES (1637949543, 1637949543) in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('{{%userAccounts...', Array)
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\rest\CreateAction.php(52): yii\db\BaseActiveRecord->save()
+#7 [internal function]: yii\rest\CreateAction->run()
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/cre...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+)
+
+2021-11-26 18:59:02 [::1][5][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '94c05f755c38ca1c6f1709a083cf9506b5b4479a68caacaa046d50cdf6fc9067a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"z34hYnQDeAwoMW2ODjlhp6WUMOuihQW3\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '62385'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=94c05f755c38ca1c6f1709a083cf9506b5b4479a68caacaa046d50cdf6fc9067a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22z34hYnQDeAwoMW2ODjlhp6WUMOuihQW3%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '130'
+    'HTTP_CONTENT_LENGTH' => '130'
+    'REQUEST_TIME_FLOAT' => 1637949542.9718
+    'REQUEST_TIME' => 1637949542
+]
+2021-11-26 19:03:04 [::1][5][-][error][yii\db\IntegrityException] PDOException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE) in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php:1302
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1302): PDOStatement->execute()
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('{{%userAccounts...', Array)
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\rest\CreateAction.php(52): yii\db\BaseActiveRecord->save()
+#7 [internal function]: yii\rest\CreateAction->run()
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/cre...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\IntegrityException: SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+The SQL being executed was: INSERT INTO `userAccounts` (`created_at`, `updated_at`) VALUES (1637949784, 1637949784) in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1307): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Command.php(1102): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\Schema.php(433): yii\db\Command->execute()
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(600): yii\db\Schema->insert('{{%userAccounts...', Array)
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\ActiveRecord.php(566): yii\db\ActiveRecord->insertInternal(NULL)
+#5 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\db\BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\rest\CreateAction.php(52): yii\db\BaseActiveRecord->save()
+#7 [internal function]: yii\rest\CreateAction->run()
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Action.php(94): call_user_func_array(Array, Array)
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\Action->runWithParams(Array)
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/cre...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1452
+    [2] => Cannot add or update a child row: a foreign key constraint fails (`wabw_pa_dev`.`useraccounts`, CONSTRAINT `fk-userAccounts-user_id` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`) ON DELETE CASCADE)
+)
+
+2021-11-26 19:03:04 [::1][5][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '220115b0b9aef3398123fbb64d9019110039dfdc4f1fc475940170e654059bd9a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"6lThkI9ZlLDqKk34Mo54AdVi4nckjUNa\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52780'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'POST'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=220115b0b9aef3398123fbb64d9019110039dfdc4f1fc475940170e654059bd9a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%226lThkI9ZlLDqKk34Mo54AdVi4nckjUNa%22%3B%7D'
+    'CONTENT_TYPE' => 'application/json'
+    'HTTP_CONTENT_TYPE' => 'application/json'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'CONTENT_LENGTH' => '130'
+    'HTTP_CONTENT_LENGTH' => '130'
+    'REQUEST_TIME_FLOAT' => 1637949784.0953
+    'REQUEST_TIME' => 1637949784
+]
+2021-11-27 16:35:28 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-11-27 16:35:27 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '60768'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_SEC_CH_UA' => '\" Not A;Brand\";v=\"99\", \"Chromium\";v=\"96\", \"Microsoft Edge\";v=\"96\"'
+    'HTTP_ACCEPT' => 'application/json, text/plain, */*'
+    'HTTP_DNT' => '1'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1638027327.7779
+    'REQUEST_TIME' => 1638027327
+]
+2021-11-27 19:21:18 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/transactions/". in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/transaction...', Array)
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-27 19:21:17 [::1][-][-][info][application] $_GET = [
+    'item_id' => '6'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '3af47672af785d5cdf19b8eaff39033c476d5bb44d873a7fbcf00df167013f19a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"Aq_SD-XN4vuuFlPryYFjByjpwJe-gs9X\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '63169'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/transactions/?item_id=6'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/transactions/'
+    'PHP_SELF' => '/index.php/api/transactions/'
+    'QUERY_STRING' => 'item_id=6'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=3af47672af785d5cdf19b8eaff39033c476d5bb44d873a7fbcf00df167013f19a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22Aq_SD-XN4vuuFlPryYFjByjpwJe-gs9X%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1638037277.9616
+    'REQUEST_TIME' => 1638037277
+]
+2021-11-30 04:48:38 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/items/chapter-v-advice-from-a,9". in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/items/chapt...', Array)
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-30 04:48:38 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '65338'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/chapter-v-advice-from-a,9'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items/chapter-v-advice-from-a,9'
+    'PHP_SELF' => '/index.php/api/items/chapter-v-advice-from-a,9'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'POST'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization,content-type'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1638244118.6594
+    'REQUEST_TIME' => 1638244118
+]
+2021-11-30 04:49:28 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/items/chapter-v-advice-from-a,9". in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/items/chapt...', Array)
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-11-30 04:49:28 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '65396'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/chapter-v-advice-from-a,9'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items/chapter-v-advice-from-a,9'
+    'PHP_SELF' => '/index.php/api/items/chapter-v-advice-from-a,9'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'PATCH'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization,content-type'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1638244168.9059
+    'REQUEST_TIME' => 1638244168
+]

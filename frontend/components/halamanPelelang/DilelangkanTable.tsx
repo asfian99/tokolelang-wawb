@@ -6,6 +6,7 @@ import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
 import DilelangkanDetailModal from "./DilelangkanDetailModal";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
 import { formatSlug } from "../../lib/formatString";
+import { formatDateTime } from "../../lib/formatDateTime";
 
 interface DilelangkanTableProps {
   data: PostItemResponse[];
@@ -40,7 +41,7 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
       return {
         ...item,
         open_bid: "Rp " + item.open_bid,
-        closing_time: datetime.toLocaleDateString(),
+        closing_time: formatDateTime(item.closing_time),
         fundraising: item.fundraising ? "Ya" : "Tidak",
         event: item.event || "-",
         action: (

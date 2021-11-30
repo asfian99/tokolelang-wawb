@@ -14,7 +14,6 @@ import type {
   PostImageInputs,
   PostImageResponse,
 } from "../../../lib/mutations/imageMutations";
-import { getTimeStamp } from "../../../lib/timestamp";
 import {
   postItem,
   PostItemInputs,
@@ -267,7 +266,7 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
                   htmlFor="location"
                   className="block mb-2 text-sm font-medium text-gray-900"
                 >
-                  Lokasi (Kabupaten)
+                  Lokasi (Kabupaten / Kota)
                 </label>
                 <input
                   type="text"

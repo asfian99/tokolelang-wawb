@@ -3,7 +3,11 @@ import Image from "next/image";
 import { ClockIcon, LocationMarkerIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
-import { formatDate, formatTime } from "../../lib/formatDateTime";
+import {
+  formatDate,
+  formatDateTime,
+  formatTime,
+} from "../../lib/formatDateTime";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { formatSlug } from "../../lib/formatString";
 import { PostImageResponse } from "../../lib/mutations/imageMutations";
@@ -53,7 +57,7 @@ const Product = ({ data, images }: ProductProps) => {
         <div className="flex flex-row items-center justify-start gap-2 mt-2 mb-4 text-red-600">
           <ClockIcon className="w-4 h-4 font-semibold" />
           <p className="text-sm font-semibold">
-            {formatDate(data.closing_time)} - {formatTime(data.closing_time)}
+            {formatDateTime(data.closing_time)}
           </p>
         </div>
 

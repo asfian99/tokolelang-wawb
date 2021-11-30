@@ -46,3 +46,34 @@ export const postItem = async (input: PostItemInputs) => {
     return res.data;
   }
 };
+
+export const patchItem = async (
+  input: PostItemInputs,
+  slug: string | string[] | undefined
+) => {
+  const ts = getTimeStamp();
+  if (!id || !access_token) {
+    console.log("cookie not found!");
+    return {};
+  } else {
+    if (!slug) {
+      return [];
+    } else {
+      let iid = ["", ""];
+      if (Array.isArray(slug)) iid = slug.join().split("_");
+      else iid = slug.split("_");
+
+      const req = {
+        ...input,
+        closing_time: formatUnixTime(input.closing_time),
+        fundraising: input.fundraising ? 1 : 0,
+        updated_at: ts,
+      };
+      const res = await axios.patch(`${API_URL}/items/${iid[1]}`, req, {
+        headers: { Authorization: `Bearer ${access_token}` },
+      });
+
+      return res.data;
+    }
+  }
+};

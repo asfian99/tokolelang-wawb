@@ -24,6 +24,15 @@ export const formatDateTime = (unix: number | string) => {
   return d + " - " + t;
 };
 
+export const formatInputDateTime = (unix: string | number) => {
+  const tzOffsite = new Date().getTimezoneOffset() * 60000;
+  const dt = new Date(Number(unix) * 1000 - tzOffsite).toISOString();
+  const dt2 = dt.split(".")[0];
+  const dt3 = dt2.substring(0, dt2.length - 3);
+
+  return dt3;
+};
+
 export const formatUnixTime = (date: string | number | Date) => {
   const dt = new Date(date);
   return Math.floor(dt.getTime() / 1000);
