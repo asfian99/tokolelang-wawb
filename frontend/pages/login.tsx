@@ -36,10 +36,10 @@ const Login: NextPage = () => {
         setReqStatus({ loading: false, error: true });
       },
       onSuccess: async (data) => {
-        const account = await getAccountDetail(data);
+        const account = await getAccountDetail(data, true);
         const { id, username, user_id, is_master, is_member } = account;
 
-        const cookieValue = `${data.access_token}&${id}&${username}`;
+        const cookieValue = `${data.access_token}&${account.id}&${username}`;
         setCookie(null, "token", cookieValue, {
           maxAge: 1 * 24 * 60 * 60,
           path: "/",

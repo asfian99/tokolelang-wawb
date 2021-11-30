@@ -25,18 +25,25 @@ export const getAllAccounts = async (data: LoginResponse) => {
   return res.data;
 };
 
-export const getAccountDetail = async (data: LoginResponse) => {
+export const getAccountDetail = async (
+  data: LoginResponse,
+  login?: boolean
+) => {
   const res = await axios.get<AccountResponse[]>(`${API_URL}/accounts`, {
     headers: { Authorization: `Bearer ${data.access_token}` },
   });
 
   console.log(data);
 
-  const users: AccountResponse[] = res.data.filter(
-    (user: AccountResponse) => user.id === data.id
-  );
-
-  const user = { ...users[0] };
-
-  return user;
+  if (login) {
+    const accounts: AccountResponse[] = res.data.filter(
+      (account: AccountResponse) => account.user_id === data.id
+    );
+    return { ...accounts[0] };
+  } else {
+    const accounts: AccountResponse[] = res.data.filter(
+      (account: AccountResponse) => account.id === data.id
+    );
+    return { ...accounts[0] };
+  }
 };

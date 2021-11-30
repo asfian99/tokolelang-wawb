@@ -13,6 +13,8 @@ export const useCheckLoginStatus = ({ user, setUser }: userContextType) => {
 
     const fetch = async () => {
       const cValue = cookies.token.split("&");
+      console.log(cValue);
+
       const res = await getAccountDetail({
         access_token: cValue[0],
         id: Number(cValue[1]),
