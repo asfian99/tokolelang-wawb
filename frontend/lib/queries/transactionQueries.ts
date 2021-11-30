@@ -25,7 +25,12 @@ export const getTransactionsOnUser = async (data: LoginResponse) => {
   );
   const transWithItemName = trans.map((transaction) => {
     const item = items.filter((item) => item.id === transaction.item_id);
-    return { ...transaction, name: item[0].name, open_bid: item[0].open_bid };
+    return {
+      ...transaction,
+      name: item[0].name,
+      open_bid: item[0].open_bid,
+      closing_time: Number(item[0].closing_time),
+    };
   });
 
   return transWithItemName;

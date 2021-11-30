@@ -7,10 +7,11 @@ const LogoutButton = () => {
   const router = useRouter();
   const { setUser } = useContext(userContext);
 
-  const onLogout = () => {
+  const onLogout = async () => {
+    console.log("logout");
     destroyCookie(null, "token");
     setUser({ authenticated: false, data: userDefault });
-    router.replace("/");
+    router.push("/");
   };
 
   return (

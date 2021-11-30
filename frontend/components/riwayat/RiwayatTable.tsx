@@ -4,7 +4,7 @@ import clsx from "clsx";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/outline";
 import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
 import { TransactionUserResponse } from "../../lib/mutations/transactionMutations";
-import { formatDateTime } from "../../lib/formatDateTime";
+import { formatDateTime, getTimeStamp } from "../../lib/formatDateTime";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { formatSlug } from "../../lib/formatString";
 
@@ -13,6 +13,14 @@ interface RiwayatTableInterface {
 }
 
 const RiwayatTable = (props: RiwayatTableInterface) => {
+  const isHighest = (item: TransactionUserResponse) => {
+    if (item.is_highest > 0) return "Selesai";
+    else {
+      if (item.closing_time > getTimeStamp()) return "Pending";
+      else return "Gagal";
+    }
+  };
+
   const columns = useMemo<Column<TransactionUserResponse>[]>(
     () => [
       {
@@ -44,14 +52,13 @@ const RiwayatTable = (props: RiwayatTableInterface) => {
         open_bid: formatRupiah(item.open_bid),
         bid_value: formatRupiah(item.bid_value),
         date: formatDateTime(item.updated_at),
-        status: item.is_highest ? "Selesai" : "Gagal",
+        status: isHighest(item),
         action: (
-          <Link href={`/lelang-terbuka/${formatSlug(item.name, item.id)}`}>
+          <Link href={`/lelang-terbuka/${formatSlug(item.name, item.item_id)}`}>
             <a className="cursor-pointer text-primary hover:text-blue-600 hover:underline">
               Detail
             </a>
           </Link>
-          // <DilelangkanDetailModal data={item} />
         ),
       };
     });

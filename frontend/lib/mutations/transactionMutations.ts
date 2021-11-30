@@ -24,6 +24,7 @@ export interface TransactionItemResponse extends TransactionResponse {
 export interface TransactionUserResponse extends TransactionResponse {
   name: string;
   open_bid: number;
+  closing_time: number;
 }
 
 const cookie = parseCookies();

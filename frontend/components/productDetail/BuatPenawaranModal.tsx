@@ -7,13 +7,14 @@ import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
 import { PostItemResponse } from "../../lib/mutations/itemMutations";
 import { formatRupiah } from "../../lib/formatCurrency";
-import { useMutation } from "react-query";
+import { useMutation, useQueryClient } from "react-query";
 import {
   postTransaction,
   TransactionInputs,
   TransactionResponse,
 } from "../../lib/mutations/transactionMutations";
 import { AxiosError } from "axios";
+import { useRouter } from "next/router";
 interface PenawaranModalProps {
   isOpen: boolean;
   closeModal: () => void;
@@ -28,6 +29,8 @@ const schema = yup.object({
 
 const BuatPenawaranModal = (props: PenawaranModalProps) => {
   const { isOpen, closeModal } = props;
+  const { slug } = useRouter().query;
+  const queryClient = useQueryClient();
   const [isAccept, setIsAccept] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
   const { handleSubmit, register, reset } = useForm<InputType>({
@@ -63,6 +66,7 @@ const BuatPenawaranModal = (props: PenawaranModalProps) => {
         },
         onSuccess: (data) => {
           console.log(data);
+          queryClient.invalidateQueries(`transaction_${slug}`);
           setReqStatus({ loading: false, error: false, success: true });
         },
       });
