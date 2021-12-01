@@ -3,7 +3,6 @@ import Link from "next/link";
 import clsx from "clsx";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/outline";
 import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
-import DilelangkanDetailModal from "./DilelangkanDetailModal";
 import { ItemResponse } from "../../lib/mutations/itemMutations";
 import { formatSlug } from "../../lib/formatString";
 import { formatDateTime } from "../../lib/formatDateTime";
