@@ -6,6 +6,7 @@ import { formatRupiah } from "../../lib/formatCurrency";
 import { ItemResponse } from "../../lib/mutations/itemMutations";
 import BuatPenawaranModal from "./BuatPenawaranModal";
 import { formatSlug } from "../../lib/formatString";
+import { getTimeStamp } from "../../lib/formatDateTime";
 
 interface BuatPenawaranButtonProps {
   data: ItemResponse;
@@ -13,14 +14,13 @@ interface BuatPenawaranButtonProps {
 
 const BuatPenawaranButton = (props: BuatPenawaranButtonProps) => {
   const { user } = useContext(userContext);
-  const [isExpired, setIsExpired] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => setIsOpen(true);
   const closeModal = () => setIsOpen(false);
 
-  console.log({ user });
-  console.log(props.data);
+  // console.log({ user });
+  // console.log(props.data);
 
   return (
     <>
@@ -38,13 +38,17 @@ const BuatPenawaranButton = (props: BuatPenawaranButtonProps) => {
           <>
             <button
               onClick={openModal}
-              disabled={isExpired}
+              disabled={props.data.closing_time < getTimeStamp()}
               className={clsx(
-                isExpired ? "cursor-not-allowed" : "cursor-pointer",
+                props.data.closing_time < getTimeStamp()
+                  ? "cursor-not-allowed"
+                  : "cursor-pointer",
                 "w-1/2 py-3 font-bold btn-primary "
               )}
             >
-              {isExpired ? "Penawaran Berakhir" : "Buat Penawaran"}
+              {props.data.closing_time < getTimeStamp()
+                ? "Penawaran Berakhir"
+                : "Buat Penawaran"}
             </button>
             <p className="w-1/2 my-2 text-xs font-medium text-center ">
               Kelipatan {formatRupiah(props.data.bid_ratio)}

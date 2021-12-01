@@ -7,6 +7,7 @@ import { TransactionUserResponse } from "../../lib/mutations/transactionMutation
 import { formatDateTime, getTimeStamp } from "../../lib/formatDateTime";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { formatSlug } from "../../lib/formatString";
+import BatalkanPenawaran from "./BatalkanPenawaran";
 
 interface RiwayatTableInterface {
   data: TransactionUserResponse[];
@@ -14,9 +15,9 @@ interface RiwayatTableInterface {
 
 const RiwayatTable = (props: RiwayatTableInterface) => {
   const isHighest = (item: TransactionUserResponse) => {
-    if (item.is_highest > 0) return "Selesai";
+    if (item.closing_time > getTimeStamp()) return "Pending";
     else {
-      if (item.closing_time > getTimeStamp()) return "Pending";
+      if (item.is_highest) return "Selesai";
       else return "Gagal";
     }
   };
@@ -47,6 +48,7 @@ const RiwayatTable = (props: RiwayatTableInterface) => {
 
   const data = React.useMemo(() => {
     const temp = props.data.map((item: TransactionUserResponse) => {
+      const { name, item_id } = item;
       return {
         ...item,
         open_bid: formatRupiah(item.open_bid),
@@ -54,11 +56,14 @@ const RiwayatTable = (props: RiwayatTableInterface) => {
         date: formatDateTime(item.updated_at),
         status: isHighest(item),
         action: (
-          <Link href={`/lelang-terbuka/${formatSlug(item.name, item.item_id)}`}>
-            <a className="cursor-pointer text-primary hover:text-primary-d hover:underline">
-              Detail
-            </a>
-          </Link>
+          <div className="flex flex-row gap-4">
+            <Link href={`/lelang-terbuka/${formatSlug(name, item_id)}`}>
+              <a className="cursor-pointer text-primary hover:text-primary-d hover:underline">
+                Detail
+              </a>
+            </Link>
+            <BatalkanPenawaran data={item} />
+          </div>
         ),
       };
     });
@@ -66,10 +71,10 @@ const RiwayatTable = (props: RiwayatTableInterface) => {
     return temp;
   }, [props.data]);
 
-  // const initialState = { sortBy: [{ id: "bid", desc: true }] };
+  const initialState = { sortBy: [{ id: "date", asc: true }] };
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     // @ts-ignore
-    useTable({ columns, data }, useGlobalFilter, useSortBy);
+    useTable({ columns, data, initialState }, useGlobalFilter, useSortBy);
 
   return (
     <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">

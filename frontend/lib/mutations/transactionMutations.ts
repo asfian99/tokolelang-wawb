@@ -12,7 +12,7 @@ export type TransactionInputs = {
 export interface TransactionResponse extends TransactionInputs {
   id: number;
   account_id: number;
-  is_highest: number;
+  is_highest: number | boolean;
   created_at: number;
   updated_at: number;
 }
@@ -41,6 +41,14 @@ export const postTransaction = async (data: TransactionInputs) => {
     updated_at: ts,
   };
   const res = await axios.post(`${API_URL}/transactions`, newTrans, {
+    headers: { Authorization: `Bearer ${access_token}` },
+  });
+
+  return res.data;
+};
+
+export const cancelTransaction = async (iid: number) => {
+  const res = await axios.delete(`${API_URL}/transactions/${iid}`, {
     headers: { Authorization: `Bearer ${access_token}` },
   });
 

@@ -37,7 +37,6 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
 
   const data = React.useMemo(() => {
     const temp = props.data?.map((item: ItemResponse) => {
-      const datetime = new Date(item.closing_time);
       return {
         ...item,
         open_bid: "Rp " + item.open_bid,
@@ -50,7 +49,6 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
               Detail
             </a>
           </Link>
-          // <DilelangkanDetailModal data={item} />
         ),
       };
     });

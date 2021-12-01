@@ -29,11 +29,10 @@ const Product = ({ data, images }: ProductProps) => {
     if (a.bid_value > b.bid_value) return -1;
     else return 0;
   });
-  console.log({ highestTrans, ori: data.transactions });
 
   const img = images.length > 0 ? IMAGE_URL + "/w_400" + images[0].link : "";
   return (
-    <div className="transition duration-150 ease-in-out border border-gray-300 rounded-xl group hover:border-primary-l hover:bg-gray-100">
+    <div className="transition duration-150 ease-in-out border border-gray-300 rounded-xl group hover:border-primary-l hover:bg-gray-50 hover:shadow-md">
       <figure className="border-b border-gray-300 cursor-pointer rounded-t-xl">
         <Image
           className="rounded-t-xl"
