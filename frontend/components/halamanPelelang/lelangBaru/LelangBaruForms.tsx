@@ -11,13 +11,13 @@ import {
 import { useMutation, useQueryClient } from "react-query";
 import { AxiosError } from "axios";
 import type {
-  PostImageInputs,
-  PostImageResponse,
+  ImageInputs,
+  ImageResponse,
 } from "../../../lib/mutations/imageMutations";
 import {
   postItem,
-  PostItemInputs,
-  PostItemResponse,
+  ItemInputs,
+  ItemResponse,
 } from "../../../lib/mutations/itemMutations";
 // import { formatUnixTime } from "../../../lib/formatDateTime";
 import UploadImage from "../../forms/UploadImage";
@@ -62,16 +62,12 @@ const LelangBaruForms = (props: LelangBaruFormsProps) => {
   const [reqStatus, setReqStatus] = useState({ loading: false, error: false });
   const [selectedImg, setSelectedImg] = useState();
 
-  const itemMutation = useMutation<
-    PostItemResponse,
-    AxiosError,
-    PostItemInputs
-  >((data) => postItem(data));
-  const imageMutation = useMutation<
-    PostImageResponse,
-    AxiosError,
-    PostImageInputs
-  >((data) => postItemImage(data));
+  const itemMutation = useMutation<ItemResponse, AxiosError, ItemInputs>(
+    (data) => postItem(data)
+  );
+  const imageMutation = useMutation<ImageResponse, AxiosError, ImageInputs>(
+    (data) => postItemImage(data)
+  );
 
   const upload = async (iid: number) => {
     if (!selectedImg) return;

@@ -4,12 +4,12 @@ import { getTimeStamp } from "../formatDateTime";
 import { API_URL } from "../url";
 import { LoginResponse } from "./authMutations";
 
-export interface PostImageInputs {
+export interface ImageInputs {
   item_id: number;
   link: string;
 }
 
-export interface PostImageResponse extends PostImageInputs {
+export interface ImageResponse extends ImageInputs {
   id: number;
   created_at: number;
   updated_at: number;
@@ -55,7 +55,7 @@ export const uploadImage = async (
   }
 };
 
-export const postItemImage = async (input: PostImageInputs) => {
+export const postItemImage = async (input: ImageInputs) => {
   const ts = getTimeStamp();
   if (!id || !access_token) {
     console.log("cookie not found!");

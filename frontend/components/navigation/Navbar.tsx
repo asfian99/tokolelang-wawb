@@ -21,12 +21,12 @@ const Navbar = ({ user }: NavbarProps) => {
       </div>
 
       <div className="flex flex-row items-center justify-start gap-6 mx-auto">
-        <Link href="/tentang-kami">
+        <Link href="/fitur">
           <a className="font-semibold cursor-pointer text-text-l hover:text-text-d text-md">
             Fitur
           </a>
         </Link>
-        <Link href="/tentang-kami">
+        <Link href="/kontak">
           <a className="font-semibold cursor-pointer text-text-l hover:text-text-d text-md">
             Kontak
           </a>

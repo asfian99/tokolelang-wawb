@@ -8,11 +8,11 @@ import nookies from "nookies";
 import Products from "../../components/lelangTerbuka/Products";
 import Head from "next/head";
 import { useQuery } from "react-query";
-import { getItems } from "../../lib/queries/itemQueries";
+import { getItems, getItemsWithTrans } from "../../lib/queries/itemQueries";
 import Loading from "../../components/pageStatus/Loading";
 import { AxiosError } from "axios";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
-import { PostImageResponse } from "../../lib/mutations/imageMutations";
+import { ItemResponseWithTrans } from "../../lib/mutations/itemMutations";
+import { ImageResponse } from "../../lib/mutations/imageMutations";
 import { getImages } from "../../lib/queries/imageQueries";
 
 const LelangTerbuka: NextPage = (
@@ -20,10 +20,10 @@ const LelangTerbuka: NextPage = (
 ) => {
   const { cookie } = props;
 
-  const items = useQuery<PostItemResponse[], AxiosError>("items", () =>
-    getItems(cookie)
+  const items = useQuery<ItemResponseWithTrans[], AxiosError>("items", () =>
+    getItemsWithTrans(cookie)
   );
-  const images = useQuery<PostImageResponse[], AxiosError>("images", () =>
+  const images = useQuery<ImageResponse[], AxiosError>("images", () =>
     getImages(cookie)
   );
 

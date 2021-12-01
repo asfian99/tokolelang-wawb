@@ -1,16 +1,31 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { ClockIcon } from "@heroicons/react/outline";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { formatDate, formatTime } from "../../lib/formatDateTime";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
-import { PostImageResponse } from "../../lib/mutations/imageMutations";
+import { ItemResponse } from "../../lib/mutations/itemMutations";
+import { ImageResponse } from "../../lib/mutations/imageMutations";
+import { TransactionItemResponse } from "../../lib/mutations/transactionMutations";
 
 interface ProductInfoProps {
-  data: PostItemResponse;
+  data: ItemResponse;
+  transactions?: TransactionItemResponse[];
 }
 
 const ProductInfo = (props: ProductInfoProps) => {
   const { data } = props;
+
+  const highestTrans = useMemo(() => {
+    if (props.transactions) {
+      const ht = [...props.transactions];
+      ht.sort((a, b) => {
+        if (a.bid_value < b.bid_value) return 1;
+        if (a.bid_value > b.bid_value) return -1;
+        else return 0;
+      });
+      return ht;
+    } else return [];
+  }, [props.transactions]);
+
   return (
     <div>
       <h2 className="mt-4 text-3xl font-bold ">{data.name}</h2>
@@ -35,7 +50,11 @@ const ProductInfo = (props: ProductInfoProps) => {
         </div> */}
         <div className="flex flex-col items-start justify-between w-full">
           <p className="font-medium text-gray-600">Tertinggi</p>
-          <h4 className="text-2xl font-bold">Rp10.250.000</h4>
+          <h4 className="text-2xl font-bold">
+            {highestTrans.length > 0
+              ? formatRupiah(highestTrans[0]?.bid_value)
+              : "-"}
+          </h4>
         </div>
       </div>
     </div>

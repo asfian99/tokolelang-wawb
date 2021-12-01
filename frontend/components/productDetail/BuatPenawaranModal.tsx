@@ -5,7 +5,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import { BadgeCheckIcon } from "@heroicons/react/outline";
 import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup/dist/yup";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { ItemResponse } from "../../lib/mutations/itemMutations";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { useMutation, useQueryClient } from "react-query";
 import {
@@ -18,7 +18,7 @@ import { useRouter } from "next/router";
 interface PenawaranModalProps {
   isOpen: boolean;
   closeModal: () => void;
-  data: PostItemResponse;
+  data: ItemResponse;
 }
 
 type InputType = { penawaran: number };

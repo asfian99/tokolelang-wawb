@@ -13,11 +13,11 @@ import BuatPenawaranButton from "../../components/productDetail/BuatPenawaranBut
 import PelelangInfo from "../../components/productDetail/PelelangInfo";
 import LelangTable from "../../components/productDetail/LelangTable";
 import { useQuery } from "react-query";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { ItemResponse } from "../../lib/mutations/itemMutations";
 import { AxiosError } from "axios";
 import { getItemDetail } from "../../lib/queries/itemQueries";
 import Loading from "../../components/pageStatus/Loading";
-import { PostImageResponse } from "../../lib/mutations/imageMutations";
+import { ImageResponse } from "../../lib/mutations/imageMutations";
 import { getItemImages } from "../../lib/queries/imageQueries";
 import { IMAGE_URL } from "../../lib/url";
 import { rgbDataURL } from "../../lib/formatImage";
@@ -39,10 +39,10 @@ const ProductDetail: NextPage = (
   const { slug } = useRouter().query;
   const { cookie } = props;
 
-  const item = useQuery<PostItemResponse, AxiosError>(`item_${slug}`, () =>
+  const item = useQuery<ItemResponse, AxiosError>(`item_${slug}`, () =>
     getItemDetail(cookie, slug)
   );
-  const image = useQuery<PostImageResponse, AxiosError>(`image_${slug}`, () =>
+  const image = useQuery<ImageResponse, AxiosError>(`image_${slug}`, () =>
     getItemImages(cookie, slug)
   );
   const transactions = useQuery<TransactionItemResponse[], AxiosError>(
@@ -78,7 +78,7 @@ const ProductDetail: NextPage = (
             </div>
 
             <div className="flex flex-col pr-8 mb-4">
-              <ProductInfo data={item.data} />
+              <ProductInfo data={item.data} transactions={transactions.data} />
               <BuatPenawaranButton data={item.data} />
             </div>
           </div>

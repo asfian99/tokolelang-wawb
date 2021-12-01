@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useRouter } from "next/router";
 import { QueryClient, QueryClientProvider } from "react-query";
 import Navbar from "./navigation/Navbar";
@@ -23,18 +23,23 @@ const Layout = ({ children }: AppProps): JSX.Element => {
   const [user, setUser] = React.useState(userContextDefault);
   const res = useCheckLoginStatus({ user, setUser });
 
-  // console.log({ user });
-  // console.log(res);
+  const getSlug = useCallback(
+    () =>
+      pathname === "/login" ||
+      pathname === "/register" ||
+      pathname === "/tentang-kami" ||
+      pathname === "/kontak" ||
+      pathname === "/fitur" ||
+      pathname === "/_error" ||
+      pathname === "/",
+    [pathname]
+  );
 
   return (
     <>
       <QueryClientProvider client={queryClient}>
         <userContext.Provider value={{ user, setUser }}>
-          {pathname === "/login" ||
-          pathname === "/register" ||
-          pathname === "/tentang-kami" ||
-          pathname === "/_error" ||
-          pathname === "/" ? (
+          {getSlug() ? (
             <div className="min-h-screen antialiased">
               <Navbar user={user} />
               <div className="flex flex-row text-text-d font-inter">
@@ -50,7 +55,6 @@ const Layout = ({ children }: AppProps): JSX.Element => {
               </div>
             </div>
           )}
-          {/* <Script src="https://unpkg.com/@themesberg/flowbite@1.1.1/dist/flowbite.bundle.js"></Script> */}
         </userContext.Provider>
       </QueryClientProvider>
     </>

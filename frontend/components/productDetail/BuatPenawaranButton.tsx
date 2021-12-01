@@ -3,12 +3,12 @@ import React, { useContext, useState } from "react";
 import Link from "next/link";
 import { userContext } from "../../lib/contexts/userContext";
 import { formatRupiah } from "../../lib/formatCurrency";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { ItemResponse } from "../../lib/mutations/itemMutations";
 import BuatPenawaranModal from "./BuatPenawaranModal";
 import { formatSlug } from "../../lib/formatString";
 
 interface BuatPenawaranButtonProps {
-  data: PostItemResponse;
+  data: ItemResponse;
 }
 
 const BuatPenawaranButton = (props: BuatPenawaranButtonProps) => {

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { LoginResponse } from "../mutations/authMutations";
-import { PostImageResponse } from "../mutations/imageMutations";
+import { ImageResponse } from "../mutations/imageMutations";
 import { API_URL } from "../url";
 
 export const getImages = async (data: LoginResponse) => {
@@ -25,7 +25,7 @@ export const getItemImages = async (
     });
 
     const itemImages = res.data.filter(
-      (item: PostImageResponse) => item.item_id === Number(id[1])
+      (item: ImageResponse) => item.item_id === Number(id[1])
     );
 
     return itemImages[0];

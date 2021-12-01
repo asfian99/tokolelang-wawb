@@ -6,9 +6,10 @@ import { getAllAccounts } from "./accountQueries";
 import { getItems } from "./itemQueries";
 
 export const getTransactions = async (data: LoginResponse) => {
-  const res = await axios.get(`${API_URL}/transactions`, {
-    headers: { Authorization: `Bearer ${data.access_token}` },
-  });
+  const res = await axios.get<TransactionResponse[]>(
+    `${API_URL}/transactions`,
+    { headers: { Authorization: `Bearer ${data.access_token}` } }
+  );
 
   return res.data;
 };

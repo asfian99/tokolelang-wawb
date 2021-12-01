@@ -1,11 +1,11 @@
 import React from "react";
-import { PostImageResponse } from "../../lib/mutations/imageMutations";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { ImageResponse } from "../../lib/mutations/imageMutations";
+import { ItemResponseWithTrans } from "../../lib/mutations/itemMutations";
 import Product from "./Product";
 
 interface ProductsProps {
-  data: PostItemResponse[];
-  images: PostImageResponse[];
+  data: ItemResponseWithTrans[];
+  images: ImageResponse[];
 }
 
 const Products = ({ data, images }: ProductsProps) => {

@@ -1,10 +1,10 @@
 import React from "react";
 import { formatRupiah } from "../../../lib/formatCurrency";
 import { formatDateTime } from "../../../lib/formatDateTime";
-import { PostItemResponse } from "../../../lib/mutations/itemMutations";
+import { ItemResponse } from "../../../lib/mutations/itemMutations";
 
 interface LelangDetailViewProps {
-  data: PostItemResponse;
+  data: ItemResponse;
 }
 
 const LelangDetailView = ({ data }: LelangDetailViewProps) => {

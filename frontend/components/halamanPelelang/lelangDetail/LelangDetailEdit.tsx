@@ -5,8 +5,8 @@ import Link from "next/link";
 import * as yup from "yup";
 import {
   patchItem,
-  PostItemInputs,
-  PostItemResponse,
+  ItemInputs,
+  ItemResponse,
 } from "../../../lib/mutations/itemMutations";
 import { useMutation, useQueryClient } from "react-query";
 import { AxiosError } from "axios";
@@ -14,7 +14,7 @@ import { formatInputDateTime } from "../../../lib/formatDateTime";
 import { useRouter } from "next/router";
 
 interface LelangDetailEditProps {
-  data: PostItemResponse;
+  data: ItemResponse;
   toggleEdit: () => void;
 }
 
@@ -61,11 +61,9 @@ const LelangDetailEdit = ({ data, toggleEdit }: LelangDetailEditProps) => {
   // const formRef = React.useRef<HTMLFormElement | null>(null);
   const [reqStatus, setReqStatus] = useState({ loading: false, error: false });
 
-  const itemMutation = useMutation<
-    PostItemResponse,
-    AxiosError,
-    PostItemInputs
-  >((data) => patchItem(data, slug));
+  const itemMutation = useMutation<ItemResponse, AxiosError, ItemInputs>(
+    (data) => patchItem(data, slug)
+  );
 
   const onSubmit: SubmitHandler<InputType> = (data) => {
     setReqStatus({ loading: true, error: false });

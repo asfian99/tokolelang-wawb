@@ -4,39 +4,39 @@ import clsx from "clsx";
 import { ChevronDownIcon, ChevronUpIcon } from "@heroicons/react/outline";
 import { Column, useGlobalFilter, useSortBy, useTable } from "react-table";
 import DilelangkanDetailModal from "./DilelangkanDetailModal";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { ItemResponse } from "../../lib/mutations/itemMutations";
 import { formatSlug } from "../../lib/formatString";
 import { formatDateTime } from "../../lib/formatDateTime";
 
 interface DilelangkanTableProps {
-  data: PostItemResponse[];
+  data: ItemResponse[];
 }
 
 const DilelangkanTable = (props: DilelangkanTableProps) => {
-  const columns = useMemo<Column<PostItemResponse>[]>(
+  const columns = useMemo<Column<ItemResponse>[]>(
     () => [
-      { Header: "Nama Barang", accessor: "name" as keyof PostItemResponse },
+      { Header: "Nama Barang", accessor: "name" as keyof ItemResponse },
       {
         Header: "Harga Pembukaan",
-        accessor: "open_bid" as keyof PostItemResponse,
+        accessor: "open_bid" as keyof ItemResponse,
       },
       {
         Header: "Waktu Penutupan",
-        accessor: "closing_time" as keyof PostItemResponse,
+        accessor: "closing_time" as keyof ItemResponse,
       },
       // {
       //   Header: "Penggalangan Dana",
-      //   accessor: "fundraising" as keyof PostItemResponse,
+      //   accessor: "fundraising" as keyof ItemResponse,
       // },
-      { Header: "Lokasi ", accessor: "location" as keyof PostItemResponse },
-      { Header: "Event", accessor: "event" as keyof PostItemResponse },
-      { Header: "Aksi", accessor: "action" as keyof PostItemResponse },
+      { Header: "Lokasi ", accessor: "location" as keyof ItemResponse },
+      { Header: "Event", accessor: "event" as keyof ItemResponse },
+      { Header: "Aksi", accessor: "action" as keyof ItemResponse },
     ],
     []
   );
 
   const data = React.useMemo(() => {
-    const temp = props.data?.map((item: PostItemResponse) => {
+    const temp = props.data?.map((item: ItemResponse) => {
       const datetime = new Date(item.closing_time);
       return {
         ...item,

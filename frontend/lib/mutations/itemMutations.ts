@@ -3,8 +3,9 @@ import { parseCookies } from "nookies";
 import { formatUnixTime, getTimeStamp } from "../formatDateTime";
 import { API_URL } from "../url";
 import { LoginResponse } from "./authMutations";
+import { TransactionResponse } from "./transactionMutations";
 
-export interface PostItemInputs {
+export interface ItemInputs {
   name: string;
   description: string;
   open_bid: number;
@@ -14,18 +15,22 @@ export interface PostItemInputs {
   event?: string;
   location: string;
 }
-export interface PostItemResponse extends PostItemInputs {
+export interface ItemResponse extends ItemInputs {
   account_id?: number;
   id: number;
   created_at: number;
   updated_at: number;
 }
 
+export interface ItemResponseWithTrans extends ItemResponse {
+  transactions: TransactionResponse[];
+}
+
 const cookie = parseCookies();
 const cValue = cookie.token ? cookie.token?.split("&") : ["", "", ""];
 const [access_token, id, username] = cValue;
 
-export const postItem = async (input: PostItemInputs) => {
+export const postItem = async (input: ItemInputs) => {
   const ts = getTimeStamp();
   if (!id || !access_token) {
     console.log("cookie not found!");
@@ -48,7 +53,7 @@ export const postItem = async (input: PostItemInputs) => {
 };
 
 export const patchItem = async (
-  input: PostItemInputs,
+  input: ItemInputs,
   slug: string | string[] | undefined
 ) => {
   const ts = getTimeStamp();

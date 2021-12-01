@@ -2,21 +2,17 @@ import React from "react";
 import Image from "next/image";
 import { ClockIcon, LocationMarkerIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
-import {
-  formatDate,
-  formatDateTime,
-  formatTime,
-} from "../../lib/formatDateTime";
+import { ItemResponseWithTrans } from "../../lib/mutations/itemMutations";
+import { formatDateTime } from "../../lib/formatDateTime";
 import { formatRupiah } from "../../lib/formatCurrency";
 import { formatSlug } from "../../lib/formatString";
-import { PostImageResponse } from "../../lib/mutations/imageMutations";
+import { ImageResponse } from "../../lib/mutations/imageMutations";
 import { rgbDataURL } from "../../lib/formatImage";
 import { IMAGE_URL } from "../../lib/url";
 
 interface ProductProps {
-  data: PostItemResponse;
-  images: PostImageResponse[];
+  data: ItemResponseWithTrans;
+  images: ImageResponse[];
 }
 
 const placeholderImg = "/uploads/item_placeholder.png";
@@ -27,11 +23,17 @@ const Product = ({ data, images }: ProductProps) => {
     router.push(`/lelang-terbuka/${formatSlug(data.name, data.id)}`);
   };
 
-  // console.log(images);
+  const highestTrans = [...data.transactions];
+  highestTrans.sort((a, b) => {
+    if (a.bid_value < b.bid_value) return 1;
+    if (a.bid_value > b.bid_value) return -1;
+    else return 0;
+  });
+  console.log({ highestTrans, ori: data.transactions });
 
   const img = images.length > 0 ? IMAGE_URL + "/w_400" + images[0].link : "";
   return (
-    <div className="transition duration-150 ease-in-out border border-gray-300 rounded-xl group hover:bg-gray-100">
+    <div className="transition duration-150 ease-in-out border border-gray-300 rounded-xl group hover:border-primary-l hover:bg-gray-100">
       <figure className="border-b border-gray-300 cursor-pointer rounded-t-xl">
         <Image
           className="rounded-t-xl"
@@ -66,12 +68,13 @@ const Product = ({ data, images }: ProductProps) => {
             <p>Dibuka</p>
             <h4>{formatRupiah(data.open_bid)}</h4>
           </div>
-          {/* <div className="flex flex-row items-end justify-between w-full gap-4 ">
-          <h4>|</h4>
-        </div> */}
           <div className="flex flex-row items-start justify-between w-full gap-4">
             <p>Tertinggi</p>
-            <h4 className="text-base font-semibold">Rp10.250.000</h4>
+            <h4 className="text-base font-semibold">
+              {highestTrans.length > 0
+                ? formatRupiah(highestTrans[0]?.bid_value)
+                : "-"}
+            </h4>
           </div>
         </div>
 

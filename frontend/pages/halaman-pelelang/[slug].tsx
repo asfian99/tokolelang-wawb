@@ -13,9 +13,9 @@ import LelangTable from "../../components/productDetail/LelangTable";
 import PelelangInfo from "../../components/productDetail/PelelangInfo";
 import { useRouter } from "next/router";
 import { useQuery } from "react-query";
-import { PostItemResponse } from "../../lib/mutations/itemMutations";
+import { ItemResponse } from "../../lib/mutations/itemMutations";
 import { AxiosError } from "axios";
-import { PostImageResponse } from "../../lib/mutations/imageMutations";
+import { ImageResponse } from "../../lib/mutations/imageMutations";
 import { getItemDetail } from "../../lib/queries/itemQueries";
 import { getItemImages } from "../../lib/queries/imageQueries";
 import { rgbDataURL } from "../../lib/formatImage";
@@ -44,10 +44,10 @@ const ProductDilelangkanDetail: NextPage = (
   const { cookie } = props;
   const [isEdit, setIsEdit] = useState(false);
 
-  const item = useQuery<PostItemResponse, AxiosError>(`item_${slug}`, () =>
+  const item = useQuery<ItemResponse, AxiosError>(`item_${slug}`, () =>
     getItemDetail(cookie, slug)
   );
-  const image = useQuery<PostImageResponse, AxiosError>(`image_${slug}`, () =>
+  const image = useQuery<ImageResponse, AxiosError>(`image_${slug}`, () =>
     getItemImages(cookie, slug)
   );
   const transactions = useQuery<TransactionItemResponse[], AxiosError>(
