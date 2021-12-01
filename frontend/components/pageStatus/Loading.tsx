@@ -2,8 +2,10 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-semibold text-gray-700">Loading...</h1>
+    <div className="flex items-center justify-center my-4 space-x-2 animate-bounce">
+      <div className="w-5 h-5 rounded-full bg-primary"></div>
+      <div className="w-5 h-5 rounded-full bg-primary"></div>
+      <div className="w-5 h-5 rounded-full bg-primary"></div>
     </div>
   );
 };

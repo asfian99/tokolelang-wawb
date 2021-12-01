@@ -12,6 +12,8 @@ import { useQuery } from "react-query";
 import { ItemResponse } from "../../lib/mutations/itemMutations";
 import { AxiosError } from "axios";
 import { getItems } from "../../lib/queries/itemQueries";
+import Loading from "../../components/pageStatus/Loading";
+import RequestFailed from "../../components/pageStatus/RequestFailed";
 
 const HalamanPelelang: NextPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
@@ -43,6 +45,8 @@ const HalamanPelelang: NextPage = (
         </div>
 
         <div className="flex flex-col mt-4">
+          {items.status === "loading" && <Loading />}
+          {items.status === "error" && <RequestFailed />}
           {items.data && <DilelangkanTable data={userItems} />}
         </div>
 

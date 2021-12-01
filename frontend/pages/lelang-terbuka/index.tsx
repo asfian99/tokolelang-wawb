@@ -14,6 +14,7 @@ import { AxiosError } from "axios";
 import { ItemResponseWithTrans } from "../../lib/mutations/itemMutations";
 import { ImageResponse } from "../../lib/mutations/imageMutations";
 import { getImages } from "../../lib/queries/imageQueries";
+import RequestFailed from "../../components/pageStatus/RequestFailed";
 
 const LelangTerbuka: NextPage = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
@@ -34,7 +35,7 @@ const LelangTerbuka: NextPage = (
       </Head>
 
       {items.status === "loading" && <Loading />}
-      {items.status === "error" && <Loading />}
+      {items.status === "error" && <RequestFailed />}
       {items.data && images.data && (
         <div>
           <h2 className="mb-4 text-2xl font-semibold">Lelang Terbuka</h2>
