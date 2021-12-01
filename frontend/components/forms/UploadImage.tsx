@@ -25,14 +25,14 @@ const UploadImage = (props: UploadImageProps) => {
   return (
     <div>
       <label
-        className="block mb-2 text-sm font-medium text-gray-900"
+        className="block mb-2 text-sm font-medium text-text-d"
         htmlFor="item_image"
         // onClick={props.onClickHandler}
       >
         Upload Foto Barang
       </label>
       <input
-        className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none focus:border-transparent"
+        className="block w-full text-sm text-text-d border border-gray-300 rounded-lg cursor-pointer bg-gray-50 focus:outline-none focus:border-transparent"
         aria-describedby="item_image_help"
         name="itemImage"
         id="item_image"

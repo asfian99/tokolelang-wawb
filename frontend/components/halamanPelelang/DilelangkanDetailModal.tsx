@@ -19,7 +19,7 @@ const DilelangkanDetailModal = (props: DilelangkanDetailInterface) => {
     <>
       <span
         onClick={openModal}
-        className="cursor-pointer text-primary hover:text-blue-600 hover:underline"
+        className="cursor-pointer text-primary hover:text-primary-d hover:underline"
       >
         Detail
       </span>
@@ -62,7 +62,7 @@ const DilelangkanDetailModal = (props: DilelangkanDetailInterface) => {
               <div className="inline-block w-full max-w-3xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-xl">
                 <Dialog.Title
                   as="h3"
-                  className="text-lg font-semibold leading-6 text-gray-900"
+                  className="text-lg font-semibold leading-6 text-text-d"
                 >
                   Buat Lelang Baru
                 </Dialog.Title>
@@ -73,7 +73,7 @@ const DilelangkanDetailModal = (props: DilelangkanDetailInterface) => {
                 <div className="flex flex-row justify-end gap-4">
                   <button
                     type="button"
-                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-primary-d bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
                     onClick={closeModal}
                   >
                     Tutup

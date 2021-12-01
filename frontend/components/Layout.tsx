@@ -37,14 +37,14 @@ const Layout = ({ children }: AppProps): JSX.Element => {
           pathname === "/" ? (
             <div className="min-h-screen antialiased">
               <Navbar user={user} />
-              <div className="flex flex-row font-sans text-gray-900">
+              <div className="flex flex-row text-text-d font-inter">
                 <div className="w-full px-8 py-4">{children}</div>
               </div>
             </div>
           ) : (
-            <div className="min-h-screen antialiased text-gray-900">
+            <div className="min-h-screen antialiased text-text-">
               <Navbar user={user} />
-              <div className="flex flex-row font-sans">
+              <div className="flex flex-row font-inter">
                 <Sidebar user={user} />
                 <div className="w-full px-8 py-4 ml-64">{children}</div>
               </div>

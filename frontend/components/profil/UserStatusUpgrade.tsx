@@ -19,7 +19,7 @@ const UserStatusUpgrade = ({ data }: UserStatusUpgradeProps) => {
         Ingin membuka pelelangan?{" "}
         <span
           onClick={openModal}
-          className="cursor-pointer text-primary hover:text-blue-600"
+          className="cursor-pointer text-primary hover:text-primary-d"
         >
           Upgrade ke User Master
         </span>

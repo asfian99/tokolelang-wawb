@@ -15,7 +15,7 @@ const ProductInfo = (props: ProductInfoProps) => {
     <div>
       <h2 className="mt-4 text-3xl font-bold ">{data.name}</h2>
 
-      <div className="flex flex-row items-center justify-start gap-2 mt-2 mb-4 text-red-600">
+      <div className="flex flex-row items-center justify-start gap-2 mt-2 mb-4 text-danger-d">
         <ClockIcon className="w-4 h-4 font-semibold" />
         <p className="text-sm font-semibold">
           {formatDate(data.closing_time)} - {formatTime(data.closing_time)}

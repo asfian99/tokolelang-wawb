@@ -5,26 +5,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#3280EB",
-        lPrimary: "#DFE9FE",
-        cGray: "#747474",
-        clGray: "#EDEDED",
-        accent: "#FFC155",
+        primary: "#008060",
+        "primary-d": "#004C3F",
+        "primary-l": "#69CF9C",
+        "primary-l2": "#C1F0D0",
+        cream: "#FBF7ED",
+        "text-d": "#212326",
+        "text-l": "#6B7177",
+        danger: "#FF556D",
+        "danger-d": "#F62C47",
       },
     },
     fontFamily: {
-      sans: [
-        "Inter",
-        "ui-sans-serif",
-        "system-ui",
-        "-apple-system",
-        "BlinkMacSystemFont",
-        "Segoe UI",
-        "Roboto",
-        "Helvetica Neue",
-        "Arial",
-        "sans-serif",
-      ],
+      inter: ["Inter", "ui-sans-serif", "-apple-system", "sans-serif"],
     },
   },
   variants: {

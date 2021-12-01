@@ -13,11 +13,11 @@ const UserInfo = ({ userData }: UserInfoProps) => {
     <div className="flex flex-row items-center justify-between gap-6 divide-x-2 divide-gray-500">
       <div className="flex flex-col justify-end ">
         <Link href="/profil">
-          <a className="text-xl font-bold text-right text-gray-700 hover:text-gray-500">
+          <a className="text-xl font-bold text-right text-primary hover:text-primary-d">
             {userData.username}
           </a>
         </Link>
-        <p className="text-sm text-right text-gray-500">
+        <p className="text-sm text-right text-text-l">
           {userData.is_master ? "Master" : "Member"}
         </p>
       </div>

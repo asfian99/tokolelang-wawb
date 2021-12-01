@@ -31,7 +31,7 @@ const Product = ({ data, images }: ProductProps) => {
 
   const img = images.length > 0 ? IMAGE_URL + "/w_400" + images[0].link : "";
   return (
-    <div className="border border-gray-300 rounded-xl group hover:bg-gray-50">
+    <div className="transition duration-150 ease-in-out border border-gray-300 rounded-xl group hover:bg-gray-100">
       <figure className="border-b border-gray-300 cursor-pointer rounded-t-xl">
         <Image
           className="rounded-t-xl"
@@ -50,11 +50,11 @@ const Product = ({ data, images }: ProductProps) => {
       <div className="px-4 pb-4">
         <h2
           onClick={onClick}
-          className="mt-4 font-bold cursor-pointer group-hover:text-black hover:underline"
+          className="mt-4 font-bold cursor-pointer hover:underline"
         >
           {data.name}
         </h2>
-        <div className="flex flex-row items-center justify-start gap-2 mt-2 mb-4 text-red-600">
+        <div className="flex flex-row items-center justify-start gap-2 mt-2 mb-4 text-danger-d">
           <ClockIcon className="w-4 h-4 font-semibold" />
           <p className="text-sm font-semibold">
             {formatDateTime(data.closing_time)}
