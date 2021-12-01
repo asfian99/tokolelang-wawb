@@ -11,7 +11,9 @@ const Notifikasi: NextPage = () => {
       </Head>
 
       <div>
-        <h2 className="mb-4 text-2xl font-semibold">Notifikasi</h2>
+        <h2 className="mb-4 text-2xl font-semibold">
+          Notifikasi (Dalam Pengembangan)
+        </h2>
       </div>
     </>
   );
