@@ -63,7 +63,7 @@ const ProductDetail: NextPage = (
           <h2 className="mb-4 text-2xl font-semibold">Product Detail</h2>
 
           <div className="grid grid-cols-2 gap-4">
-            <div className="my-4 mr-2">
+            <div className="my-4 mr-2 transition duration-150 ease-in-out border border-gray-300 hover:shadow-md rounded-2xl">
               <Image
                 className="border border-gray-300 cursor-pointer rounded-2xl"
                 src={image.data ? img : placeholderImg}

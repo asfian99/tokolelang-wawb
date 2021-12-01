@@ -19,7 +19,7 @@ const Register = () => {
       </Head>
 
       <div className="flex flex-row items-center justify-center min-h-[80vh]">
-        <div className="w-4/5 px-12 py-12 border-2 border-gray-300 rounded-lg md:w-2/4">
+        <div className="w-4/5 px-12 py-12 border-2 border-gray-300 rounded-lg shadow-md md:w-2/4">
           <h2 className="mb-4 text-2xl font-bold">
             {reqStatus.success ? "Selamat" : "Daftar"}
           </h2>

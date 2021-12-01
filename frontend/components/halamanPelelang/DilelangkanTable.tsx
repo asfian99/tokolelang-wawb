@@ -46,7 +46,7 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
         event: item.event || "-",
         action: (
           <Link href={`/halaman-pelelang/${formatSlug(item.name, item.id)}`}>
-            <a className="cursor-pointer text-primary hover:text-blue-600 hover:underline">
+            <a className="cursor-pointer text-primary hover:text-primary-d hover:underline">
               Detail
             </a>
           </Link>
@@ -58,7 +58,7 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
     return temp;
   }, [props.data]);
 
-  const initialState = { sortBy: [{ id: "closing_time", desc: true }] };
+  const initialState = { sortBy: [{ id: "closing_time", asc: true }] };
   const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
     // @ts-ignore
     useTable({ columns, data, initialState }, useGlobalFilter, useSortBy);
@@ -120,7 +120,7 @@ const DilelangkanTable = (props: DilelangkanTableProps) => {
                           className={clsx(
                             "px-6 py-4 text-sm",
                             i === 0
-                              ? "whitespace-nowrap  font-medium text-gray-900"
+                              ? "whitespace-nowrap  font-medium text-text-d"
                               : " text-gray-500 whitespace-nowrap"
                           )}
                         >

@@ -32,9 +32,7 @@ const BuatPenawaranButton = (props: BuatPenawaranButtonProps) => {
               props.data.id
             )}`}
           >
-            <a className="w-1/2 py-3 font-bold text-center rounded-lg cursor-pointer text-primary bg-blue-50 disabled:bg-blue-300 hover:bg-blue-100 ">
-              Edit Lelang
-            </a>
+            <a className="w-1/2 py-3 font-bold btn-secondary">Edit Lelang</a>
           </Link>
         ) : (
           <>
@@ -43,7 +41,7 @@ const BuatPenawaranButton = (props: BuatPenawaranButtonProps) => {
               disabled={isExpired}
               className={clsx(
                 isExpired ? "cursor-not-allowed" : "cursor-pointer",
-                "w-1/2 py-3 font-bold text-white rounded-lg bg-primary disabled:bg-blue-300 hover:bg-blue-600 "
+                "w-1/2 py-3 font-bold btn-primary "
               )}
             >
               {isExpired ? "Penawaran Berakhir" : "Buat Penawaran"}

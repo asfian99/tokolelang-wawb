@@ -42,9 +42,9 @@ const MemberSidebar = () => {
         <Link href={`/${menu.slug}`} key={menu.slug}>
           <a
             className={clsx(
-              "w-full px-4 py-3 font-semibold flex flex-row items-center gap-2 text-left rounded-lg hover:bg-blue-50 hover:underline",
+              "w-full px-4 py-3 transition duration-150 ease-in font-semibold flex flex-row items-center gap-2 text-left rounded-xl hover:bg-primary-l2 ",
               pageSlug === menu.slug
-                ? "text-blue-600 bg-blue-50"
+                ? "text-primary-d bg-primary-l2"
                 : "text-gray-700 "
             )}
           >

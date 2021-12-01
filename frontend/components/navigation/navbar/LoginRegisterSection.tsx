@@ -5,14 +5,10 @@ const LoginRegisterSection = () => {
   return (
     <>
       <Link href="/register">
-        <a className="px-6 py-2 font-bold text-blue-500 bg-blue-100 rounded-lg hover:bg-blue-200 ">
-          Daftar
-        </a>
+        <a className="px-8 font-bold btn-secondary">Daftar</a>
       </Link>
       <Link href="/login">
-        <a className="px-6 py-2 font-bold text-white bg-blue-500 rounded-lg hover:bg-blue-600 ">
-          Masuk
-        </a>
+        <a className="px-8 font-bold btn-primary">Masuk</a>
       </Link>
     </>
   );

@@ -92,66 +92,59 @@ const LelangDetailEdit = ({ data, toggleEdit }: LelangDetailEditProps) => {
         <div className="grid grid-cols-2 gap-4">
           {/* NAMA BARANG */}
           <div>
-            <label
-              htmlFor="namaBarang"
-              className="block mb-2 text-sm font-medium text-gray-900"
-            >
+            <label htmlFor="namaBarang" className="form-input-label">
               Nama Barang
             </label>
             <input
               type="text"
               id="namaBarang"
               placeholder="Nama"
-              className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              className="form-input form-input-text"
               {...register("name")}
             />
             {errors.name && (
-              <p className="m-1 text-sm text-red-600">Nama Penawaran Invalid</p>
+              <p className="m-1 text-sm text-danger-d">
+                Nama Penawaran Invalid
+              </p>
             )}
           </div>
 
           {/* HARGA PEMBUKAAN */}
           <div>
-            <label
-              htmlFor="hargaPembukaan"
-              className="block mb-2 text-sm font-medium text-gray-900"
-            >
+            <label htmlFor="hargaPembukaan" className="form-input-label">
               Harga Pembukaan
             </label>
             <div className="flex">
-              <span className="inline-flex items-center px-3 text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-lg sm:text-sm">
+              <span className="inline-flex items-center px-3 text-text-d bg-gray-200 border border-r-0 border-gray-300 rounded-l-lg sm:text-sm">
                 Rp
               </span>
               <input
                 type="number"
                 id="hargaPembukaan"
                 placeholder="0"
-                className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                className="rounded-l-none form-input form-input-text"
                 {...register("open_bid")}
               />
             </div>
             {errors.open_bid && (
-              <p className="m-1 text-sm text-red-600">Nilai Harga Invalid</p>
+              <p className="m-1 text-sm text-danger-d">Nilai Harga Invalid</p>
             )}
           </div>
 
           {/* DESKRIPSI */}
           <div>
-            <label
-              htmlFor="deskripsiBarang"
-              className="block mb-2 text-sm font-medium text-gray-900"
-            >
+            <label htmlFor="deskripsiBarang" className="form-input-label">
               Deskripsi Barang
             </label>
             <textarea
               id="deskripsiBarang"
               rows={4}
-              className="block w-full p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-sm focus:ring-blue-500 focus:border-blue-500"
+              className="form-input form-input-text"
               placeholder="Deskripsi..."
               {...register("description")}
             />
             {errors.description && (
-              <p className="m-1 text-sm text-red-600">
+              <p className="m-1 text-sm text-danger-d">
                 Deskripsi Barang Invalid
               </p>
             )}
@@ -160,21 +153,18 @@ const LelangDetailEdit = ({ data, toggleEdit }: LelangDetailEditProps) => {
           <div className="flex flex-col justify-between">
             {/* WAKTU PENUTUPAN */}
             <div>
-              <label
-                htmlFor="waktuPenutupan"
-                className="block mb-2 text-sm font-medium text-gray-900"
-              >
+              <label htmlFor="waktuPenutupan" className="form-input-label">
                 Waktu Penutupan
               </label>
               <input
                 type="datetime-local"
                 id="waktuPenutupan"
                 placeholder=""
-                className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                className="form-input form-input-text"
                 {...register("closing_time")}
               />
               {errors.closing_time && (
-                <p className="m-1 text-sm text-red-600">
+                <p className="m-1 text-sm text-danger-d">
                   Waktu Penutupan Invalid
                 </p>
               )}
@@ -192,7 +182,7 @@ const LelangDetailEdit = ({ data, toggleEdit }: LelangDetailEditProps) => {
                 {...register("fundraising")}
               />
               <div className="h-6 bg-gray-200 border-2 border-gray-200 rounded-full toggle-bg w-11"></div>
-              <span className="ml-3 text-sm font-medium text-gray-900">
+              <span className="ml-3 text-sm font-medium text-text-d">
                 Penggalangan Dana
               </span>
             </label>
@@ -200,61 +190,52 @@ const LelangDetailEdit = ({ data, toggleEdit }: LelangDetailEditProps) => {
 
           {/* KELIPATAN PENAWARAN */}
           <div>
-            <label
-              htmlFor="kelipatanPenawaran"
-              className="block mb-2 text-sm font-medium text-gray-900"
-            >
+            <label htmlFor="kelipatanPenawaran" className="form-input-label">
               Kelipatan Penawaran
             </label>
             <div className="flex">
-              <span className="inline-flex items-center px-3 text-gray-900 bg-gray-200 border border-r-0 border-gray-300 rounded-l-lg sm:text-sm">
+              <span className="inline-flex items-center px-3 text-text-d bg-gray-200 border border-r-0 border-gray-300 rounded-l-lg sm:text-sm">
                 Rp
               </span>
               <input
                 type="number"
                 id="kelipatanPenawaran"
                 placeholder="0"
-                className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-r-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                className="rounded-l-none form-input form-input-text"
                 {...register("bid_ratio")}
               />
             </div>
             {errors.bid_ratio && (
-              <p className="m-1 text-sm text-red-600">Nilai Harga Invalid</p>
+              <p className="m-1 text-sm text-danger-d">Nilai Harga Invalid</p>
             )}
           </div>
           {/* LOKASI */}
           <div>
-            <label
-              htmlFor="location"
-              className="block mb-2 text-sm font-medium text-gray-900"
-            >
+            <label htmlFor="location" className="form-input-label">
               Lokasi (Kabupaten / Kota)
             </label>
             <input
               type="text"
               id="location"
               placeholder="Kabupaten"
-              className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              className="form-input form-input-text"
               {...register("location")}
             />
             {errors.location && (
-              <p className="m-1 text-sm text-red-600">Lokasi Invalid</p>
+              <p className="m-1 text-sm text-danger-d">Lokasi Invalid</p>
             )}
           </div>
 
           {/* EVENT */}
           <div>
-            <label
-              htmlFor="event"
-              className="block mb-2 text-sm font-medium text-gray-900"
-            >
+            <label htmlFor="event" className="form-input-label">
               Event
             </label>
             <input
               type="text"
               id="event"
               placeholder="Event (optional)"
-              className="form-input bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+              className="form-input form-input-text"
               {...register("event")}
             />
           </div>
@@ -264,16 +245,10 @@ const LelangDetailEdit = ({ data, toggleEdit }: LelangDetailEditProps) => {
         </div>
 
         <div className="flex flex-row items-center justify-end gap-4">
-          <button
-            onClick={toggleEdit}
-            className="inline-flex justify-center px-4 py-2 text-sm font-medium border border-transparent rounded-md text-primary bg-blue-50 hover:bg-blue-100 focus:outline-none disabled:bg-blue-300 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-200"
-          >
+          <button onClick={toggleEdit} className="btn-secondary">
             Batal
           </button>
-          <button
-            type="submit"
-            className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-primary hover:bg-blue-600 focus:outline-none disabled:bg-blue-300 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-          >
+          <button type="submit" className="btn-primary">
             {reqStatus.loading ? "Loading" : "Simpan"}
           </button>
         </div>

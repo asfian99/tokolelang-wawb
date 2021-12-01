@@ -116,21 +116,18 @@ const RegForms = (props: RegFormsProps) => {
       <div className="grid grid-cols-2 gap-4">
         {/* FIRST_NAME */}
         <div className="">
-          <label
-            htmlFor="first_name"
-            className="block mb-2 text-sm font-medium text-gray-900"
-          >
+          <label htmlFor="first_name" className="form-input-label">
             First Name
           </label>
           <input
             type="text"
             id="first_name"
             placeholder="First Name"
-            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="form-input form-input-text"
             {...register("first_name")}
           />
           {errors.first_name && (
-            <p className="m-1 text-sm text-red-600">
+            <p className="m-1 text-sm text-danger-d">
               <span className="font-medium">Oops!</span>{" "}
               {errors.first_name.message}
             </p>
@@ -139,21 +136,18 @@ const RegForms = (props: RegFormsProps) => {
 
         {/* LAST_NAME */}
         <div className="">
-          <label
-            htmlFor="last_name"
-            className="block mb-2 text-sm font-medium text-gray-900"
-          >
+          <label htmlFor="last_name" className="form-input-label">
             Last Name
           </label>
           <input
             type="text"
             id="last_name"
             placeholder="Last Name"
-            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="form-input form-input-text"
             {...register("last_name")}
           />
           {errors.last_name && (
-            <p className="mt-1 text-sm text-red-600">
+            <p className="mt-1 text-sm text-danger-d">
               <span className="font-medium">Oops!</span>{" "}
               {errors.last_name.message}
             </p>
@@ -162,21 +156,18 @@ const RegForms = (props: RegFormsProps) => {
 
         {/* EMAIL */}
         <div className="">
-          <label
-            htmlFor="email"
-            className="block mb-2 text-sm font-medium text-gray-900"
-          >
+          <label htmlFor="email" className="form-input-label">
             Email
           </label>
           <input
             type="text"
             id="email"
             placeholder="Email"
-            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="form-input form-input-text"
             {...register("email")}
           />
           {errors.email && (
-            <p className="mt-1 text-sm text-red-600">
+            <p className="mt-1 text-sm text-danger-d">
               <span className="font-medium">Oops!</span> {errors.email.message}
             </p>
           )}
@@ -184,21 +175,18 @@ const RegForms = (props: RegFormsProps) => {
 
         {/* USERNAME */}
         <div className="">
-          <label
-            htmlFor="username"
-            className="block mb-2 text-sm font-medium text-gray-900"
-          >
+          <label htmlFor="username" className="form-input-label">
             Username
           </label>
           <input
             type="text"
             id="username"
             placeholder="Username"
-            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="form-input form-input-text"
             {...register("username")}
           />
           {errors.username && (
-            <p className="m-1 text-sm text-red-600">
+            <p className="m-1 text-sm text-danger-d">
               <span className="font-medium">Oops!</span>{" "}
               {errors.username.message}
             </p>
@@ -207,21 +195,18 @@ const RegForms = (props: RegFormsProps) => {
 
         {/* PASSWORD */}
         <div className="">
-          <label
-            htmlFor="password"
-            className="block mb-2 text-sm font-medium text-gray-900"
-          >
+          <label htmlFor="password" className="form-input-label">
             Password
           </label>
           <input
             type="password"
             id="password"
             placeholder="Password"
-            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="form-input form-input-text"
             {...register("password")}
           />
           {errors.password && (
-            <p className="mt-1 text-sm text-red-600">
+            <p className="mt-1 text-sm text-danger-d">
               <span className="font-medium">Oops!</span>{" "}
               {errors.password.message}
             </p>
@@ -230,21 +215,18 @@ const RegForms = (props: RegFormsProps) => {
 
         {/* REPEAT_PASSWORD */}
         <div className="">
-          <label
-            htmlFor="password_repeat"
-            className="block mb-2 text-sm font-medium text-gray-900"
-          >
+          <label htmlFor="password_repeat" className="form-input-label">
             Ulangi Password
           </label>
           <input
             type="password"
             id="password_repeat"
             placeholder="Password"
-            className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+            className="form-input form-input-text"
             {...register("password_repeat")}
           />
           {errors.password_repeat && (
-            <p className="mt-1 text-sm text-red-600">
+            <p className="mt-1 text-sm text-danger-d">
               <span className="font-medium">Oops!</span>{" "}
               {errors.password_repeat.message}
             </p>
@@ -256,7 +238,7 @@ const RegForms = (props: RegFormsProps) => {
         <button
           type="submit"
           disabled={reqStatus.loading}
-          className="w-1/5 px-8 py-2 mt-4 font-bold text-center text-white bg-blue-500 rounded-lg disabled:bg-blue-300 hover:bg-blue-600 "
+          className="w-1/5 btn-primary"
         >
           {reqStatus.loading ? "Loading" : "Daftar"}
         </button>

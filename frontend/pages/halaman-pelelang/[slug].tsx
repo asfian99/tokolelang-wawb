@@ -69,7 +69,7 @@ const ProductDilelangkanDetail: NextPage = (
           <h2 className="text-2xl font-semibold ">Product Detail</h2>
           {!isEdit && (
             <PencilAltIcon
-              className="w-6 h-6 cursor-pointer text-primary hover:text-blue-600"
+              className="w-6 h-6 cursor-pointer text-primary hover:text-primary-d"
               onClick={toggleEdit}
             />
           )}
@@ -87,7 +87,7 @@ const ProductDilelangkanDetail: NextPage = (
               )}
             </div>
 
-            <div>
+            <div className="transition duration-150 ease-in-out border border-gray-300 hover:shadow-md rounded-2xl">
               <Image
                 className="border border-gray-300 cursor-pointer rounded-2xl"
                 src={image.data ? img : placeholderImg}

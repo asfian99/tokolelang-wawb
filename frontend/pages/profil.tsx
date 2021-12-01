@@ -42,7 +42,7 @@ const Profil: NextPage = (
               <h2 className="text-2xl font-semibold">Profil</h2>
 
               <PencilAltIcon
-                className="w-6 h-6 cursor-pointer text-primary hover:text-blue-600"
+                className="w-6 h-6 cursor-pointer text-primary hover:text-primary-d"
                 onClick={openModal}
               />
             </div>

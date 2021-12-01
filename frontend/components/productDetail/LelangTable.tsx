@@ -101,7 +101,7 @@ const LelangTable = (props: LelangTableProps) => {
                           className={clsx(
                             "px-6 py-4 text-sm",
                             i === 0
-                              ? "whitespace-nowrap  font-medium text-gray-900"
+                              ? "whitespace-nowrap  font-medium text-text-d"
                               : " text-gray-500 whitespace-nowrap"
                           )}
                         >

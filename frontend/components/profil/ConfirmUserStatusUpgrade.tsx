@@ -63,14 +63,14 @@ const ConfirmUserStatusUpgrade = (props: ConfirmUserStatusUpgradeProps) => {
         <div className="min-h-screen px-4 text-center">
           <Transition.Child
             as={Fragment}
-            enter="ease-out duration-200"
+            enter="ease-out duration-150"
             enterFrom="opacity-0"
             enterTo="opacity-100"
             leave="ease-in duration-100"
             leaveFrom="opacity-100"
             leaveTo="opacity-0"
           >
-            <Dialog.Overlay className="fixed inset-0 bg-black opacity-50" />
+            <Dialog.Overlay className="fixed inset-0 bg-black bg-opacity-50 backdrop-filter backdrop-blur-lg" />
           </Transition.Child>
 
           {/* This element is to trick the browser into centering the modal contents. */}
@@ -82,7 +82,7 @@ const ConfirmUserStatusUpgrade = (props: ConfirmUserStatusUpgradeProps) => {
           </span>
           <Transition.Child
             as={Fragment}
-            enter="ease-out duration-200"
+            enter="ease-out duration-150"
             enterFrom="opacity-0 scale-95"
             enterTo="opacity-100 scale-100"
             leave="ease-in duration-100"
@@ -92,7 +92,7 @@ const ConfirmUserStatusUpgrade = (props: ConfirmUserStatusUpgradeProps) => {
             <div className="inline-block w-full max-w-lg p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-xl">
               <Dialog.Title
                 as="h3"
-                className="text-lg font-semibold leading-6 text-gray-900"
+                className="text-lg font-semibold leading-6 text-text-d"
               >
                 Konfirmasi Upgrade User Status
               </Dialog.Title>
@@ -116,7 +116,7 @@ const ConfirmUserStatusUpgrade = (props: ConfirmUserStatusUpgradeProps) => {
                           checked={isAccept}
                           onChange={() => setIsAccept(!isAccept)}
                           id="syaratKetentuan"
-                          className="w-4 h-4 border border-gray-300 rounded form-checkbox bg-gray-50 focus:ring-3 focus:ring-blue-300"
+                          className="w-4 h-4 border border-gray-300 rounded text-primary form-checkbox bg-gray-50 focus:ring-3 focus:ring-primary-l"
                         />
                         <label
                           htmlFor="syaratKetentuan"
@@ -124,7 +124,7 @@ const ConfirmUserStatusUpgrade = (props: ConfirmUserStatusUpgradeProps) => {
                         >
                           Saya telah membaca & menyetujui{" "}
                           <Link href={`/syarat-ketentuan`}>
-                            <a className="text-blue-600 cursor-pointer hover:underline">
+                            <a className="cursor-pointer text-primary hover:underline">
                               Syarat & Ketentuan.
                             </a>
                           </Link>{" "}
@@ -137,17 +137,14 @@ const ConfirmUserStatusUpgrade = (props: ConfirmUserStatusUpgradeProps) => {
 
               <div className="flex flex-row justify-end gap-4 mt-4">
                 {reqStatus.success ? (
-                  <button
-                    onClick={reloadHandler}
-                    className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-primary hover:bg-blue-600 focus:outline-none disabled:bg-blue-300 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
-                  >
+                  <button onClick={reloadHandler} className="btn-primary">
                     Muat Ulang
                   </button>
                 ) : (
                   <>
                     <button
                       type="button"
-                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-blue-600 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                      className="btn-secondary"
                       onClick={props.modal.closeModal}
                     >
                       Batal
@@ -156,7 +153,7 @@ const ConfirmUserStatusUpgrade = (props: ConfirmUserStatusUpgradeProps) => {
                       type="submit"
                       onClick={clickHandler}
                       disabled={!isAccept || reqStatus.loading}
-                      className="inline-flex justify-center px-4 py-2 text-sm font-medium text-white border border-transparent rounded-md bg-primary hover:bg-blue-600 focus:outline-none disabled:bg-blue-300 disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-blue-500"
+                      className="btn-primary"
                     >
                       {reqStatus.loading ? "Loading..." : "Ya, Saya Yakin"}
                     </button>

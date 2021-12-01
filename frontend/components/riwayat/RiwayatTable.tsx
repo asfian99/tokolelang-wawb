@@ -55,7 +55,7 @@ const RiwayatTable = (props: RiwayatTableInterface) => {
         status: isHighest(item),
         action: (
           <Link href={`/lelang-terbuka/${formatSlug(item.name, item.item_id)}`}>
-            <a className="cursor-pointer text-primary hover:text-blue-600 hover:underline">
+            <a className="cursor-pointer text-primary hover:text-primary-d hover:underline">
               Detail
             </a>
           </Link>
@@ -128,7 +128,7 @@ const RiwayatTable = (props: RiwayatTableInterface) => {
                           className={clsx(
                             "px-6 py-4 text-sm",
                             i === 0
-                              ? "whitespace-nowrap  font-medium text-gray-900"
+                              ? "whitespace-nowrap  font-medium text-text-d"
                               : " text-gray-500 whitespace-nowrap"
                           )}
                         >
