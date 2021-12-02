@@ -23,8 +23,7 @@ const Product = ({ data, images }: ProductProps) => {
     router.push(`/lelang-terbuka/${formatSlug(data.name, data.id)}`);
   };
 
-  const highestTrans =
-    data.transactions.length > 1 ? [...data.transactions] : [];
+  const highestTrans = data.transactions ? [...data.transactions] : [];
   highestTrans.sort((a, b) => {
     if (a.bid_value < b.bid_value) return 1;
     if (a.bid_value > b.bid_value) return -1;

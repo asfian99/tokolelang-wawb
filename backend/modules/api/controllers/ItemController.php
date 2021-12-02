@@ -33,18 +33,4 @@ class ItemController extends ActiveController
         return $behaviors;
     }
 
-    // public function actions()
-    // {
-    //     $actions = parent::actions();
-    //     $actions['index']['prepareDataProvider'] = [$this, 'prepareDataProvider'];
-
-    //     return $actions;
-    // }
-
-    // public function prepareDataProvider()
-    // {
-    //     return new ActiveDataProvider([
-    //         'query' => $this->modelClass::find()->andWhere(['account_id' => \Yii::$app->user->id])
-    //     ]);
-    // }
 }

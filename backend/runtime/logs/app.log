@@ -9883,3 +9883,303 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1638285834.7189
     'REQUEST_TIME' => 1638285834
 ]
+2021-12-01 16:45:36 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\IndexAction))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\IndexAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\IndexAction))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\IndexAction))
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('index', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/account/ind...', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-12-01 16:45:36 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '2786ac10378187b05671f7186575165fb8d778897a0ab4deaffccedcea38e3fba:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"-99ej0Yg99WYErM1pkTdQrsoOZsryyAe\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53485'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts'
+    'PHP_SELF' => '/index.php/api/accounts'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=2786ac10378187b05671f7186575165fb8d778897a0ab4deaffccedcea38e3fba%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22-99ej0Yg99WYErM1pkTdQrsoOZsryyAe%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1638373536.4821
+    'REQUEST_TIME' => 1638373536
+]
+2021-12-01 16:49:06 [::1][-][-][error][yii\web\HttpException:401] yii\web\UnauthorizedHttpException: Your request was made with invalid credentials. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php:93
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\HttpHeaderAuth.php(65): yii\filters\auth\AuthMethod->handleFailure(Object(yii\web\Response))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(73): yii\filters\auth\HttpHeaderAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\AuthMethod.php(59): yii\filters\auth\CompositeAuth->authenticate(Object(yii\web\User), Object(yii\web\Request), Object(yii\web\Response))
+#3 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\filters\auth\CompositeAuth.php(57): yii\filters\auth\AuthMethod->beforeAction(Object(yii\rest\DeleteAction))
+#4 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\ActionFilter.php(77): yii\filters\auth\CompositeAuth->beforeAction(Object(yii\rest\DeleteAction))
+#5 [internal function]: yii\base\ActionFilter->beforeFilter(Object(yii\base\ActionEvent))
+#6 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Component.php(628): call_user_func(Array, Object(yii\base\ActionEvent))
+#7 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(300): yii\base\Component->trigger('beforeAction', Object(yii\base\ActionEvent))
+#8 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Controller.php(216): yii\base\Controller->beforeAction(Object(yii\rest\DeleteAction))
+#9 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Controller.php(179): yii\web\Controller->beforeAction(Object(yii\rest\DeleteAction))
+#10 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('delete', Array)
+#11 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/item/delete', Array)
+#12 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#14 {main}
+2021-12-01 16:49:06 [::1][-][-][info][application] $_GET = [
+    'id' => '7'
+]
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    '_csrf' => '7f819a5146389f8891d1fbe72f8282dce437f7f675bf3ca22a58fae43498591ea:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"sSvRNsmlwpt6R9Aa2ppAwYzC91fsO4QZ\";}'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53561'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/items/7'
+    'REQUEST_METHOD' => 'DELETE'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/items/7'
+    'PHP_SELF' => '/index.php/api/items/7'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_USER_AGENT' => 'insomnia/2021.6.0'
+    'HTTP_COOKIE' => '_csrf=7f819a5146389f8891d1fbe72f8282dce437f7f675bf3ca22a58fae43498591ea%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22sSvRNsmlwpt6R9Aa2ppAwYzC91fsO4QZ%22%3B%7D'
+    'HTTP_AUTHORIZATION' => '***'
+    'HTTP_ACCEPT' => '*/*'
+    'REQUEST_TIME_FLOAT' => 1638373746.2687
+    'REQUEST_TIME' => 1638373746
+]
+2021-12-01 16:56:47 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/accounts/". in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/accounts/', Array)
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-12-01 16:56:47 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53810'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts/'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts/'
+    'PHP_SELF' => '/index.php/api/accounts/'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'PATCH'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization,content-type'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1638374207.8965
+    'REQUEST_TIME' => 1638374207
+]
+2021-12-01 16:56:52 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/accounts/". in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/accounts/', Array)
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-12-01 16:56:52 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53811'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts/'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts/'
+    'PHP_SELF' => '/index.php/api/accounts/'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'PATCH'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization,content-type'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1638374212.8921
+    'REQUEST_TIME' => 1638374212
+]
+2021-12-01 16:56:57 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/accounts/". in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/accounts/', Array)
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-12-01 16:56:57 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53812'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts/'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts/'
+    'PHP_SELF' => '/index.php/api/accounts/'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'PATCH'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization,content-type'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1638374217.2624
+    'REQUEST_TIME' => 1638374217
+]
+2021-12-01 16:57:03 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "api/accounts/". in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('api/accounts/', Array)
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\Users\Asfian\Documents\Development\TokoLelang\backend\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\Users\Asfian\Documents\Development\TokoLelang\backend\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2021-12-01 16:57:03 [::1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '53815'
+    'SERVER_SOFTWARE' => 'PHP 7.4.25 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '8080'
+    'REQUEST_URI' => '/api/accounts/'
+    'REQUEST_METHOD' => 'OPTIONS'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\Users\\Asfian\\Documents\\Development\\TokoLelang\\backend\\web\\index.php'
+    'PATH_INFO' => '/api/accounts/'
+    'PHP_SELF' => '/index.php/api/accounts/'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => '*/*'
+    'HTTP_ACCESS_CONTROL_REQUEST_METHOD' => 'PATCH'
+    'HTTP_ACCESS_CONTROL_REQUEST_HEADERS' => 'authorization,content-type'
+    'HTTP_ORIGIN' => 'http://localhost:3000'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36 Edg/96.0.1054.34'
+    'HTTP_SEC_FETCH_MODE' => 'cors'
+    'HTTP_SEC_FETCH_SITE' => 'same-site'
+    'HTTP_SEC_FETCH_DEST' => 'empty'
+    'HTTP_REFERER' => 'http://localhost:3000/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9,id;q=0.8'
+    'REQUEST_TIME_FLOAT' => 1638374223.8202
+    'REQUEST_TIME' => 1638374223
+]
